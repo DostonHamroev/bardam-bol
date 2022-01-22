@@ -1,5 +1,6 @@
 package uz.hamroev.bardambolnew
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -7,6 +8,7 @@ import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import uz.hamroev.bardambolnew.activity.HomeActivity
 import uz.hamroev.bardambolnew.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,24 +28,25 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+        startAnimation()
 
         // this is code for ActionBar hide
         supportActionBar?.hide()
 
         //this is code animation typeWriter
 
-        startAnimation()
+
 
         binding.introTv.text = ""
         binding.introTv.animateText("Bardam \nBo'l")
         binding.introTv.setCharacterDeley(80)
 
-        startAnimation()
 
-        Handler(Looper.getMainLooper()).postDelayed({
+        Handler().postDelayed({
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
 
-
-        }, 2500)
+        }, 3500)
 
     }
 

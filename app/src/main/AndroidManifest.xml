@@ -11,6 +11,7 @@
         android:theme="@style/Theme.BardamBolNew">
         <activity
             android:screenOrientation="portrait"
+            android:fitsSystemWindows="true"
             android:name=".activity.HomeActivity"
             android:exported="true" />
         <activity
