@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
 
-        }, 3500)
+        }, 350)
 
     }
 

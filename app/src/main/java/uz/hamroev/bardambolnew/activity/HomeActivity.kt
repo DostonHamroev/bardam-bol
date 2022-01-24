@@ -38,33 +38,28 @@ class HomeActivity : AppCompatActivity() {
         binding.includeMain.languageIcon.setOnClickListener {
             val alertDialog = AlertDialog.Builder(binding.root.context)
             val dialog = alertDialog.create()
-            val bindingLanguage = DialogLanguageBinding.inflate(LayoutInflater.from(applicationContext))
+            val bindingLanguage =
+                DialogLanguageBinding.inflate(LayoutInflater.from(applicationContext))
             dialog.setView(bindingLanguage.root)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            dialog.setCancelable(false)
+            dialog.setCancelable(true)
 
             bindingLanguage.uzbTv.setOnClickListener {
-                Toast.makeText(this, "uzb", Toast.LENGTH_SHORT).show()
+                dialog.dismiss()
+            }
+
+            bindingLanguage.rusTv.setOnClickListener {
+                dialog.dismiss()
+            }
+
+            bindingLanguage.krillTv.setOnClickListener {
                 dialog.dismiss()
             }
 
             dialog.show()
 
 
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
 
 
     }
