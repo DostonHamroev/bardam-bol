@@ -9,5 +9,38 @@
         android:id="@+id/homeFragment"
         android:name="uz.hamroev.bardambolnew.fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_content1Fragment"
+            app:destination="@id/content1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_content2Fragment"
+            app:destination="@id/content2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_content3Fragment"
+            app:destination="@id/content3Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/content1Fragment"
+        android:name="uz.hamroev.bardambolnew.fragment.Content1Fragment"
+        android:label="fragment_content1"
+        tools:layout="@layout/fragment_content1" />
+    <fragment
+        android:id="@+id/content2Fragment"
+        android:name="uz.hamroev.bardambolnew.fragment.Content2Fragment"
+        android:label="fragment_content2"
+        tools:layout="@layout/fragment_content2" />
+    <fragment
+        android:id="@+id/content3Fragment"
+        android:name="uz.hamroev.bardambolnew.fragment.Content3Fragment"
+        android:label="fragment_content3"
+        tools:layout="@layout/fragment_content3" />
+    <fragment
+        android:id="@+id/authorFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.AuthorFragment"
+        android:label="fragment_author"
+        tools:layout="@layout/fragment_author" />
 </navigation>

@@ -6,11 +6,11 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.WindowManager
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.Navigation
 import uz.hamroev.bardambolnew.R
+import uz.hamroev.bardambolnew.cache.Cache
 import uz.hamroev.bardambolnew.databinding.ActivityHomeBinding
 import uz.hamroev.bardambolnew.databinding.DialogLanguageBinding
 
@@ -21,6 +21,8 @@ class HomeActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        Cache.init(this)
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
