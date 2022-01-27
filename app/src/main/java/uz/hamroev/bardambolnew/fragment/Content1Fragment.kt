@@ -34,6 +34,7 @@ class Content1Fragment : Fragment() {
             object : ContentAdapter.OnMyContentClickListener {
                 override fun onContentClick(content: Content, position: Int) {
                     when (position) {
+
                         0 -> {
                             findNavController().navigate(R.id.content1_1Fragment)
                         }
