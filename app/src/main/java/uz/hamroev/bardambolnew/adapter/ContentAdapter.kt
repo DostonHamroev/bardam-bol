@@ -4,6 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.realpacific.clickshrinkeffect.applyClickShrink
+import render.animations.Attention
+import render.animations.Render
 import uz.hamroev.bardambolnew.databinding.ItemContentBinding
 import uz.hamroev.bardambolnew.model.Content
 
@@ -28,6 +31,13 @@ class ContentAdapter(
             itemContentBinding.root.setOnClickListener {
                 onMyContentClickListener.onContentClick(content, position)
             }
+
+            val render = Render(context)
+            render.setDuration(700)
+            render.setAnimation(Attention.Bounce(itemContentBinding.root))
+            render.start()
+
+//            itemContentBinding.root.applyClickShrink()
 
         }
 

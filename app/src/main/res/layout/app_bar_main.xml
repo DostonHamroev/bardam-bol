@@ -22,7 +22,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/menu_icon"
+                    android:id="@+id/menu_icons"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginLeft="10dp"
@@ -38,7 +38,7 @@
                 </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/language_icon"
+                android:id="@+id/language_icons"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginRight="10dp"

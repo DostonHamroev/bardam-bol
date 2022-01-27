@@ -29,18 +29,32 @@ class HomeFragment : Fragment() {
         Cache.init(binding.root.context)
         checkLanguage()
 
+
+
         menuMainAdapter = MenuMainAdapter(
             binding.root.context,
             list,
             object : MenuMainAdapter.OnMyMainMenuClickLIstener {
                 override fun onClickMenu(mainMenu: MainMenu, position: Int) {
                     when (position) {
-                        0 -> { findNavController().navigate(R.id.content1Fragment)}
-                        1 -> { findNavController().navigate(R.id.content2Fragment)}
-                        2 -> { findNavController().navigate(R.id.content3Fragment)}
-                        3 -> { findNavController().navigate(R.id.authorFragment)}
-                        4 -> { findNavController().navigate(R.id.authorFragment)}
-                        else -> { findNavController().navigate(R.id.authorFragment)}
+                        0 -> {
+                            findNavController().navigate(R.id.content1Fragment)
+                        }
+                        1 -> {
+                            findNavController().navigate(R.id.content2Fragment)
+                        }
+                        2 -> {
+                            findNavController().navigate(R.id.content3Fragment)
+                        }
+                        3 -> {
+                            findNavController().navigate(R.id.authorFragment)
+                        }
+                        4 -> {
+                            findNavController().navigate(R.id.authorFragment)
+                        }
+                        else -> {
+                            findNavController().navigate(R.id.authorFragment)
+                        }
                     }
                 }
             })
@@ -66,42 +80,37 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadUzData() {
+        binding.typeWriter.animateText("Ekstremal vaziyatlarda o'zini boshqarish !")
+        binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
+        list.add(MainMenu("UZ", R.drawable.ic_medicine))
         list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
         list.add(MainMenu("", R.drawable.ic_run))
         list.add(MainMenu("", R.drawable.ic_run))
     }
 
     private fun loadKrillData() {
+        binding.typeWriter.animateText("Экстремал вазиятларда узини бошкариш !")
+        binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
+        list.add(MainMenu("Krill", R.drawable.ic_medicine))
         list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
         list.add(MainMenu("", R.drawable.ic_run))
         list.add(MainMenu("", R.drawable.ic_run))
     }
 
     private fun loadRuData() {
+        binding.typeWriter.animateText("Что делать во время экстремальных ситуаций !")
+        binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
+        list.add(MainMenu("RU", R.drawable.ic_medicine))
         list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
         list.add(MainMenu("", R.drawable.ic_run))
         list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
+
     }
 
 

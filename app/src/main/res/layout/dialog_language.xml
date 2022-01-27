@@ -8,10 +8,9 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        app:cardBackgroundColor="#80FFFFFF"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp">
 
@@ -38,9 +37,10 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="10dp"
+                        android:fontFamily="@font/san_bold"
                         android:text="Ilova tili"
                         android:textColor="@color/black"
-                        android:textSize="18sp"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -49,9 +49,10 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="10dp"
+                        android:fontFamily="@font/san_regular"
                         android:text="Dastur tilini o'zgartirish uchun tanlang"
                         android:textColor="@color/black"
-                        android:textSize="14sp"
+                        android:textSize="13sp"
                         android:textStyle="normal" />
 
                     <View
@@ -68,8 +69,9 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="UZB"
-                        android:textColor="#4a7ac7"
-                        android:textSize="18sp"
+                        android:textColor="@color/ios_blue"
+                        android:fontFamily="@font/san_bold"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <View
@@ -86,8 +88,9 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="RUS"
-                        android:textColor="#4a7ac7"
-                        android:textSize="18sp"
+                        android:textColor="@color/ios_blue"
+                        android:fontFamily="@font/san_bold"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <View
@@ -104,8 +107,9 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Krill"
-                        android:textColor="#4a7ac7"
-                        android:textSize="18sp"
+                        android:textColor="@color/ios_blue"
+                        android:fontFamily="@font/san_bold"
+                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <View
@@ -113,6 +117,7 @@
                         android:layout_height="10dp" />
 
                 </LinearLayout>
+
             </androidx.core.widget.NestedScrollView>
 
 

@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import render.animations.Attention
+import render.animations.Render
 import uz.hamroev.bardambolnew.databinding.MainItemBinding
 import uz.hamroev.bardambolnew.model.MainMenu
 
@@ -25,7 +27,15 @@ class MenuMainAdapter(
             mainItemBinding.root.setOnClickListener {
                 onMyMainMenuClickLIstener.onClickMenu(mainMenu, position)
             }
+//            mainItemBinding.root.applyClickShrink()
+
+            val render = Render(context)
+            render.setDuration(700)
+            render.setAnimation(Attention.Bounce(mainItemBinding.root))
+            render.start()
+
         }
+
 
     }
 

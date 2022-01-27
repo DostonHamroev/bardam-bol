@@ -50,6 +50,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     // lottie animation
     implementation 'com.airbnb.android:lottie:4.2.2'
+    // shrink click
+    implementation 'com.github.realpacific:click-shrink-effect:2.0'
+    // animation
+    implementation 'com.github.gayanvoice:android-animations:1.0.2'
     
 
 }

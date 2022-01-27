@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cloud"
+    android:background="@color/ios_blue"
     android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
 
@@ -35,7 +35,8 @@
                         app:lottie_autoPlay="true"
                         app:lottie_fileName="bike.json"
                         app:lottie_loop="true"
-                        app:lottie_repeatMode="restart" />
+                        app:lottie_repeatMode="restart"
+                        app:lottie_speed="1.5" />
 
 
                 </LinearLayout>
@@ -45,7 +46,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1">
 
-                    <TextView
+                    <uz.hamroev.bardambolnew.typeWriter.TypeWriter
+                        android:id="@+id/type_writer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
@@ -63,9 +65,9 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvMain"
-                android:overScrollMode="never"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/main_item" />
 

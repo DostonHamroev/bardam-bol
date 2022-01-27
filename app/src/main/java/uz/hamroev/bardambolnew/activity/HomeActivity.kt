@@ -1,11 +1,15 @@
 package uz.hamroev.bardambolnew.activity
 
 import android.app.AlertDialog
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
@@ -16,7 +20,13 @@ import uz.hamroev.bardambolnew.databinding.ActivityHomeBinding
 import uz.hamroev.bardambolnew.databinding.DialogLanguageBinding
 
 class HomeActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityHomeBinding
+//
+//    lateinit var dataPasser: uz.hamroev.bardambolnew.passData.OnDataPass
+
+    var til = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -24,6 +34,10 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         Cache.init(this)
+        checkLanguage()
+//
+//        dataPasser = applicationContext as OnDataPass
+
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -32,13 +46,15 @@ class HomeActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
 
-        binding.includeMain.menuIcon.setOnClickListener {
+
+        binding.includeMain.menuIcons.setOnClickListener {
             binding.drawerLayout.open()
 
         }
 
-        binding.includeMain.languageIcon.setOnClickListener {
+        binding.includeMain.languageIcons.setOnClickListener {
             val alertDialog = AlertDialog.Builder(binding.root.context)
             val dialog = alertDialog.create()
             val bindingLanguage =
@@ -47,15 +63,40 @@ class HomeActivity : AppCompatActivity() {
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.setCancelable(true)
 
+            when (Cache.til) {
+                "uz" -> {
+                    bindingLanguage.ilovaTiliTv.text = "Ilova Tili"
+                    bindingLanguage.ilovaTilniTanlashTv.text = "Dastur tilini o'zgartirish uchun tanlang"
+                }
+                "ru" -> {
+                    bindingLanguage.ilovaTiliTv.text = "Язык приложения"
+                    bindingLanguage.ilovaTilniTanlashTv.text = "Выберите, чтобы изменить язык программы"
+                }
+                "krill" -> {
+                    bindingLanguage.ilovaTiliTv.text = "Илова Тили"
+                    bindingLanguage.ilovaTilniTanlashTv.text = "Дастур тилини ўзгартириш учун танланг"
+                }
+            }
+
+
             bindingLanguage.uzbTv.setOnClickListener {
+                Cache.til = "uz"
+                checkLanguage()
+                navController.navigate(R.id.homeFragment)
                 dialog.dismiss()
             }
 
             bindingLanguage.rusTv.setOnClickListener {
+                Cache.til = "ru"
+                checkLanguage()
+                navController.navigate(R.id.homeFragment)
                 dialog.dismiss()
             }
 
             bindingLanguage.krillTv.setOnClickListener {
+                Cache.til = "krill"
+                checkLanguage()
+                navController.navigate(R.id.homeFragment)
                 dialog.dismiss()
             }
 
@@ -64,13 +105,13 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-        val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
 
         /*
         Cache.position = "0"
         navController.popBackStack(R.id.homeFragment, true)
         navController.navigate(R.id.homeFragment)
         */
+
         binding.navMainPage.setOnClickListener {
             navController.navigate(R.id.homeFragment)
             binding.drawerLayout.closeDrawers()
@@ -95,9 +136,33 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.navElevation.setOnClickListener {
+            try {
+                val uri: Uri = Uri.parse("market://details?id=$packageName")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+            } catch (e: ActivityNotFoundException) {
+                val uri: Uri =
+                    Uri.parse("http://play.google.com/store/apps/details?id=$packageName")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+            }
+
             binding.drawerLayout.closeDrawers()
         }
         binding.navShare.setOnClickListener {
+            try {
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.setType("text/plain")
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Bardam bo'l")
+                val shareMessage: String =
+                    "https://play.google.com/store/apps/details?id=" + packageName
+                intent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+                startActivity(Intent.createChooser(intent, "share by"))
+            } catch (e: Exception) {
+                Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+            }
             binding.drawerLayout.closeDrawers()
         }
 
@@ -119,4 +184,79 @@ class HomeActivity : AppCompatActivity() {
         } else
             super.onBackPressed()
     }
+
+    private fun checkLanguage() {
+        when (Cache.til) {
+            "uz" -> {
+                loadUzData()
+            }
+            "krill" -> {
+                loadKrillData()
+            }
+            "ru" -> {
+                loadRuData()
+            }
+        }
+    }
+
+    private fun loadUzData() {
+
+
+        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda o'zini boshqarish !"
+
+        binding.navMainPageTitle.text = "Asosiy Sahifa"
+
+        binding.navContentFirstTitle.text = "Bo'lim 1"
+        binding.navContentSecondTitle.text = "Bo'lim 2"
+        binding.navContentTherdTitle.text = "Bo'lim 3"
+
+        binding.navAuthorsTitle.text = "Ilova Haqida"
+
+        binding.navElevationTitle.text = "Baholash"
+        binding.navShareTitle.text = "Yuborish"
+
+        binding.navExitTitle.text = "Chiqish"
+
+
+    }
+
+    private fun loadKrillData() {
+        binding.navHeaderTitle.text = "Экстремал вазиятларда узини бошкариш !"
+
+        binding.navMainPageTitle.text = "Асосий Саҳифа"
+
+        binding.navContentFirstTitle.text = "Контент 1"
+        binding.navContentSecondTitle.text = "Контент 2"
+        binding.navContentTherdTitle.text = "Контент 3"
+
+        binding.navAuthorsTitle.text = "Илова Ҳақида"
+
+        binding.navElevationTitle.text = "Баҳолаш"
+        binding.navShareTitle.text = "Юбориш"
+
+        binding.navExitTitle.text = "Чиқиш"
+
+
+    }
+
+    private fun loadRuData() {
+        binding.navHeaderTitle.text = "Что делать во время экстремальных ситуаций !"
+
+        binding.navMainPageTitle.text = "Главная страница"
+
+        binding.navContentFirstTitle.text = "Контент 1"
+        binding.navContentSecondTitle.text = "Контент 2"
+        binding.navContentTherdTitle.text = "Контент 3"
+
+        binding.navAuthorsTitle.text = "О приложении"
+
+        binding.navElevationTitle.text = "Оценка"
+        binding.navShareTitle.text = "Поделиться"
+
+        binding.navExitTitle.text = "Выход"
+
+
+    }
+
+
 }
