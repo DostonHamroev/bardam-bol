@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.ContentAdapter
 import uz.hamroev.bardambolnew.cache.Cache
@@ -32,7 +33,14 @@ class Content1Fragment : Fragment() {
             list,
             object : ContentAdapter.OnMyContentClickListener {
                 override fun onContentClick(content: Content, position: Int) {
-
+                    when (position) {
+                        0 -> {
+                            findNavController().navigate(R.id.content1_1Fragment)
+                        }
+                        1 -> {
+                            findNavController().navigate(R.id.content1_2Fragment)
+                        }
+                    }
                 }
             })
         binding.rvContent.adapter = contentAdapter
@@ -57,22 +65,58 @@ class Content1Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Ekstremal vaziyatlarda o'zini tutish qoidalari", R.drawable.ic_medicine, R.drawable.back_image_content1))
-        list.add(Content("Shoshilinch psixologik yordam", R.drawable.ic_medicine, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Ekstremal vaziyatlarda o'zini tutish qoidalari",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Shoshilinch psixologik yordam",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
     }
 
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Экстремал вазиятларда ўзини тутиш қоидалари", R.drawable.ic_medicine, R.drawable.back_image_content1))
-        list.add(Content("Шошилинч психологик ёрдам", R.drawable.ic_medicine, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Экстремал вазиятларда ўзини тутиш қоидалари",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Шошилинч психологик ёрдам",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
     }
 
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Правила поведения в экстренных ситуациях", R.drawable.ic_medicine, R.drawable.back_image_content1))
-        list.add(Content("Экстренная психологическая помощь", R.drawable.ic_medicine, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Правила поведения в экстренных ситуациях",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Экстренная психологическая помощь",
+                R.drawable.ic_medicine,
+                R.drawable.back_image_content1
+            )
+        )
     }
 
 
