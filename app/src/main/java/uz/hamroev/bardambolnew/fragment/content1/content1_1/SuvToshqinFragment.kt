@@ -1,11 +1,14 @@
 package uz.hamroev.bardambolnew.fragment.content1.content1_1
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import uz.hamroev.bardambolnew.R
+import androidx.fragment.app.Fragment
+import uz.hamroev.bardambolnew.adapter.VideoAdapter
+import uz.hamroev.bardambolnew.cache.Cache
+import uz.hamroev.bardambolnew.databinding.FragmentSuvToshqinBinding
+import uz.hamroev.bardambolnew.model.Video
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,13 +33,77 @@ class SuvToshqinFragment : Fragment() {
         }
     }
 
+    lateinit var binding: FragmentSuvToshqinBinding
+    lateinit var list: ArrayList<Video>
+    lateinit var videoAdapter: VideoAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_suv_toshqin, container, false)
+    ): View {
+        binding = FragmentSuvToshqinBinding.inflate(layoutInflater, container, false)
+
+        checkLanguage()
+        videoAdapter =
+            VideoAdapter(binding.root.context, list, object : VideoAdapter.OnMyVideoClickListener {
+                override fun onDownload(video: Video, position: Int, view: View) {
+                    when (position) {
+                        0 -> {
+                            view.visibility = View.GONE
+                        }
+                        0 -> {
+                        }
+                        0 -> {
+                        }
+                    }
+                }
+            })
+        binding.rvVideo.adapter = videoAdapter
+
+
+        return binding.root
     }
+
+    private fun checkLanguage() {
+        when (Cache.til) {
+            "uz" -> {
+                loadUzData()
+            }
+            "krill" -> {
+                loadKrillData()
+            }
+            "ru" -> {
+                loadRuData()
+            }
+        }
+    }
+
+    private fun loadUzData() {
+        list = ArrayList()
+        list.clear()
+        list.add(Video("Zilzila Lite", "k3rDBN2it-c", "Yuklash"))
+        list.add(Video("Zilzila Lite", "k3rDBN2it-c", "Yuklash"))
+        list.add(Video("Zilzila Lite", "k3rDBN2it-c", "Yuklash"))
+
+    }
+
+    private fun loadKrillData() {
+        list = ArrayList()
+        list.clear()
+        list.add(Video("", "fqfN6U23Sfk", "Юклаш"))
+        list.add(Video("", "fqfN6U23Sfk", "Юклаш"))
+        list.add(Video("", "fqfN6U23Sfk", "Юклаш"))
+
+    }
+
+    private fun loadRuData() {
+        list = ArrayList()
+        list.clear()
+        list.add(Video("действия при землятресении", "fqfN6U23Sfk", "Скачать"))
+        list.add(Video("действия при землятресении", "fqfN6U23Sfk", "Скачать"))
+        list.add(Video("действия при землятресении", "fqfN6U23Sfk", "Скачать"))
+
+    }
+
 
     companion object {
         /**

@@ -61,6 +61,8 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
     //you tube downloader
     implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
+    //you tube player
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
     
 
 }
