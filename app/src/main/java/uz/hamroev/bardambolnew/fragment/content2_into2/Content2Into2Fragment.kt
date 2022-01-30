@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.ContentAdapter
 import uz.hamroev.bardambolnew.cache.Cache
@@ -51,7 +52,23 @@ class Content2Into2Fragment : Fragment() {
             list,
             object : ContentAdapter.OnMyContentClickListener {
                 override fun onContentClick(content: Content, position: Int) {
-
+                    when (position) {
+                        0 -> {
+                            findNavController().navigate(R.id.jismoniyMashqlarFragment)
+                        }
+                        1 -> {
+                            findNavController().navigate(R.id.relaksiyaMashqiFragment)
+                        }
+                        2 -> {
+                            findNavController().navigate(R.id.salomatlikniSaqlashFragment)
+                        }
+                        3 -> {
+                            findNavController().navigate(R.id.suvniTozalashFragment)
+                        }
+                        4 -> {
+                            findNavController().navigate(R.id.faollashtirishMashqiFragment)
+                        }
+                    }
                 }
             })
         binding.rvContent.adapter = contentAdapter
@@ -78,9 +95,27 @@ class Content2Into2Fragment : Fragment() {
         list.clear()
         list.add(Content("Jismoniy mashqlar", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Relaksatsiya mashki", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Salomatlikni saklash asoslari", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Suvni tozalash usullari", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Faollashtirish mashqi", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Salomatlikni saklash asoslari",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Suvni tozalash usullari",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Faollashtirish mashqi",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
 
 
     }
@@ -90,8 +125,20 @@ class Content2Into2Fragment : Fragment() {
         list.clear()
         list.add(Content("Жисмоний машклар", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Релаксация машки", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Саломатликни саклаш асослари", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Сувни тозалаш усуллари", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Саломатликни саклаш асослари",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Сувни тозалаш усуллари",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Фаоллаштириш машқи", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }
@@ -100,10 +147,28 @@ class Content2Into2Fragment : Fragment() {
         list = ArrayList()
         list.clear()
         list.add(Content("Упражнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Упражнение на расслабление", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Основы здравоохранения", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Упражнение на расслабление",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Основы здравоохранения",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Методы очистки воды", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Активационное упражнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Активационное упражнение",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
 
     }
 

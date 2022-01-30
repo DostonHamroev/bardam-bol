@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.ContentAdapter
 import uz.hamroev.bardambolnew.cache.Cache
@@ -51,7 +52,47 @@ class Content1_2Fragment : Fragment() {
             list,
             object : ContentAdapter.OnMyContentClickListener {
                 override fun onContentClick(content: Content, position: Int) {
-
+                    when (position) {
+                        0 -> {
+                            findNavController().navigate(R.id.tajovuzFragment)
+                        }
+                        1 -> {
+                            findNavController().navigate(R.id.befarqlikFragment)
+                        }
+                        2 -> {
+                            findNavController().navigate(R.id.damOlishFragment)
+                        }
+                        3 -> {
+                            findNavController().navigate(R.id.aldanishlarFragment)
+                        }
+                        4 -> {
+                            findNavController().navigate(R.id.favqulotdaVaziyatlarFragment)
+                        }
+                        5 -> {
+                            findNavController().navigate(R.id.vositaQozgalishiFragment)
+                        }
+                        6 -> {
+                            findNavController().navigate(R.id.falokatdaBirinchiYordamFragment)
+                        }
+                        7 -> {
+                            findNavController().navigate(R.id.isterikaFragment)
+                        }
+                        8 -> {
+                            findNavController().navigate(R.id.asabiyTitroqFragment)
+                        }
+                        9 -> {
+                            findNavController().navigate(R.id.yiglamoqFragment)
+                        }
+                        10 -> {
+                            findNavController().navigate(R.id.bolaniParvarishlashFragment)
+                        }
+                        11 -> {
+                            findNavController().navigate(R.id.asabiyTaranglikFragment)
+                        }
+                        12 -> {
+                            findNavController().navigate(R.id.qorquvFragment)
+                        }
+                    }
                 }
             })
         binding.rvContent.adapter = contentAdapter
@@ -78,16 +119,52 @@ class Content1_2Fragment : Fragment() {
         list.clear()
         list.add(Content("Tajovuz", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Befarqlik", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Dam olish uchun audio", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Aldanishlar va gallyutsinatsiyalar", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Favqulodda vaziyatlarda bolalar bilan o'zaro munosabat", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Dam olish uchun audio",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Aldanishlar va gallyutsinatsiyalar",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Favqulodda vaziyatlarda bolalar bilan o'zaro munosabat",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Vosita qo'zg'alishi", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Falokatda birinchi yordam", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Falokatda birinchi yordam",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Isterika", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Asabiy titroq", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Yig'lamoq", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Bolalarni parvarish qilish qoidalari", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Asabiy taranglikni kamaytirish", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Bolalarni parvarish qilish qoidalari",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Asabiy taranglikni kamaytirish",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Qo'rquv", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }
@@ -98,15 +175,45 @@ class Content1_2Fragment : Fragment() {
         list.add(Content("Тажовуз", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Бефарқлик", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Дам олиш учун аудио", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Aлданишлар ва галлюцинациялар", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Фавқулодда вазиятларда болалар билан ўзаро муносабат", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Aлданишлар ва галлюцинациялар",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Фавқулодда вазиятларда болалар билан ўзаро муносабат",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Восита қўзғалиши", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Фалокатда биринчи ёрдам", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Фалокатда биринчи ёрдам",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Истерика", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Aсабий титроқ", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Йиғламоқ", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Болаларни парвариш қилиш қоидалари", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Aсабий тарангликни камайтириш", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Болаларни парвариш қилиш қоидалари",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "Aсабий тарангликни камайтириш",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Қўрқув", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }
@@ -118,14 +225,38 @@ class Content1_2Fragment : Fragment() {
         list.add(Content("апатия", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("аудио для релаксации", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("бред и галлюцинации", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("взаимодействие с детьми при  ЧС", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("двигательное возбуждение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("первая помощь в случае бедствия", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "взаимодействие с детьми при  ЧС",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "двигательное возбуждение",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "первая помощь в случае бедствия",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("истерика", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("нервная дрожь", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("плач", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("правила помощи детям", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("снижение нервно псих напряжения", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "снижение нервно псих напряжения",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("страх", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }

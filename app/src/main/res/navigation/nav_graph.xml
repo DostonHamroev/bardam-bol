@@ -43,12 +43,55 @@
         <action
             android:id="@+id/action_content2Fragment_to_content2Into2Fragment"
             app:destination="@id/content2Into2Fragment" />
+        <action
+            android:id="@+id/action_content2Fragment_to_birinchiTibbiyYordamFragment"
+            app:destination="@id/birinchiTibbiyYordamFragment" />
+        <action
+            android:id="@+id/action_content2Fragment_to_bolagaBirinchiYordamVideoFragment"
+            app:destination="@id/bolagaBirinchiYordamVideoFragment" />
+        <action
+            android:id="@+id/action_content2Fragment_to_kattalargaBirinchiYordamVideoFragment"
+            app:destination="@id/kattalargaBirinchiYordamVideoFragment" />
     </fragment>
     <fragment
         android:id="@+id/content3Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.Content3Fragment"
         android:label="fragment_content3"
-        tools:layout="@layout/fragment_content3" />
+        tools:layout="@layout/fragment_content3" >
+        <action
+            android:id="@+id/action_content3Fragment_to_agressiyaFragment"
+            app:destination="@id/agressiyaFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_bolaUchunVideoFragment"
+            app:destination="@id/bolaUchunVideoFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_bolagaPsixologikYordamFragment"
+            app:destination="@id/bolagaPsixologikYordamFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_bolalarniFaollashtirishMashqlariFragment"
+            app:destination="@id/bolalarniFaollashtirishMashqlariFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_giperativBolagaYordamFragment"
+            app:destination="@id/giperativBolagaYordamFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_mushakZoriqishlarFragment"
+            app:destination="@id/mushakZoriqishlarFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_otaOnaPsixologikYordamFragment"
+            app:destination="@id/otaOnaPsixologikYordamFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_qayguXolatidagiBolaFragment"
+            app:destination="@id/qayguXolatidagiBolaFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_qorquvXolatidagiBirinchiYordamFragment"
+            app:destination="@id/qorquvXolatidagiBirinchiYordamFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_umirlardaStressFragment"
+            app:destination="@id/umirlardaStressFragment" />
+        <action
+            android:id="@+id/action_content3Fragment_to_yuqoriQozgalishlarFragment"
+            app:destination="@id/yuqoriQozgalishlarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/authorFragment"
         android:name="uz.hamroev.bardambolnew.fragment.AuthorFragment"
@@ -58,15 +101,280 @@
         android:id="@+id/content1_1Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.content1.Content1_1Fragment"
         android:label="fragment_content1_1"
-        tools:layout="@layout/fragment_content1_1" />
+        tools:layout="@layout/fragment_content1_1" >
+        <action
+            android:id="@+id/action_content1_1Fragment_to_zilzilaFragment"
+            app:destination="@id/zilzilaFragment" />
+        <action
+            android:id="@+id/action_content1_1Fragment_to_suvToshqinFragment"
+            app:destination="@id/suvToshqinFragment" />
+        <action
+            android:id="@+id/action_content1_1Fragment_to_yonginFragment"
+            app:destination="@id/yonginFragment" />
+        <action
+            android:id="@+id/action_content1_1Fragment_to_transportFalokatFragment"
+            app:destination="@id/transportFalokatFragment" />
+        <action
+            android:id="@+id/action_content1_1Fragment_to_tashvishliChamadonFragment"
+            app:destination="@id/tashvishliChamadonFragment" />
+        <action
+            android:id="@+id/action_content1_1Fragment_to_tufonFragment"
+            app:destination="@id/tufonFragment" />
+    </fragment>
     <fragment
         android:id="@+id/content1_2Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.content1.Content1_2Fragment"
         android:label="fragment_content1_2"
-        tools:layout="@layout/fragment_content1_2" />
+        tools:layout="@layout/fragment_content1_2" >
+        <action
+            android:id="@+id/action_content1_2Fragment_to_aldanishlarFragment"
+            app:destination="@id/aldanishlarFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_asabiyTaranglikFragment"
+            app:destination="@id/asabiyTaranglikFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_asabiyTitroqFragment"
+            app:destination="@id/asabiyTitroqFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_befarqlikFragment"
+            app:destination="@id/befarqlikFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_bolaniParvarishlashFragment"
+            app:destination="@id/bolaniParvarishlashFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_damOlishFragment"
+            app:destination="@id/damOlishFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_falokatdaBirinchiYordamFragment"
+            app:destination="@id/falokatdaBirinchiYordamFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_favqulotdaVaziyatlarFragment"
+            app:destination="@id/favqulotdaVaziyatlarFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_isterikaFragment"
+            app:destination="@id/isterikaFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_qorquvFragment"
+            app:destination="@id/qorquvFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_tajovuzFragment"
+            app:destination="@id/tajovuzFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_vositaQozgalishiFragment"
+            app:destination="@id/vositaQozgalishiFragment" />
+        <action
+            android:id="@+id/action_content1_2Fragment_to_yiglamoqFragment"
+            app:destination="@id/yiglamoqFragment" />
+    </fragment>
     <fragment
         android:id="@+id/content2Into2Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.content2_into2.Content2Into2Fragment"
         android:label="fragment_content2_into2"
-        tools:layout="@layout/fragment_content2_into2" />
+        tools:layout="@layout/fragment_content2_into2" >
+        <action
+            android:id="@+id/action_content2Into2Fragment_to_faollashtirishMashqiFragment"
+            app:destination="@id/faollashtirishMashqiFragment" />
+        <action
+            android:id="@+id/action_content2Into2Fragment_to_jismoniyMashqlarFragment"
+            app:destination="@id/jismoniyMashqlarFragment" />
+        <action
+            android:id="@+id/action_content2Into2Fragment_to_relaksiyaMashqiFragment"
+            app:destination="@id/relaksiyaMashqiFragment" />
+        <action
+            android:id="@+id/action_content2Into2Fragment_to_salomatlikniSaqlashFragment"
+            app:destination="@id/salomatlikniSaqlashFragment" />
+        <action
+            android:id="@+id/action_content2Into2Fragment_to_suvniTozalashFragment"
+            app:destination="@id/suvniTozalashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zilzilaFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.ZilzilaFragment"
+        android:label="fragment_zilzila"
+        tools:layout="@layout/fragment_zilzila" />
+    <fragment
+        android:id="@+id/suvToshqinFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.SuvToshqinFragment"
+        android:label="fragment_suv_toshqin"
+        tools:layout="@layout/fragment_suv_toshqin" />
+    <fragment
+        android:id="@+id/transportFalokatFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.TransportFalokatFragment"
+        android:label="fragment_transport_falokat"
+        tools:layout="@layout/fragment_transport_falokat" />
+    <fragment
+        android:id="@+id/yonginFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.YonginFragment"
+        android:label="fragment_yongin"
+        tools:layout="@layout/fragment_yongin" />
+    <fragment
+        android:id="@+id/tashvishliChamadonFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.TashvishliChamadonFragment"
+        android:label="fragment_tashvishli_chamadon"
+        tools:layout="@layout/fragment_tashvishli_chamadon" />
+    <fragment
+        android:id="@+id/tufonFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_1.TufonFragment"
+        android:label="fragment_tufon"
+        tools:layout="@layout/fragment_tufon" />
+    <fragment
+        android:id="@+id/aldanishlarFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.AldanishlarFragment"
+        android:label="fragment_aldanishlar"
+        tools:layout="@layout/fragment_aldanishlar" />
+    <fragment
+        android:id="@+id/asabiyTaranglikFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.AsabiyTaranglikFragment"
+        android:label="fragment_asabiy_taranglik"
+        tools:layout="@layout/fragment_asabiy_taranglik" />
+    <fragment
+        android:id="@+id/asabiyTitroqFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.AsabiyTitroqFragment"
+        android:label="fragment_asabiy_titroq"
+        tools:layout="@layout/fragment_asabiy_titroq" />
+    <fragment
+        android:id="@+id/befarqlikFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.BefarqlikFragment"
+        android:label="fragment_befarqlik"
+        tools:layout="@layout/fragment_befarqlik" />
+    <fragment
+        android:id="@+id/bolaniParvarishlashFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.BolaniParvarishlashFragment"
+        android:label="fragment_bolani_parvarishlash"
+        tools:layout="@layout/fragment_bolani_parvarishlash" />
+    <fragment
+        android:id="@+id/damOlishFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.DamOlishFragment"
+        android:label="fragment_dam_olish"
+        tools:layout="@layout/fragment_dam_olish" />
+    <fragment
+        android:id="@+id/falokatdaBirinchiYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.FalokatdaBirinchiYordamFragment"
+        android:label="fragment_falokatda_birinchi_yordam"
+        tools:layout="@layout/fragment_falokatda_birinchi_yordam" />
+    <fragment
+        android:id="@+id/favqulotdaVaziyatlarFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.FavqulotdaVaziyatlarFragment"
+        android:label="fragment_favqulotda_vaziyatlar"
+        tools:layout="@layout/fragment_favqulotda_vaziyatlar" />
+    <fragment
+        android:id="@+id/isterikaFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.IsterikaFragment"
+        android:label="fragment_isterika"
+        tools:layout="@layout/fragment_isterika" />
+    <fragment
+        android:id="@+id/qorquvFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.QorquvFragment"
+        android:label="fragment_qorquv"
+        tools:layout="@layout/fragment_qorquv" />
+    <fragment
+        android:id="@+id/tajovuzFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.TajovuzFragment"
+        android:label="fragment_tajovuz"
+        tools:layout="@layout/fragment_tajovuz" />
+    <fragment
+        android:id="@+id/vositaQozgalishiFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.VositaQozgalishiFragment"
+        android:label="fragment_vosita_qozgalishi"
+        tools:layout="@layout/fragment_vosita_qozgalishi" />
+    <fragment
+        android:id="@+id/yiglamoqFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content1.content1_2.YiglamoqFragment"
+        android:label="fragment_yiglamoq"
+        tools:layout="@layout/fragment_yiglamoq" />
+    <fragment
+        android:id="@+id/birinchiTibbiyYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2.BirinchiTibbiyYordamFragment"
+        android:label="fragment_birinchi_tibbiy_yordam"
+        tools:layout="@layout/fragment_birinchi_tibbiy_yordam" />
+    <fragment
+        android:id="@+id/bolagaBirinchiYordamVideoFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2.BolagaBirinchiYordamVideoFragment"
+        android:label="fragment_bolaga_birinchi_yordam_video"
+        tools:layout="@layout/fragment_bolaga_birinchi_yordam_video" />
+    <fragment
+        android:id="@+id/kattalargaBirinchiYordamVideoFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2.KattalargaBirinchiYordamVideoFragment"
+        android:label="fragment_kattalarga_birinchi_yordam_video"
+        tools:layout="@layout/fragment_kattalarga_birinchi_yordam_video" />
+    <fragment
+        android:id="@+id/faollashtirishMashqiFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.content2_2.FaollashtirishMashqiFragment"
+        android:label="fragment_faollashtirish_mashqi"
+        tools:layout="@layout/fragment_faollashtirish_mashqi" />
+    <fragment
+        android:id="@+id/jismoniyMashqlarFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.content2_2.JismoniyMashqlarFragment"
+        android:label="fragment_jismoniy_mashqlar"
+        tools:layout="@layout/fragment_jismoniy_mashqlar" />
+    <fragment
+        android:id="@+id/relaksiyaMashqiFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.content2_2.RelaksiyaMashqiFragment"
+        android:label="fragment_relaksiya_mashqi"
+        tools:layout="@layout/fragment_relaksiya_mashqi" />
+    <fragment
+        android:id="@+id/salomatlikniSaqlashFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.content2_2.SalomatlikniSaqlashFragment"
+        android:label="fragment_salomatlikni_saqlash"
+        tools:layout="@layout/fragment_salomatlikni_saqlash" />
+    <fragment
+        android:id="@+id/suvniTozalashFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.content2_2.SuvniTozalashFragment"
+        android:label="fragment_suvni_tozalash"
+        tools:layout="@layout/fragment_suvni_tozalash" />
+    <fragment
+        android:id="@+id/agressiyaFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.AgressiyaFragment"
+        android:label="fragment_agressiya"
+        tools:layout="@layout/fragment_agressiya" />
+    <fragment
+        android:id="@+id/bolaUchunVideoFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.BolaUchunVideoFragment"
+        android:label="fragment_bola_uchun_video"
+        tools:layout="@layout/fragment_bola_uchun_video" />
+    <fragment
+        android:id="@+id/bolagaPsixologikYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.BolagaPsixologikYordamFragment"
+        android:label="fragment_bolaga_psixologik_yordam"
+        tools:layout="@layout/fragment_bolaga_psixologik_yordam" />
+    <fragment
+        android:id="@+id/bolalarniFaollashtirishMashqlariFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.BolalarniFaollashtirishMashqlariFragment"
+        android:label="fragment_bolalarni_faollashtirish_mashqlari"
+        tools:layout="@layout/fragment_bolalarni_faollashtirish_mashqlari" />
+    <fragment
+        android:id="@+id/giperativBolagaYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.GiperativBolagaYordamFragment"
+        android:label="fragment_giperativ_bolaga_yordam"
+        tools:layout="@layout/fragment_giperativ_bolaga_yordam" />
+    <fragment
+        android:id="@+id/mushakZoriqishlarFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.MushakZoriqishlarFragment"
+        android:label="fragment_mushak_zoriqishlar"
+        tools:layout="@layout/fragment_mushak_zoriqishlar" />
+    <fragment
+        android:id="@+id/otaOnaPsixologikYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.OtaOnaPsixologikYordamFragment"
+        android:label="fragment_ota_ona_psixologik_yordam"
+        tools:layout="@layout/fragment_ota_ona_psixologik_yordam" />
+    <fragment
+        android:id="@+id/qayguXolatidagiBolaFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.QayguXolatidagiBolaFragment"
+        android:label="fragment_qaygu_xolatidagi_bola"
+        tools:layout="@layout/fragment_qaygu_xolatidagi_bola" />
+    <fragment
+        android:id="@+id/qorquvXolatidagiBirinchiYordamFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.QorquvXolatidagiBirinchiYordamFragment"
+        android:label="fragment_qorquv_xolatidagi_birinchi_yordam"
+        tools:layout="@layout/fragment_qorquv_xolatidagi_birinchi_yordam" />
+    <fragment
+        android:id="@+id/umirlardaStressFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.UmirlardaStressFragment"
+        android:label="fragment_umirlarda_stress"
+        tools:layout="@layout/fragment_umirlarda_stress" />
+    <fragment
+        android:id="@+id/yuqoriQozgalishlarFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content3.YuqoriQozgalishlarFragment"
+        android:label="fragment_yuqori_qozgalishlar"
+        tools:layout="@layout/fragment_yuqori_qozgalishlar" />
 </navigation>

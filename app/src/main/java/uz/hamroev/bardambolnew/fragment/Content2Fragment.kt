@@ -36,16 +36,16 @@ class Content2Fragment : Fragment() {
 
                     when (position) {
                         0 -> {
-
+                            findNavController().navigate(R.id.birinchiTibbiyYordamFragment)
                         }
                         1 -> {
                             findNavController().navigate(R.id.content2Into2Fragment)
                         }
                         2 -> {
-
+                            findNavController().navigate(R.id.bolagaBirinchiYordamVideoFragment)
                         }
                         3 -> {
-
+                            findNavController().navigate(R.id.kattalargaBirinchiYordamVideoFragment)
                         }
 
                     }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.ContentAdapter
 import uz.hamroev.bardambolnew.cache.Cache
@@ -51,7 +52,26 @@ class Content1_1Fragment : Fragment() {
             list,
             object : ContentAdapter.OnMyContentClickListener {
                 override fun onContentClick(content: Content, position: Int) {
-
+                    when (position) {
+                        0 -> {
+                            findNavController().navigate(R.id.zilzilaFragment)
+                        }
+                        1 -> {
+                            findNavController().navigate(R.id.suvToshqinFragment)
+                        }
+                        2 -> {
+                            findNavController().navigate(R.id.yonginFragment)
+                        }
+                        3 -> {
+                            findNavController().navigate(R.id.transportFalokatFragment)
+                        }
+                        4 -> {
+                            findNavController().navigate(R.id.tashvishliChamadonFragment)
+                        }
+                        5 -> {
+                            findNavController().navigate(R.id.tufonFragment)
+                        }
+                    }
                 }
             })
         binding.rvContent.adapter = contentAdapter
@@ -79,7 +99,13 @@ class Content1_1Fragment : Fragment() {
         list.add(Content("Zilzila", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Suv toshqin", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Yong'in", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Baxtsiz hodisalar va aviahalokatlar paytida o'zini tutish qoidalari", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Baxtsiz hodisalar va aviahalokatlar paytida o'zini tutish qoidalari",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Tashvishli chamadon", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("To'fon", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
@@ -91,7 +117,13 @@ class Content1_1Fragment : Fragment() {
         list.add(Content("Зилзила", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Сув тошқин", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Ёнғин", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("бахциз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "бахциз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Ташвишли чамадон", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("Тўфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
@@ -103,7 +135,13 @@ class Content1_1Fragment : Fragment() {
         list.add(Content("землятресение", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("наводнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("пожар", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("правила поведения при аварии и авиакатастрофах", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "правила поведения при аварии и авиакатастрофах",
+                R.drawable.ic_2_1,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(Content("Тревожный чемодан", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(Content("туфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
