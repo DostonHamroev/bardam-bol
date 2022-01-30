@@ -39,7 +39,11 @@
         android:id="@+id/content2Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.Content2Fragment"
         android:label="fragment_content2"
-        tools:layout="@layout/fragment_content2" />
+        tools:layout="@layout/fragment_content2" >
+        <action
+            android:id="@+id/action_content2Fragment_to_content2Into2Fragment"
+            app:destination="@id/content2Into2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/content3Fragment"
         android:name="uz.hamroev.bardambolnew.fragment.Content3Fragment"
@@ -60,4 +64,9 @@
         android:name="uz.hamroev.bardambolnew.fragment.content1.Content1_2Fragment"
         android:label="fragment_content1_2"
         tools:layout="@layout/fragment_content1_2" />
+    <fragment
+        android:id="@+id/content2Into2Fragment"
+        android:name="uz.hamroev.bardambolnew.fragment.content2_into2.Content2Into2Fragment"
+        android:label="fragment_content2_into2"
+        tools:layout="@layout/fragment_content2_into2" />
 </navigation>

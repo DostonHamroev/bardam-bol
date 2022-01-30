@@ -1,4 +1,4 @@
-package uz.hamroev.bardambolnew.fragment.content1
+package uz.hamroev.bardambolnew.fragment.content2_into2
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.ContentAdapter
 import uz.hamroev.bardambolnew.cache.Cache
-import uz.hamroev.bardambolnew.databinding.FragmentContent11Binding
+import uz.hamroev.bardambolnew.databinding.FragmentContent2Into2Binding
 import uz.hamroev.bardambolnew.model.Content
 
 // TODO: Rename parameter arguments, choose names that match
@@ -18,10 +18,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Content1_1Fragment.newInstance] factory method to
+ * Use the [Content2Into2Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Content1_1Fragment : Fragment() {
+class Content2Into2Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,16 +34,16 @@ class Content1_1Fragment : Fragment() {
         }
     }
 
-    lateinit var binding: FragmentContent11Binding
+    lateinit var binding: FragmentContent2Into2Binding
     lateinit var list: ArrayList<Content>
     lateinit var contentAdapter: ContentAdapter
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentContent11Binding.inflate(layoutInflater, container, false)
+    ): View? {
+
+        binding = FragmentContent2Into2Binding.inflate(layoutInflater, container, false)
 
         checkLanguage()
         contentAdapter = ContentAdapter(
@@ -76,36 +76,34 @@ class Content1_1Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Zilzila", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Suv toshqin", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Yong'in", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Baxtsiz hodisalar va aviahalokatlar paytida o'zini tutish qoidalari", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Tashvishli chamadon", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("To'fon", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Jismoniy mashqlar", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Relaksatsiya mashki", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Salomatlikni saklash asoslari", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Suvni tozalash usullari", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Faollashtirish mashqi", R.drawable.ic_2_1, R.drawable.back_image_content1))
+
 
     }
 
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Зилзила", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Сув тошқин", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Ёнғин", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("бахциз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Ташвишли чамадон", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Тўфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Жисмоний машклар", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Релаксация машки", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Саломатликни саклаш асослари", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Сувни тозалаш усуллари", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Фаоллаштириш машқи", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }
 
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("землятресение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("наводнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("пожар", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("правила поведения при аварии и авиакатастрофах", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Тревожный чемодан", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("туфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Упражнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Упражнение на расслабление", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Основы здравоохранения", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Методы очистки воды", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Активационное упражнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
 
     }
 
@@ -116,12 +114,12 @@ class Content1_1Fragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Content1_1Fragment.
+         * @return A new instance of fragment Content2Into2Fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Content1_1Fragment().apply {
+            Content2Into2Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
