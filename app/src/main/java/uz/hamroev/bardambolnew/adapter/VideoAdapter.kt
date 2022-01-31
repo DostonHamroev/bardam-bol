@@ -35,7 +35,7 @@ class VideoAdapter(
                 }
             })
 
-            itemVideoBinding.downloadBtn.setOnClickListener {
+            itemVideoBinding.donwloadImage.setOnClickListener {
                 onMyVideoClickListener.onDownload(video, position, itemVideoBinding.cardDownloadBtn)
             }
         }
