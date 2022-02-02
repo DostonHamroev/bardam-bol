@@ -117,147 +117,201 @@ class Content1_2Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Tajovuz", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Befarqlik", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Tajovuz", R.drawable.ic_tajovuz, R.drawable.back_image_content1))
+        list.add(Content("Befarqlik", R.drawable.ic_bafarqlik, R.drawable.back_image_content1))
         list.add(
             Content(
                 "Dam olish uchun audio",
-                R.drawable.ic_2_1,
+                R.drawable.ic_audio_dam_olish,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Aldanishlar va gallyutsinatsiyalar",
-                R.drawable.ic_2_1,
+                R.drawable.ic_aldanishlar,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Favqulodda vaziyatlarda bolalar bilan o'zaro munosabat",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favquloda_bolalar_bilan_munosabat,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Vosita qo'zg'alishi", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Vosita qo'zg'alishi",
+                R.drawable.ic_vosita_qozgalishi,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(
             Content(
                 "Falokatda birinchi yordam",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favqulotda_birinchi_yordam,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Isterika", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Asabiy titroq", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Yig'lamoq", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Isterika", R.drawable.ic_isterika, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Asabiy titroq",
+                R.drawable.ic_asabiy_titroq,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("Yig'lamoq", R.drawable.ic_yiglamoq, R.drawable.back_image_content1))
         list.add(
             Content(
                 "Bolalarni parvarish qilish qoidalari",
-                R.drawable.ic_2_1,
+                R.drawable.ic_bola_parvarish_qilish,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Asabiy taranglikni kamaytirish",
-                R.drawable.ic_2_1,
+                R.drawable.ic_asabiy_taranglikni_kamaytirish,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Qo'rquv", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Qo'rquv", R.drawable.ic_qorquv, R.drawable.back_image_content1))
 
     }
 
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Тажовуз", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Бефарқлик", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Дам олиш учун аудио", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Тажовуз", R.drawable.ic_tajovuz, R.drawable.back_image_content1))
+        list.add(Content("Бефарқлик", R.drawable.ic_bafarqlik, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Дам олиш учун аудио",
+                R.drawable.ic_audio_dam_olish,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(
             Content(
                 "Aлданишлар ва галлюцинациялар",
-                R.drawable.ic_2_1,
+                R.drawable.ic_aldanishlar,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Фавқулодда вазиятларда болалар билан ўзаро муносабат",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favquloda_bolalar_bilan_munosabat,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Восита қўзғалиши", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Восита қўзғалиши",
+                R.drawable.ic_vosita_qozgalishi,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(
             Content(
                 "Фалокатда биринчи ёрдам",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favqulotda_birinchi_yordam,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Истерика", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Aсабий титроқ", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Йиғламоқ", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Истерика", R.drawable.ic_isterika, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Aсабий титроқ",
+                R.drawable.ic_asabiy_titroq,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("Йиғламоқ", R.drawable.ic_yiglamoq, R.drawable.back_image_content1))
         list.add(
             Content(
                 "Болаларни парвариш қилиш қоидалари",
-                R.drawable.ic_2_1,
+                R.drawable.ic_bola_parvarish_qilish,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Aсабий тарангликни камайтириш",
-                R.drawable.ic_2_1,
+                R.drawable.ic_asabiy_taranglikni_kamaytirish,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Қўрқув", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Қўрқув", R.drawable.ic_qorquv, R.drawable.back_image_content1))
 
     }
 
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("агрессия", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("апатия", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("аудио для релаксации", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("бред и галлюцинации", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("агрессия", R.drawable.ic_tajovuz, R.drawable.back_image_content1))
+        list.add(Content("апатия", R.drawable.ic_bafarqlik, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "аудио для релаксации",
+                R.drawable.ic_audio_dam_olish,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(
+            Content(
+                "бред и галлюцинации",
+                R.drawable.ic_aldanishlar,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(
             Content(
                 "взаимодействие с детьми при  ЧС",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favquloda_bolalar_bilan_munosabat,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "двигательное возбуждение",
-                R.drawable.ic_2_1,
+                R.drawable.ic_vosita_qozgalishi,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "первая помощь в случае бедствия",
-                R.drawable.ic_2_1,
+                R.drawable.ic_favqulotda_birinchi_yordam,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("истерика", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("нервная дрожь", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("плач", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("правила помощи детям", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("истерика", R.drawable.ic_isterika, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "нервная дрожь",
+                R.drawable.ic_asabiy_titroq,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("плач", R.drawable.ic_yiglamoq, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "правила помощи детям",
+                R.drawable.ic_bola_parvarish_qilish,
+                R.drawable.back_image_content1
+            )
+        )
         list.add(
             Content(
                 "снижение нервно псих напряжения",
-                R.drawable.ic_2_1,
+                R.drawable.ic_asabiy_taranglikni_kamaytirish,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("страх", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("страх", R.drawable.ic_qorquv, R.drawable.back_image_content1))
 
     }
 

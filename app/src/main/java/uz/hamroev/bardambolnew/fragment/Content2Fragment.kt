@@ -78,28 +78,28 @@ class Content2Fragment : Fragment() {
         list.add(
             Content(
                 "Birinhi tibbiy yordam",
-                R.drawable.ic_medicine,
+                R.drawable.ic_birinchi_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Sog'lom Turmush Tarzi",
-                R.drawable.ic_medicine,
+                R.drawable.ic_soglom_turmush_tarzi,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Bolalarga Birinchi Tibbiy Yordam (Video)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Kattalarga Birinchi Tibbiy Yordam (Video)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
         )
@@ -111,28 +111,28 @@ class Content2Fragment : Fragment() {
         list.add(
             Content(
                 "Биринчи тиббий ёрдам",
-                R.drawable.ic_medicine,
+                R.drawable.ic_birinchi_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Соглом турмуш тарзини",
-                R.drawable.ic_medicine,
+                R.drawable.ic_soglom_turmush_tarzi,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Болаларга Биринчи Тиббий Ёрдам (Видео)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Катталарга Биринчи Тиббий Ёрдам (Видео)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
         )
@@ -144,28 +144,28 @@ class Content2Fragment : Fragment() {
         list.add(
             Content(
                 "первая медицинская помощь",
-                R.drawable.ic_medicine,
+                R.drawable.ic_birinchi_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Здоровый образ жизни",
-                R.drawable.ic_medicine,
+                R.drawable.ic_soglom_turmush_tarzi,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Первая помощь детям (видео)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
                 "Первая помощь взрослым (видео)",
-                R.drawable.ic_medicine,
+                R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
         )

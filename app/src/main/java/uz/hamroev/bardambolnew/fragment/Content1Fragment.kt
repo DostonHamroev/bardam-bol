@@ -69,14 +69,14 @@ class Content1Fragment : Fragment() {
         list.add(
             Content(
                 "Ekstremal vaziyatlarda o'zini tutish qoidalari",
-                R.drawable.ic_medicine,
+                R.drawable.ic_ekstremal_vaziayt,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Shoshilinch psixologik yordam",
-                R.drawable.ic_medicine,
+                R.drawable.ic_shoshilinch_psixologik_yordam,
                 R.drawable.back_image_content1
             )
         )
@@ -88,14 +88,14 @@ class Content1Fragment : Fragment() {
         list.add(
             Content(
                 "Экстремал вазиятларда ўзини тутиш қоидалари",
-                R.drawable.ic_medicine,
+                R.drawable.ic_ekstremal_vaziayt,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Шошилинч психологик ёрдам",
-                R.drawable.ic_medicine,
+                R.drawable.ic_shoshilinch_psixologik_yordam,
                 R.drawable.back_image_content1
             )
         )
@@ -107,14 +107,14 @@ class Content1Fragment : Fragment() {
         list.add(
             Content(
                 "Правила поведения в экстренных ситуациях",
-                R.drawable.ic_medicine,
+                R.drawable.ic_ekstremal_vaziayt,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
                 "Экстренная психологическая помощь",
-                R.drawable.ic_medicine,
+                R.drawable.ic_shoshilinch_psixologik_yordam,
                 R.drawable.back_image_content1
             )
         )

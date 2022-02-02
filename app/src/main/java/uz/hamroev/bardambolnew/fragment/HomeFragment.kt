@@ -84,10 +84,10 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("UZ", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
+        list.add(MainMenu("Ekstremal vaziyatlarni boshqarish", R.drawable.ic_medicine))
+        list.add(MainMenu("O'ziga-o'zi birinchi yordam ko'rsatish", R.drawable.ic_medicine))
+        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga Yordam ko'rsatish", R.drawable.ic_run))
+        list.add(MainMenu("Ilova Haqida", R.drawable.ic_run))
     }
 
     private fun loadKrillData() {
@@ -95,10 +95,10 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Krill", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
+        list.add(MainMenu("Экстремал вазиятларни бошқариш", R.drawable.ic_medicine))
+        list.add(MainMenu("Ўзига-ўзи биринчи ёрдам кўрсатиш", R.drawable.ic_medicine))
+        list.add(MainMenu("Болага ғамхўрлик. Болага Ёрдам кўрсатиш", R.drawable.ic_run))
+        list.add(MainMenu("Илова ҳақида", R.drawable.ic_run))
     }
 
     private fun loadRuData() {
@@ -106,10 +106,10 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("RU", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_medicine))
-        list.add(MainMenu("", R.drawable.ic_run))
-        list.add(MainMenu("", R.drawable.ic_run))
+        list.add(MainMenu("Управление экстремальными ситуациями", R.drawable.ic_medicine))
+        list.add(MainMenu("Оказание первой доврачебной", R.drawable.ic_medicine))
+        list.add(MainMenu("Забота о ребенке. Оказание помощи ребенку", R.drawable.ic_run))
+        list.add(MainMenu("О приложении", R.drawable.ic_run))
 
     }
 

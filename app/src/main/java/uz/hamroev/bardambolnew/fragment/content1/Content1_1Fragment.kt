@@ -96,56 +96,75 @@ class Content1_1Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Zilzila", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Suv toshqin", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Yong'in", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Zilzila", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Suv toshqin", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Yong'in", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
                 "Baxtsiz hodisalar va aviahalokatlar paytida o'zini tutish qoidalari",
-                R.drawable.ic_2_1,
+                R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Tashvishli chamadon", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("To'fon", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Tashvishli chamadon",
+                R.drawable.ic_tashvishli_chamadon,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("To'fon", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Зилзила", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Сув тошқин", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Ёнғин", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Зилзила", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Сув тошқин", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Ёнғин", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
                 "бахциз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари",
-                R.drawable.ic_2_1,
+                R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Ташвишли чамадон", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Тўфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Ташвишли чамадон",
+                R.drawable.ic_tashvishli_chamadon,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("Тўфон", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("землятресение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("наводнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("пожар", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("землятресение", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("наводнение", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("пожар", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
                 "правила поведения при аварии и авиакатастрофах",
-                R.drawable.ic_2_1,
+                R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Тревожный чемодан", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("туфон", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(
+            Content(
+                "Тревожный чемодан",
+                R.drawable.ic_tashvishli_chamadon,
+                R.drawable.back_image_content1
+            )
+        )
+        list.add(Content("туфон", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
+
 
     companion object {
         /**

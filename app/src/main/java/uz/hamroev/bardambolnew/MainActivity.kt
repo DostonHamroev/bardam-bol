@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
         binding.introTv.setCharacterDeley(80)
 
 
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
 
-        }, 350)
+        }, 3500)
 
     }
 
