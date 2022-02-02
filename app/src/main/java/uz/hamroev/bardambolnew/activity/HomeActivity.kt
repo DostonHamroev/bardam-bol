@@ -206,9 +206,9 @@ class HomeActivity : AppCompatActivity() {
 
         binding.navMainPageTitle.text = "Asosiy Sahifa"
 
-        binding.navContentFirstTitle.text = "Bo'lim 1"
-        binding.navContentSecondTitle.text = "Bo'lim 2"
-        binding.navContentTherdTitle.text = "Bo'lim 3"
+        binding.navContentFirstTitle.text = "Ekstremal vaziyatlarni boshqarish"
+        binding.navContentSecondTitle.text = "O'ziga-o'zi birinchi yordam ko'rsatish"
+        binding.navContentTherdTitle.text = "Bolaga g'amxo'rlik. Bolaga Yordam ko'rsatish"
 
         binding.navAuthorsTitle.text = "Ilova Haqida"
 
@@ -225,9 +225,9 @@ class HomeActivity : AppCompatActivity() {
 
         binding.navMainPageTitle.text = "Асосий Саҳифа"
 
-        binding.navContentFirstTitle.text = "Контент 1"
-        binding.navContentSecondTitle.text = "Контент 2"
-        binding.navContentTherdTitle.text = "Контент 3"
+        binding.navContentFirstTitle.text = "Экстремал вазиятларни бошқариш"
+        binding.navContentSecondTitle.text = "Ўзига-ўзи биринчи ёрдам кўрсатиш"
+        binding.navContentTherdTitle.text = "Болага ғамхўрлик. Болага Ёрдам кўрсатиш"
 
         binding.navAuthorsTitle.text = "Илова Ҳақида"
 
@@ -244,9 +244,9 @@ class HomeActivity : AppCompatActivity() {
 
         binding.navMainPageTitle.text = "Главная страница"
 
-        binding.navContentFirstTitle.text = "Контент 1"
-        binding.navContentSecondTitle.text = "Контент 2"
-        binding.navContentTherdTitle.text = "Контент 3"
+        binding.navContentFirstTitle.text = "Управление экстремальными ситуациями"
+        binding.navContentSecondTitle.text = "Оказание первой доврачебной"
+        binding.navContentTherdTitle.text = "Забота о ребенке. Оказание помощи ребенку"
 
         binding.navAuthorsTitle.text = "О приложении"
 
