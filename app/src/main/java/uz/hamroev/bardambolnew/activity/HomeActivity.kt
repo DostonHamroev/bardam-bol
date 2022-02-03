@@ -18,6 +18,7 @@ import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.cache.Cache
 import uz.hamroev.bardambolnew.databinding.ActivityHomeBinding
 import uz.hamroev.bardambolnew.databinding.DialogLanguageBinding
+import uz.hamroev.bardambolnew.room.FileDatabase
 
 class HomeActivity : AppCompatActivity() {
 
@@ -33,6 +34,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        FileDatabase.getInstance(this)
         Cache.init(this)
         checkLanguage()
 //
@@ -66,15 +68,18 @@ class HomeActivity : AppCompatActivity() {
             when (Cache.til) {
                 "uz" -> {
                     bindingLanguage.ilovaTiliTv.text = "Ilova Tili"
-                    bindingLanguage.ilovaTilniTanlashTv.text = "Dastur tilini o'zgartirish uchun tanlang"
+                    bindingLanguage.ilovaTilniTanlashTv.text =
+                        "Dastur tilini o'zgartirish uchun tanlang"
                 }
                 "ru" -> {
                     bindingLanguage.ilovaTiliTv.text = "Язык приложения"
-                    bindingLanguage.ilovaTilniTanlashTv.text = "Выберите, чтобы изменить язык программы"
+                    bindingLanguage.ilovaTilniTanlashTv.text =
+                        "Выберите, чтобы изменить язык программы"
                 }
                 "krill" -> {
                     bindingLanguage.ilovaTiliTv.text = "Илова Тили"
-                    bindingLanguage.ilovaTilniTanlashTv.text = "Дастур тилини ўзгартириш учун танланг"
+                    bindingLanguage.ilovaTilniTanlashTv.text =
+                        "Дастур тилини ўзгартириш учун танланг"
                 }
             }
 

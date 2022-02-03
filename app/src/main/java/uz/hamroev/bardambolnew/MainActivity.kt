@@ -10,8 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import uz.hamroev.bardambolnew.activity.HomeActivity
 import uz.hamroev.bardambolnew.databinding.ActivityMainBinding
+import uz.hamroev.bardambolnew.room.FileDatabase
+import uz.hamroev.bardambolnew.room.FileEntity
 
 class MainActivity : AppCompatActivity() {
+
+
+    lateinit var fileDatabase: FileDatabase
 
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(binding.root)
 
+        FileDatabase.getInstance(this)
 
         // this is code for full Screen
         window.setFlags(
@@ -35,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         //this is code animation typeWriter
 
+        //writeDatabase()
 
 
         binding.introTv.text = ""
@@ -49,6 +56,14 @@ class MainActivity : AppCompatActivity() {
         }, 3500)
 
     }
+
+//    private fun writeDatabase() {
+//        var fileEntity = FileEntity()
+//        fileEntity.file_name = "image"
+//        fileEntity.file_path = "mkdir/image"
+//        fileEntity.is_download = "no"
+//        fileDatabase.fileDao().addFile(fileEntity)
+//    }
 
     private fun startAnimation() {
         val anim = AnimationUtils.loadAnimation(this, R.anim.anim_intro)

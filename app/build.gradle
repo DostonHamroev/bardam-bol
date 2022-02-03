@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -63,6 +64,18 @@ dependencies {
     implementation 'com.github.HaarigerHarald:android-youtubeExtractor:master-SNAPSHOT'
     //you tube player
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    // room database
+    def roomVersion = "2.4.1"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    // To use Kotlin annotation processing tool (kapt)
+    kapt "androidx.room:room-compiler:$roomVersion"
+    // check Internet
+    implementation 'com.github.raheemadamboev:check-internet-android:1.0.1'
+    // photo zoom view
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     
 
 }
