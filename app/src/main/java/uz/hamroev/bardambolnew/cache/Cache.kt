@@ -38,11 +38,11 @@ object Cache {
     //mavzular uchun cache
 
 
-    var turmushMavzu: Int?
-        get() = sharedPreferences.getInt("turmush", 0)
+    var path: String?
+        get() = sharedPreferences.getString("turmush", "")
         set(value) = sharedPreferences.edit() {
             if (value != null) {
-                it.putInt("turmush", value)
+                it.putString("turmush", value)
             }
         }
 

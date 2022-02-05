@@ -54,10 +54,10 @@
                     android:id="@+id/image_name"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/sf"
                     android:gravity="center_vertical"
                     android:padding="5dp"
                     android:paddingStart="10dp"
-                    android:fontFamily="@font/sf"
                     android:text="Favqulotda nima qilish kerak.png "
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -69,11 +69,27 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/imageZoom"
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:visibility="gone" />
+        app:cardElevation="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imageZoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

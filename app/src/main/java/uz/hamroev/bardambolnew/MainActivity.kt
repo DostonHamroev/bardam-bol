@@ -10,13 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import uz.hamroev.bardambolnew.activity.HomeActivity
 import uz.hamroev.bardambolnew.databinding.ActivityMainBinding
-import uz.hamroev.bardambolnew.room.FileDatabase
-import uz.hamroev.bardambolnew.room.FileEntity
 
 class MainActivity : AppCompatActivity() {
 
 
-    lateinit var fileDatabase: FileDatabase
 
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(binding.root)
 
-        FileDatabase.getInstance(this)
 
         // this is code for full Screen
         window.setFlags(

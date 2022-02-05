@@ -18,7 +18,6 @@ import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.cache.Cache
 import uz.hamroev.bardambolnew.databinding.ActivityHomeBinding
 import uz.hamroev.bardambolnew.databinding.DialogLanguageBinding
-import uz.hamroev.bardambolnew.room.FileDatabase
 
 class HomeActivity : AppCompatActivity() {
 
@@ -34,7 +33,6 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        FileDatabase.getInstance(this)
         Cache.init(this)
         checkLanguage()
 //

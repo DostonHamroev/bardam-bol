@@ -3,7 +3,7 @@ package uz.hamroev.bardambolnew.image
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ApiClient {
+class ApiClientImage {
     val BASE_URL = "https://miro.medium.com/"
 
     val retrofit = Retrofit.Builder()
@@ -11,5 +11,7 @@ class ApiClient {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    companion object val service = retrofit.create(ApiService::class.java)
+    companion object
+
+    val service = retrofit.create(ApiServiceImage::class.java)
 }
