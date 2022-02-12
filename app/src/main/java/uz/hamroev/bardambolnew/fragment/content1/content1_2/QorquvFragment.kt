@@ -310,8 +310,7 @@ class QorquvFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("куркув холатида экстремал ердам", "M4U2oSqXVTY", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -327,8 +326,7 @@ class QorquvFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("куркув холатида экстремал ердам", "M4U2oSqXVTY", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -344,9 +342,7 @@ class QorquvFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("первая помощь с состоянии страха", "JkDbSuB5q1o", ""))
         list = ArrayList()
         list.clear()
         list.add(

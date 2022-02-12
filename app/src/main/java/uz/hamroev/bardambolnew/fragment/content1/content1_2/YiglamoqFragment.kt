@@ -73,7 +73,6 @@ class YiglamoqFragment : Fragment() {
 
 
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }

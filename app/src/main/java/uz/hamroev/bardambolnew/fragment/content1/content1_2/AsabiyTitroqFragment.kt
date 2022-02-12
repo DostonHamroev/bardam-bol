@@ -309,8 +309,7 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("асабий титроги", "J341Ka7QAhw", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -326,9 +325,7 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        list = ArrayList()
+        listVideo.add(Video("асабий титроги", "J341Ka7QAhw", ""))
         list.clear()
         list.add(
             PdfDownload(
@@ -343,9 +340,7 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("нервная дрожь", "nwQROLxO3Og", ""))
         list = ArrayList()
         list.clear()
         list.add(

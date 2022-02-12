@@ -309,8 +309,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("болаларга биринчи ёрдам", "kc4YmcUosfw", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -326,8 +325,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("болаларга биринчи ёрдам", "kc4YmcUosfw", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -343,9 +341,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("первая помощь детям", "-vN58jY8CrQ", ""))
         list = ArrayList()
         list.clear()
         list.add(

@@ -310,8 +310,7 @@ class VositaQozgalishiFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("харакатли кузгалиш", "xPLbI1glFjE", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -327,8 +326,7 @@ class VositaQozgalishiFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("харакатли кузгалиш", "xPLbI1glFjE", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -344,9 +342,7 @@ class VositaQozgalishiFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("Двигательное возбуждение", "Tb4PKmsXPl0", ""))
         list = ArrayList()
         list.clear()
         list.add(

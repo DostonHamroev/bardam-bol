@@ -290,8 +290,7 @@ class TajovuzFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("тажавузкорликда биринчи ёрдам", "X2brfHqB-5U", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,8 +306,7 @@ class TajovuzFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("тажавузкорликда биринчи ёрдам", "X2brfHqB-5U", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,9 +322,7 @@ class TajovuzFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("первая помощь при агрессии", "EKiKO9vmT7o", ""))
         list = ArrayList()
         list.clear()
         list.add(
