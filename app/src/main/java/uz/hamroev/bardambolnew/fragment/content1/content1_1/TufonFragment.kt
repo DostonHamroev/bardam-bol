@@ -311,8 +311,8 @@ class TufonFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("туфон", "OMMHBVf3sOU", ""))
+        listVideo.add(Video("туфонда хулк-атвор коидалари", "VFo1WVxIyck", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -328,8 +328,8 @@ class TufonFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("туфон", "OMMHBVf3sOU", ""))
+        listVideo.add(Video("туфонда хулк-атвор коидалари", "VFo1WVxIyck", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -345,9 +345,8 @@ class TufonFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("Буря", "2LFirDfDAHU", ""))
+        listVideo.add(Video("правила поведения во время бури", "4JODIHWTkLA", ""))
         list = ArrayList()
         list.clear()
         list.add(

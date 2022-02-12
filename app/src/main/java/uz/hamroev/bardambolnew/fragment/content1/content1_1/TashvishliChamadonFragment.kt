@@ -74,8 +74,6 @@ class TashvishliChamadonFragment : Fragment() {
 
 
         checkLanguage()
-        loadVideo()
-
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
 
@@ -308,10 +306,6 @@ class TashvishliChamadonFragment : Fragment() {
 
     private fun loadUzData() {
         downloadText = "Yuklanmoqda..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -325,10 +319,6 @@ class TashvishliChamadonFragment : Fragment() {
 
     private fun loadKrillData() {
         downloadText = "Юкланмоқда..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -342,11 +332,6 @@ class TashvishliChamadonFragment : Fragment() {
 
     private fun loadRuData() {
         downloadText = "Загрузка..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
         list = ArrayList()
         list.clear()
         list.add(

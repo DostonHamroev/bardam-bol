@@ -288,8 +288,10 @@ class YonginFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("Yong'inda harakatlanish", "-0OzPa0KzUE", ""))
+        listVideo.add(Video("Uyda yong'in", "yPVKq5089Oc", ""))
+        listVideo.add(Video("Yong'in", "4EK9G0tJWic", ""))
+        listVideo.add(Video("Yonginda xarakatlanish qoidalari", "HINQZimGxAI", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -305,8 +307,10 @@ class YonginFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("Yong'inda harakatlanish", "-0OzPa0KzUE", ""))
+        listVideo.add(Video("Uyda yong'in", "yPVKq5089Oc", ""))
+        listVideo.add(Video("Yong'in", "4EK9G0tJWic", ""))
+        listVideo.add(Video("Yonginda xarakatlanish qoidalari", "HINQZimGxAI", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -322,9 +326,8 @@ class YonginFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("действия при пожаре", "KTbuqEDNlIE", ""))
+        listVideo.add(Video("пожар", "RbNi22YUdL0", ""))
         list = ArrayList()
         list.clear()
         list.add(

@@ -290,8 +290,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("Sel", "tkTRV57Uzbo", ""))
+        listVideo.add(Video("Qor", "aaaaaaaaaaa", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,8 +307,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("Sel", "AAAAAAAAAA", ""))
+        listVideo.add(Video("Qor", "AAAAAAAAAA", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,9 +324,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("Qor ko'chki Rus", "8x9EhIweay8", ""))
+        listVideo.add(Video("Sel rus", "m0gGqGLHXbg", ""))
         list = ArrayList()
         list.clear()
         list.add(

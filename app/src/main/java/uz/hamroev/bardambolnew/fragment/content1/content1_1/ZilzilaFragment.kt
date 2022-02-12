@@ -290,8 +290,8 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("Zil zila Uzb Full", "bVBEAKMEKD4", ""))
+        listVideo.add(Video("Zil zila Uzb Lite", "QWCvpSLSXSo", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,8 +307,8 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("Zil zila Uzb Full", "bVBEAKMEKD4", ""))
+        listVideo.add(Video("Zil zila Uzb Lite", "QWCvpSLSXSo", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,9 +324,8 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("действия при землятресенииRus Lite", "6Q-5kzVauNA", ""))
+        listVideo.add(Video("действия при землятресенииRus Full", "3WxuPLFfF78", ""))
         list = ArrayList()
         list.clear()
         list.add(

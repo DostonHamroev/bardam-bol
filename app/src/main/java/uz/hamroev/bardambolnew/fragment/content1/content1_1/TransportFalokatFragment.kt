@@ -308,8 +308,22 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("5 full hd 1 qism transport falokatlari uz", "WtAlnC2aIDM", ""))
+        listVideo.add(
+            Video(
+                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "ni9MdKq2fgM",
+                ""
+            )
+        )
+        listVideo.add(
+            Video(
+                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "ZBwe4rStc-o",
+                ""
+            )
+        )
+        listVideo.add(Video("хаво транспорт халокатида хулк атвор коидалари", "L0jUKYoBaMk", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -325,8 +339,22 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("5 full hd 1 qism transport falokatlari uz", "WtAlnC2aIDM", ""))
+        listVideo.add(
+            Video(
+                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "ni9MdKq2fgM",
+                ""
+            )
+        )
+        listVideo.add(
+            Video(
+                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "ZBwe4rStc-o",
+                ""
+            )
+        )
+        listVideo.add(Video("хаво транспорт халокатида хулк атвор коидалари", "L0jUKYoBaMk", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -342,9 +370,14 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("правила поведения при транспортных авариях", "FxytA43A12o", ""))
+        listVideo.add(
+            Video(
+                "правила поведения при авариях на воздушном транспорте",
+                "c3_mKuzM0Ek",
+                ""
+            )
+        )
         list = ArrayList()
         list.clear()
         list.add(
@@ -355,7 +388,6 @@ class TransportFalokatFragment : Fragment() {
         )
 
     }
-
 
 
     companion object {
