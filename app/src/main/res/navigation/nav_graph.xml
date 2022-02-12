@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_homeFragment_to_authorFragment"
             app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_certificatFragment"
+            app:destination="@id/certificatFragment" />
     </fragment>
     <fragment
         android:id="@+id/content1Fragment"
@@ -377,4 +380,9 @@
         android:name="uz.hamroev.bardambolnew.fragment.content3.YuqoriQozgalishlarFragment"
         android:label="fragment_yuqori_qozgalishlar"
         tools:layout="@layout/fragment_yuqori_qozgalishlar" />
+    <fragment
+        android:id="@+id/certificatFragment"
+        android:name="uz.hamroev.bardambolnew.fragment.CertificatFragment"
+        android:label="fragment_certificat"
+        tools:layout="@layout/fragment_certificat" />
 </navigation>

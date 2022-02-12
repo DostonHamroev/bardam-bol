@@ -168,6 +168,10 @@ class HomeActivity : AppCompatActivity() {
             }
             binding.drawerLayout.closeDrawers()
         }
+        binding.navCertificat.setOnClickListener {
+            navController.navigate(R.id.certificatFragment)
+            binding.drawerLayout.closeDrawers()
+        }
 
         binding.navExit.setOnClickListener {
             finish()
@@ -218,6 +222,8 @@ class HomeActivity : AppCompatActivity() {
         binding.navElevationTitle.text = "Baholash"
         binding.navShareTitle.text = "Yuborish"
 
+        binding.navCertificatTitle.text = "Guvohnoma"
+
         binding.navExitTitle.text = "Chiqish"
 
 
@@ -237,6 +243,8 @@ class HomeActivity : AppCompatActivity() {
         binding.navElevationTitle.text = "Баҳолаш"
         binding.navShareTitle.text = "Юбориш"
 
+        binding.navCertificatTitle.text = "Гувоҳнома"
+
         binding.navExitTitle.text = "Чиқиш"
 
 
@@ -255,6 +263,8 @@ class HomeActivity : AppCompatActivity() {
 
         binding.navElevationTitle.text = "Оценка"
         binding.navShareTitle.text = "Поделиться"
+
+        binding.navCertificatTitle.text = "Сертификат"
 
         binding.navExitTitle.text = "Выход"
 
