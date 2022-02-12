@@ -310,8 +310,14 @@ class OtaOnaPsixologikYordamFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("2 узб в качестве", "zxazAjDH8mM", ""))
+        listVideo.add(Video("ishonch bilan qulash", "0ituWLkvP20", ""))
+        listVideo.add(Video("ishonch bilan qulash в качестве", "ltb9UAH56pg", ""))
+        listVideo.add(Video("limon sharbati", "TMOSOFNfRPo", ""))
+        listVideo.add(Video("qo'rqmas bolajonlar", "zJPbsg0Wha8", ""))
+        listVideo.add(Video("qo'rqmas bolajonlar hd", "E0rh-2ZKkUQ", ""))
+        listVideo.add(Video("Tipratikanchalar o'yini", "lxP14lfQAww", ""))
+        listVideo.add(Video("Tipratikanchalar o'yini  в качестве", "zIZHZfi431s", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -327,8 +333,14 @@ class OtaOnaPsixologikYordamFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("2 узб в качестве", "zxazAjDH8mM", ""))
+        listVideo.add(Video("ishonch bilan qulash", "0ituWLkvP20", ""))
+        listVideo.add(Video("ishonch bilan qulash в качестве", "ltb9UAH56pg", ""))
+        listVideo.add(Video("limon sharbati", "TMOSOFNfRPo", ""))
+        listVideo.add(Video("qo'rqmas bolajonlar", "zJPbsg0Wha8", ""))
+        listVideo.add(Video("qo'rqmas bolajonlar hd", "E0rh-2ZKkUQ", ""))
+        listVideo.add(Video("Tipratikanchalar o'yini", "lxP14lfQAww", ""))
+        listVideo.add(Video("Tipratikanchalar o'yini  в качестве", "zIZHZfi431s", ""))
         list = ArrayList()
         list.clear()
         list.add(

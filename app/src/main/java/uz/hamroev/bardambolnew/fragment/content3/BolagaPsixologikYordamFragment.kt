@@ -307,8 +307,7 @@ class BolagaPsixologikYordamFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("QORQUVLAR QOPCHASI", "B8hJZPtI4kE", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,8 +323,7 @@ class BolagaPsixologikYordamFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("QORQUVLAR QOPCHASI", "B8hJZPtI4kE", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -341,9 +339,15 @@ class BolagaPsixologikYordamFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("доверяющее падение в качестве", "xHf9mpwHQsA", ""))
+        listVideo.add(Video("игра для снятия нервного напряжения", "ozOBSSS9DwE", ""))
+        listVideo.add(Video("игра доверяющее падение", "tqB8RYlvSw0", ""))
+        listVideo.add(Video("Игра  Колючие ёжики", "zEDE9Q7kA4o", ""))
+        listVideo.add(Video("Игра  Колючие ёжики в качестве", "WGYErhAo7cE", ""))
+        listVideo.add(Video("игра лимонный сок", "AAnk_fe79t0", ""))
+        listVideo.add(Video("игра смелые ребята ру", "XxQsDMGcljs", ""))
+        listVideo.add(Video("игря для снятия страха", "ma12YOIGwUA", ""))
+        listVideo.add(Video("рус 2 в качестве", "mjEVqY0nWhQ", ""))
         list = ArrayList()
         list.clear()
         list.add(

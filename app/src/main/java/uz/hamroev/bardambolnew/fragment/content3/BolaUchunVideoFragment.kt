@@ -75,12 +75,13 @@ class BolaUchunVideoFragment : Fragment() {
         checkLanguage()
         loadVideo()
 
-        fileDatabase = FileDatabase.getInstance(binding.root.context)
-        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+//        fileDatabase = FileDatabase.getInstance(binding.root.context)
+//        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+//
+//        if (searchFileNameList != null) {
+//            checkIsDownload(searchFileNameList)
+//        }
 
-        if (searchFileNameList != null) {
-            checkIsDownload(searchFileNameList)
-        }
 
         return binding.root
     }
@@ -309,8 +310,15 @@ class BolaUchunVideoFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("БАРДАМ БУЛ", "bkuuS7H5VWo", ""))
+        listVideo.add(Video("БОРОНДА узингни кандай тутишинг керак", "fXhybznYXd0", ""))
+        listVideo.add(Video("Зилзилада узингни кандай тутишинг керак", "5DvXwqm98MM", ""))
+        listVideo.add(Video("Зилзилада узингни кандай тутишинг керак 1", "0F_OZXTeXJM", ""))
+        listVideo.add(Video("махлуклардан куркмаймиз", "hEPV5f1hvAc", ""))
+        listVideo.add(Video("микроб, вирус ва саломат киз хакида эртак", "zxVMLko5aO4", ""))
+        listVideo.add(Video("сел кенганда узингни кандай тутишинг керак", "P_OlIf3cSeI", ""))
+        listVideo.add(Video("сув тошкинида узингни кандай тутишинг керак", "0VEPXECSuRE", ""))
+        listVideo.add(Video("тун кайтиб кел эртаги", "hlOw3Yyi0M0", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -326,8 +334,15 @@ class BolaUchunVideoFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("БАРДАМ БУЛ", "bkuuS7H5VWo", ""))
+        listVideo.add(Video("БОРОНДА узингни кандай тутишинг керак", "fXhybznYXd0", ""))
+        listVideo.add(Video("Зилзилада узингни кандай тутишинг керак", "5DvXwqm98MM", ""))
+        listVideo.add(Video("Зилзилада узингни кандай тутишинг керак 1", "0F_OZXTeXJM", ""))
+        listVideo.add(Video("махлуклардан куркмаймиз", "hEPV5f1hvAc", ""))
+        listVideo.add(Video("микроб, вирус ва саломат киз хакида эртак", "zxVMLko5aO4", ""))
+        listVideo.add(Video("сел кенганда узингни кандай тутишинг керак", "P_OlIf3cSeI", ""))
+        listVideo.add(Video("сув тошкинида узингни кандай тутишинг керак", "0VEPXECSuRE", ""))
+        listVideo.add(Video("тун кайтиб кел эртаги", "hlOw3Yyi0M0", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -343,9 +358,17 @@ class BolaUchunVideoFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("Будь здоров", "ltmGcyIfmdc", ""))
+        listVideo.add(Video("как действовать во время бури", "FuIHVM9bs8M", ""))
+        listVideo.add(Video("как действовать во время землятресения", "HfEAlUxuK7I", ""))
+        listVideo.add(Video("как действовать во время землятресения 2", "I1cN7YraPPs", ""))
+        listVideo.add(Video("как защитить себя во время наводнения", "SI5EhgFefe8", ""))
+        listVideo.add(Video("как защититься во время схода лавины", "APmVIozTYCs", ""))
+        listVideo.add(Video("Не боимся чудовищ", "L6MmdObuheg", ""))
+        listVideo.add(Video("Новый проект", "caI1nqTbVEc", ""))
+        listVideo.add(Video("Ночь вернись  сказка", "EIlRilVbg-E", ""))
+        listVideo.add(Video("Сказка Не боимся мы чудовищ", "vDtjBT_PzxI", ""))
+        listVideo.add(Video("сказка про микроб, вирус и девочку Саломат", "ey8IgA7Ubck", ""))
         list = ArrayList()
         list.clear()
         list.add(
