@@ -74,12 +74,12 @@ class KattalargaBirinchiYordamVideoFragment : Fragment() {
         checkLanguage()
         loadVideo()
 
-        fileDatabase = FileDatabase.getInstance(binding.root.context)
-        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
-
-        if (searchFileNameList != null) {
-            checkIsDownload(searchFileNameList)
-        }
+//        fileDatabase = FileDatabase.getInstance(binding.root.context)
+//        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+//
+//        if (searchFileNameList != null) {
+//            checkIsDownload(searchFileNameList)
+//        }
 
         return binding.root
     }
@@ -308,8 +308,13 @@ class KattalargaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("1.O‘PKA-YURAK REANIMATSIYASI ", "HyM0CEsDunE", ""))
+        listVideo.add(Video("2.HUSHDAN KETISH (SINKOP, SINKOPAL HOLAT)", "SJLLmVF_Xg4", ""))
+        listVideo.add(Video("3.NAFAS YO‘LLARIGA YOT JISMLARNING TIQILIB QOLISHI", "8UUYAj5E8bM", ""))
+        listVideo.add(Video("5.TAYANCH-HARAKAT A’ZOLARINING SHIKASTLANISHLARI", "AjBGUVClVYk", ""))
+        listVideo.add(Video("8.ELEKTROSHIKASTLANISHLAR", "2RoAO5DK7WY", ""))
+        listVideo.add(Video("11.ZAHARLANISHLAR", "Lo-wbnxmxPo", ""))
+        listVideo.add(Video("14.EPILEPSIYA (tutqanoq kasalligi)", "Zn55YYGCaaU", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -325,8 +330,13 @@ class KattalargaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("1.O‘PKA-YURAK REANIMATSIYASI ", "HyM0CEsDunE", ""))
+        listVideo.add(Video("2.HUSHDAN KETISH (SINKOP, SINKOPAL HOLAT)", "SJLLmVF_Xg4", ""))
+        listVideo.add(Video("3.NAFAS YO‘LLARIGA YOT JISMLARNING TIQILIB QOLISHI", "8UUYAj5E8bM", ""))
+        listVideo.add(Video("5.TAYANCH-HARAKAT A’ZOLARINING SHIKASTLANISHLARI", "AjBGUVClVYk", ""))
+        listVideo.add(Video("8.ELEKTROSHIKASTLANISHLAR", "2RoAO5DK7WY", ""))
+        listVideo.add(Video("11.ZAHARLANISHLAR", "Lo-wbnxmxPo", ""))
+        listVideo.add(Video("14.EPILEPSIYA (tutqanoq kasalligi)", "Zn55YYGCaaU", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -342,9 +352,13 @@ class KattalargaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("1.РЕАНИМАЦИЯ ЛЕГКИХ   И  СЕРДЦА", "piH6lQxXB64", ""))
+        listVideo.add(Video("2.ПОТЕРЯ СОЗНАНИЯ (СИНКОП, СИНКОПАЛЬНОЕ СОСТОЯНИЕ)", "ENAGNm2BFpE", ""))
+        listVideo.add(Video("3.ЗАСТРЕВАНИЕ ИНОРОДНЫХ ТЕЛ В ДЫХАТЕЛЬНЫХ ОРГАНАХ", "zVwIhwBUtlI", ""))
+        listVideo.add(Video("5.ТРАВМЫ ОПОРНО-ДВИГАТЕЛЬНОГО АППАРАТА", "CK8LSxx6XF8", ""))
+        listVideo.add(Video("8.ЭЛЕКТРОПОВРЕЖДЕНИЕ", "BKf2UKYU39s", ""))
+        listVideo.add(Video("11.ОТРАВЛЕНИЯ", "AQWAFx97Dy4", ""))
+        listVideo.add(Video("14.ЭПИЛЕПСИЯ (эпилептический припадок)", "5srmF0VijwY", ""))
         list = ArrayList()
         list.clear()
         list.add(

@@ -74,12 +74,12 @@ class BolagaBirinchiYordamVideoFragment : Fragment() {
         checkLanguage()
         loadVideo()
 
-        fileDatabase = FileDatabase.getInstance(binding.root.context)
-        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
-
-        if (searchFileNameList != null) {
-            checkIsDownload(searchFileNameList)
-        }
+//        fileDatabase = FileDatabase.getInstance(binding.root.context)
+//        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+//
+//        if (searchFileNameList != null) {
+//            checkIsDownload(searchFileNameList)
+//        }
 
         return binding.root
     }
@@ -308,8 +308,11 @@ class BolagaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("1 Бола юзаки жароҳат олганда биринчи  ёрдам", "uh5LLE573aw", ""))
+        listVideo.add(Video("2 Бола чуқур жароҳат олганда биринчи  ёрдам", "nzdCSFAOJqk", ""))
+        listVideo.add(Video("3 Болада синишлар кузатилганда биринчи  ёрдам", "-pXN7rtlhQQ", ""))
+        listVideo.add(Video("4 Болада турли хил куйишлар кузатилганда биринчи ёрдам", "7lfWBHQJklg", ""))
+        listVideo.add(Video("5 Чўкаётган болага биринчи тиббий ёрдам кўрсатиш", "cvdC9f33uLA", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -325,8 +328,11 @@ class BolagaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("1 Бола юзаки жароҳат олганда биринчи  ёрдам", "uh5LLE573aw", ""))
+        listVideo.add(Video("2 Бола чуқур жароҳат олганда биринчи  ёрдам", "nzdCSFAOJqk", ""))
+        listVideo.add(Video("3 Болада синишлар кузатилганда биринчи  ёрдам", "-pXN7rtlhQQ", ""))
+        listVideo.add(Video("4 Болада турли хил куйишлар кузатилганда биринчи ёрдам", "7lfWBHQJklg", ""))
+        listVideo.add(Video("5 Чўкаётган болага биринчи тиббий ёрдам кўрсатиш", "cvdC9f33uLA", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -342,9 +348,11 @@ class BolagaBirinchiYordamVideoFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("1 Первая помощь при поверхностной ране", "eGrmDmWoauE", ""))
+        listVideo.add(Video("2 Первая помощь при глубокой ране рус", "CNChAnyvBX8", ""))
+        listVideo.add(Video("3 Первая помощь при переломах", "kUva_nAzWCc", ""))
+        listVideo.add(Video("4 Первая помощь при ожогах", "DBDZnTWHAU8", ""))
+        listVideo.add(Video("5 Первая помощь утопающему ребенку", "456ENmKBLF8", ""))
         list = ArrayList()
         list.clear()
         list.add(

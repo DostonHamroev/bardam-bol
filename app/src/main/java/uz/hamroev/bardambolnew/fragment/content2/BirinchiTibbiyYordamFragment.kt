@@ -72,7 +72,6 @@ class BirinchiTibbiyYordamFragment : Fragment() {
         binding = FragmentBirinchiTibbiyYordamBinding.inflate(layoutInflater, container, false)
 
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
