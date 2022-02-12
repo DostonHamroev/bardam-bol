@@ -76,6 +76,8 @@ dependencies {
     implementation 'com.github.raheemadamboev:check-internet-android:1.0.1'
     // photo zoom view
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    //pdf viewer
+    implementation "com.dmitryborodin:pdfview-android:1.1.0"
     
 
 }

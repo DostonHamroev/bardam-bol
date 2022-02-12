@@ -1,33 +1,49 @@
 package uz.hamroev.bardambolnew.fragment.content1.content1_2
 
+import android.app.DownloadManager
 import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
+import android.util.SparseArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.github.chrisbanes.photoview.PhotoView
+import at.huber.youtubeExtractor.VideoMeta
+import at.huber.youtubeExtractor.YouTubeExtractor
+import at.huber.youtubeExtractor.YtFile
+import com.pdfview.PDFView
+import io.reactivex.Observable
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import uz.hamroev.bardambolnew.adapter.ImageAdapter
+import uz.hamroev.bardambolnew.adapter.PdfDownloadAdapter
+import uz.hamroev.bardambolnew.adapter.VideoAdapter
 import uz.hamroev.bardambolnew.cache.Cache
-import uz.hamroev.bardambolnew.cache.Cache.path
 import uz.hamroev.bardambolnew.databinding.FragmentTajovuzBinding
-import uz.hamroev.bardambolnew.image.ApiClientImage
-import uz.hamroev.bardambolnew.model.Image
+import uz.hamroev.bardambolnew.db.FileDatabase
+import uz.hamroev.bardambolnew.db.FileEntity
+import uz.hamroev.bardambolnew.model.PdfDownload
+import uz.hamroev.bardambolnew.model.Video
+import uz.hamroev.bardambolnew.pdf.ApiClientPdf
 import java.io.*
 
 
 class TajovuzFragment : Fragment() {
 
     lateinit var binding: FragmentTajovuzBinding
-    private val TAG = "TajovuzFragment"
-    lateinit var imageAdapter: ImageAdapter
-    lateinit var list: ArrayList<Image>
+    lateinit var list: ArrayList<PdfDownload>
+    lateinit var pdfDownloadAdapter: PdfDownloadAdapter
+    private val TAG = "AAAA"
+    lateinit var fileDatabase: FileDatabase
+
+    lateinit var listVideo: ArrayList<Video>
+    lateinit var videoAdapter: VideoAdapter
+    lateinit var downloadText: String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,109 +52,227 @@ class TajovuzFragment : Fragment() {
         binding = FragmentTajovuzBinding.inflate(layoutInflater, container, false)
 
 
-        checkLanguage()
-        checkDownload()
 
-        imageAdapter = ImageAdapter(
-            binding.root.context,
-            list,
-            object : ImageAdapter.OnMyImageDownloadClickListener {
-                override fun onDownload(
-                    image: Image,
-                    position: Int,
-                    downloadImage: View,
-                    progress: View,
-                    cardDownloadPunkt: View,
-                    imageZoom: PhotoView
-                ) {
-                    isDownload(list[position].imageName, imageZoom, downloadImage, progress, position)
-                }
-            })
-        binding.rvImage.adapter = imageAdapter
+        checkLanguage()
+        loadVideo()
+
+        fileDatabase = FileDatabase.getInstance(binding.root.context)
+        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+
+        if (searchFileNameList != null) {
+            checkIsDownload(searchFileNameList)
+        }
 
         return binding.root
     }
 
-    private fun checkDownload() {
+    private fun loadVideo() {
+
+        videoAdapter = VideoAdapter(
+            binding.root.context,
+            listVideo,
+            object : VideoAdapter.OnMyVideoClickListener {
+                override fun onDownload(video: Video, position: Int, view: View) {
+                    view.visibility = View.GONE
+                    videoDownload(position)
+                }
+
+                private fun videoDownload(videoUrlPosition: Int) {
+                    Toast.makeText(binding.root.context, "${downloadText}", Toast.LENGTH_SHORT)
+                        .show()
+                    Observable.fromCallable {
+                        var downloadManger: DownloadManager
+                        object : YouTubeExtractor(binding.root.context) {
+                            override fun onExtractionComplete(
+                                ytFiles: SparseArray<YtFile>?,
+                                videoMeta: VideoMeta?
+                            ) {
+                                if (ytFiles != null) {
+                                    var itag = 22
+                                    var newLink = ytFiles.get(itag).url
+                                    var title = "Video ${listVideo[videoUrlPosition].titleVideo}"
+                                    var request = DownloadManager.Request(Uri.parse(newLink))
+                                    request.setTitle(title)
+                                    request.setDestinationInExternalPublicDir(
+                                        Environment.DIRECTORY_DOWNLOADS,
+                                        "/Bardam/${title}.mp4"
+                                    )
+                                    downloadManger =
+                                        activity?.getSystemService(AppCompatActivity.DOWNLOAD_SERVICE) as DownloadManager
+                                    request.allowScanningByMediaScanner()
+                                    request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE and DownloadManager.Request.NETWORK_WIFI)
+                                    downloadManger.enqueue(request)
+                                }
+                            }
+                        }.extract("https://www.youtube.com/watch?v=${listVideo[videoUrlPosition].videoId}")
+
+                        Log.d("AAAA", "videoDownload: ${listVideo[videoUrlPosition].videoId}")
+
+                    }.subscribe()
+                }
+
+            })
+        binding.rvVideo.adapter = videoAdapter
 
     }
 
-    private fun isDownload(
-        imageName: String,
-        imageZoom: PhotoView,
-        downloadImage: View,
-        progress: View,
-        position: Int
-    ) {
-
-        downloadImage.visibility = View.GONE
-        progress.visibility = View.VISIBLE
-
-        val service = ApiClientImage().service
-        service.getImage(list[position].image_Url).enqueue(object : Callback<ResponseBody> {
-            var imageview = imageZoom
-            val context = binding.root.context
-            val path = "${context.filesDir.absolutePath}/${imageName}.jpeg"
-
-            override fun onResponse(call: Call<ResponseBody>?, response: Response<ResponseBody>?) {
-                Log.d(TAG, "onResponse: $path")
-                progress.visibility = View.GONE
-                imageZoom.visibility = View.VISIBLE
-                imageZoom.setImageURI(Uri.parse(path))
-
-                if (Cache.path != "") {
-                    imageview.setImageURI(Uri.parse(path))
-                } else Cache.path = path
-                response?.let { writeResponseBody(it.body(), path) }
+    private fun checkIsDownload(list: List<FileEntity>) {
+        try {
+            if (list.isEmpty()) {
+                Log.d(TAG, "checkIsDownload: FIle not Download")
+                pdfDownloadMain()
+            } else {
+                loadPdfByPath(list[0].file_path)
+                Log.d(TAG, "checkIsDownload: FIle Downloaded")
             }
+        } catch (e: Exception) {
 
-            override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                Log.d(TAG, "onFailure: ")
-                Toast.makeText(context, "Xato", Toast.LENGTH_SHORT).show()
-
-            }
-
-        })
-    }
-    fun writeResponseBody(body: ResponseBody, path: String?): Boolean {
-        return try {
-            val file = File(path)
-            var inputStream: InputStream? = null
-            var outputStream: OutputStream? = null
-            try {
-                val fileReader = ByteArray(4096)
-                //long fileSize = body.contentLength();
-                //long fileSizeDownloaded = 0;
-                inputStream = body.byteStream()
-                outputStream = FileOutputStream(file)
-                while (true) {
-                    val read: Int = inputStream.read(fileReader)
-                    if (read == -1) {
-                        break
-                    }
-                    outputStream.write(fileReader, 0, read)
-                    //fileSizeDownloaded += read;
-                }
-                outputStream.flush()
-                true
-            } catch (e: IOException) {
-                false
-            } finally {
-                if (inputStream != null) {
-                    inputStream.close()
-                }
-                if (outputStream != null) {
-                    outputStream.close()
-                }
-            }
-        } catch (e: IOException) {
-            false
         }
+
+
     }
 
+    private fun loadPdfByPath(path: String) {
+        binding.rvPdfDownloading.visibility = View.GONE
+        binding.pdfView.visibility = View.VISIBLE
+        binding.pdfView.fromFile(path).show()
+    }
+
+    private fun pdfDownloadMain() {
+        pdfDownloadAdapter = PdfDownloadAdapter(
+            binding.root.context,
+            list,
+            object : PdfDownloadAdapter.OnMyPdfDownloadClickListener {
+                override fun onPdfDownloadClick(
+                    pdfDownload: PdfDownload,
+                    position: Int,
+                    downloadView: View,
+                    loadingView: View,
+                    downloadingCardView: View,
+                    pdfView: PDFView,
+                    cardMain: View
+                ) {
+                    downloadView.visibility = View.GONE
+                    loadingView.visibility = View.VISIBLE
+                    downloadingCardView.visibility = View.VISIBLE
+
+                    downloadPdf(
+                        pdfDownload,
+                        position,
+                        downloadView,
+                        loadingView,
+                        downloadingCardView,
+                        pdfView,
+                        cardMain
+                    )
+
+                }
+
+                private fun downloadPdf(
+                    pdfDownload: PdfDownload,
+                    position: Int,
+                    downloadView: View,
+                    loadingView: View,
+                    downloadingCardView: View,
+                    pdfView: PDFView,
+                    cardMain: View
+                ) {
+
+                    val service = ApiClientPdf().service
+                    list[position].pdfUrl?.let {
+                        service.getPdf(it).enqueue(object : Callback<ResponseBody> {
+
+                            val context = binding.root.context
+                            val path =
+                                "${context.filesDir.absolutePath}/${list[position].pdfName}.pdf"
+
+                            override fun onResponse(
+                                call: Call<ResponseBody>?,
+                                response: Response<ResponseBody>?
+                            ) {
+                                Log.d(TAG, "onResponse: ")
+                                if (response!!.isSuccessful) {
+                                    Log.d(TAG, "onResponse: Success qaytdi")
+                                    writeResponseBodyToDisk(response.body(), path, pdfView)
+                                    Log.d(TAG, "onResponse: after write $path")
+                                    val fileEntity = FileEntity()
+                                    fileEntity.file_name = list[position].pdfName.toString()
+                                    fileEntity.file_path = path
+                                    fileDatabase.fileDao().addFilePathAndName(fileEntity)
+                                    //                                cardMain.visibility = View.GONE
+                                    //                                downloadingCardView.visibility = View.GONE
+                                    //                                pdfView.visibility = View.VISIBLE
+                                    //                                pdfView.fromFile(path).show()
+                                    openPdfWithAdapter(path)
+
+                                }
+
+                            }
+
+                            override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
+                                Log.d(TAG, "onFailure: ${t!!.message}")
+                                Toast.makeText(
+                                    binding.root.context,
+                                    "Check your internet",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        })
+                    }
+                }
+
+
+                fun writeResponseBodyToDisk(
+                    body: ResponseBody,
+                    filePath: String,
+                    pdfView: PDFView
+                ): Boolean {
+                    try {
+                        var mediaFile = File(filePath)
+                        var inputStream: InputStream? = null
+                        var outputStream: OutputStream? = null
+                        try {
+                            val fileReader = ByteArray(4096)
+                            val fileSize = body.contentLength()
+                            var fileSizeDownloaded: Long = 0
+                            inputStream = body.byteStream()
+                            outputStream = FileOutputStream(mediaFile)
+                            while (true) {
+                                val read = inputStream.read(fileReader)
+                                if (read == -1) {
+                                    break
+                                }
+                                outputStream.write(fileReader, 0, read)
+                                fileSizeDownloaded += read.toLong()
+                                Log.d(TAG, "file download: $fileSizeDownloaded of $fileSize")
+
+
+                            }
+                            outputStream.flush()
+                            return true
+                        } catch (e: IOException) {
+                            return false
+                        } finally {
+                            inputStream?.close()
+                            outputStream?.close()
+                        }
+                    } catch (e: IOException) {
+                        return false
+                    }
+                }
+
+
+            })
+
+        binding.rvPdfDownloading.adapter = pdfDownloadAdapter
+    }
+
+    private fun openPdfWithAdapter(path: String) {
+        binding.rvPdfDownloading.visibility = View.GONE
+        binding.pdfView.fromFile(path).show()
+    }
 
     private fun checkLanguage() {
-        Log.d(TAG, "checkLanguage: ")
         when (Cache.til) {
             "uz" -> {
                 loadUzData()
@@ -152,31 +286,57 @@ class TajovuzFragment : Fragment() {
         }
     }
 
-    private fun loadRuData() {
-        Log.d(TAG, "loadRuData: ")
+    private fun loadUzData() {
+        downloadText = "Yuklanmoqda..."
+        listVideo = ArrayList()
+        listVideo.clear()
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
         list = ArrayList()
         list.clear()
-        list.add(Image("max/2000/1*pelmmYTGS2LAim1Xc7iDSw.png", "agressiyadaBrinchiYordam1RU", ""))
-        list.add(Image("max/1400/1*jHsOcJkltJ2PSPEVswfgyg.png", "agressiyadaBrinchiYordam2RU", ""))
-        list.add(Image("max/2000/1*pelmmYTGS2LAim1Xc7iDSw.png", "agressiyadaBrinchiYordam1RU", ""))
+        list.add(
+            PdfDownload(
+                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
+                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+            )
+        )
+
     }
 
     private fun loadKrillData() {
-        Log.d(TAG, "loadKrillData: ")
+        downloadText = "Юкланмоқда..."
+        listVideo = ArrayList()
+        listVideo.clear()
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
         list = ArrayList()
         list.clear()
-        list.add(Image("max/2000/1*pelmmYTGS2LAim1Xc7iDSw.png", "agressiyadaBrinchiYordam1Krill", ""))
-        list.add(Image("max/1400/1*jHsOcJkltJ2PSPEVswfgyg.png", "agressiyadaBrinchiYordam2Krill", ""))
+        list.add(
+            PdfDownload(
+                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
+                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+            )
+        )
 
     }
 
-    private fun loadUzData() {
-        Log.d(TAG, "loadUzData: ")
+    private fun loadRuData() {
+        downloadText = "Загрузка..."
+        listVideo = ArrayList()
+        listVideo.clear()
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
+        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
         list = ArrayList()
         list.clear()
-        list.add(Image("max/2000/1*pelmmYTGS2LAim1Xc7iDSw.png", "agressiyadaBrinchiYordam1UZ", ""))
-        list.add(Image("max/1400/1*jHsOcJkltJ2PSPEVswfgyg.png", "agressiyadaBrinchiYordam2UZ", ""))
+        list.add(
+            PdfDownload(
+                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
+                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+            )
+        )
 
     }
+
 
 }
