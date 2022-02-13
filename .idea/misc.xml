@@ -9,7 +9,12 @@
         <entry key="app/src/main/res/drawable/back_item_image.xml" value="0.118" />
         <entry key="app/src/main/res/drawable/back_main_shape.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/back_menu_drawer.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_app_about.xml" value="0.135" />
         <entry key="app/src/main/res/drawable/ic_certificat.xml" value="0.1215" />
+        <entry key="app/src/main/res/drawable/ic_certificat_girl.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/ic_children_father.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/ic_doctor1.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/ic_doctor2.xml" value="0.135" />
         <entry key="app/src/main/res/drawable/ic_language.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/ic_logout.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.20885416666666667" />

@@ -47,14 +47,12 @@ class HomeFragment : Fragment() {
                             findNavController().navigate(R.id.content3Fragment)
                         }
                         3 -> {
-                            findNavController().navigate(R.id.authorFragment)
+                            findNavController().navigate(R.id.certificatFragment)
                         }
                         4 -> {
                             findNavController().navigate(R.id.authorFragment)
                         }
-                        else -> {
-                            findNavController().navigate(R.id.authorFragment)
-                        }
+
                     }
                 }
             })
@@ -84,10 +82,11 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Ekstremal vaziyatlarni boshqarish", R.drawable.ic_medicine))
-        list.add(MainMenu("O'ziga-o'zi birinchi yordam ko'rsatish", R.drawable.ic_medicine))
-        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga Yordam ko'rsatish", R.drawable.ic_run))
-        list.add(MainMenu("Ilova Haqida", R.drawable.ic_run))
+        list.add(MainMenu("Ekstremal vaziyatlarni boshqarish", R.drawable.ic_doctor2))
+        list.add(MainMenu("O'ziga-o'zi birinchi yordam ko'rsatish", R.drawable.ic_doctor1))
+        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga Yordam ko'rsatish", R.drawable.ic_children_father))
+        list.add(MainMenu("Guvohnoma", R.drawable.ic_certificat_girl))
+        list.add(MainMenu("Ilova Haqida", R.drawable.ic_app_about))
     }
 
     private fun loadKrillData() {
@@ -95,10 +94,11 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Экстремал вазиятларни бошқариш", R.drawable.ic_medicine))
-        list.add(MainMenu("Ўзига-ўзи биринчи ёрдам кўрсатиш", R.drawable.ic_medicine))
-        list.add(MainMenu("Болага ғамхўрлик. Болага Ёрдам кўрсатиш", R.drawable.ic_run))
-        list.add(MainMenu("Илова ҳақида", R.drawable.ic_run))
+        list.add(MainMenu("Экстремал вазиятларни бошқариш", R.drawable.ic_doctor2))
+        list.add(MainMenu("Ўзига-ўзи биринчи ёрдам кўрсатиш", R.drawable.ic_doctor1))
+        list.add(MainMenu("Болага ғамхўрлик. Болага Ёрдам кўрсатиш", R.drawable.ic_children_father))
+        list.add(MainMenu("Гувоҳнома", R.drawable.ic_certificat_girl))
+        list.add(MainMenu("Илова ҳақида", R.drawable.ic_app_about))
     }
 
     private fun loadRuData() {
@@ -106,10 +106,11 @@ class HomeFragment : Fragment() {
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Управление экстремальными ситуациями", R.drawable.ic_medicine))
-        list.add(MainMenu("Оказание первой доврачебной", R.drawable.ic_medicine))
-        list.add(MainMenu("Забота о ребенке. Оказание помощи ребенку", R.drawable.ic_run))
-        list.add(MainMenu("О приложении", R.drawable.ic_run))
+        list.add(MainMenu("Управление экстремальными ситуациями", R.drawable.ic_doctor2))
+        list.add(MainMenu("Оказание первой доврачебной", R.drawable.ic_doctor1))
+        list.add(MainMenu("Забота о ребенке. Оказание помощи ребенку", R.drawable.ic_children_father))
+        list.add(MainMenu("Сертификат", R.drawable.ic_certificat_girl))
+        list.add(MainMenu("О приложении", R.drawable.ic_app_about))
 
     }
 

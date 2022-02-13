@@ -326,6 +326,7 @@ class AsabiyTitroqFragment : Fragment() {
         listVideo = ArrayList()
         listVideo.clear()
         listVideo.add(Video("асабий титроги", "J341Ka7QAhw", ""))
+        list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
