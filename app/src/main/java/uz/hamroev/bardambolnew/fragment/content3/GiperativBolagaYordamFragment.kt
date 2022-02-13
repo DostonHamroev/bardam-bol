@@ -74,7 +74,6 @@ class GiperativBolagaYordamFragment : Fragment() {
 
 
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
@@ -316,8 +315,8 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1uc2uvZC_WzvoPQm9uFPYkIZTb07iqSJ-&export=download",
+                "giperaktiv bolalar bilan ishlash"
             )
         )
 
@@ -333,8 +332,8 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1B4uycaQznA7iLIsVzqLya4gtX9zcqj2I&export=download",
+                "гиперактив болаларга ёрдам"
             )
         )
 
@@ -351,8 +350,8 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1nhA6GAEdqyiGgmTD58X6wvX7xxp8QOXk&export=download",
+                "гиперактивность рус"
             )
         )
 

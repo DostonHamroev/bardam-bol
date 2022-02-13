@@ -1,3 +1,4 @@
+
 package uz.hamroev.bardambolnew.fragment.content3
 
 import android.app.DownloadManager
@@ -73,7 +74,6 @@ class AgressiyaFragment : Fragment() {
 
 
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
@@ -315,8 +315,8 @@ class AgressiyaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1-pzQPMMU5QR9PzIICBWs-mQ64CFygWzq&export=download",
+                "Tajavyzkorlikni korrekciyasi"
             )
         )
 
@@ -332,8 +332,8 @@ class AgressiyaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Mqg3B8AhtRl7WBwnHdDQHymi_Zb50Snu&export=download",
+                "тажаввузкорликни хусусиятлари"
             )
         )
 
@@ -350,8 +350,8 @@ class AgressiyaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1FRfRgbwyLwyLZ6urKpWSBSohMV0xYGlz&export=download",
+                "коррекция агрессивности"
             )
         )
 

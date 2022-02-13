@@ -55,7 +55,7 @@ class Content3Fragment : Fragment() {
                             findNavController().navigate(R.id.qayguXolatidagiBolaFragment)
                         }
                         7 -> {
-                            findNavController().navigate(R.id.qorquvFragment)
+                            findNavController().navigate(R.id.qorquvXolatidagiBirinchiYordamFragment)
                         }
                         8 -> {
                             findNavController().navigate(R.id.mushakZoriqishlarFragment)

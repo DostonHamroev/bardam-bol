@@ -73,12 +73,12 @@ class BolagaPsixologikYordamFragment : Fragment() {
         checkLanguage()
         loadVideo()
 
-        fileDatabase = FileDatabase.getInstance(binding.root.context)
-        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
-
-        if (searchFileNameList != null) {
-            checkIsDownload(searchFileNameList)
-        }
+//        fileDatabase = FileDatabase.getInstance(binding.root.context)
+//        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
+//
+//        if (searchFileNameList != null) {
+//            checkIsDownload(searchFileNameList)
+//        }
 
         return binding.root
     }

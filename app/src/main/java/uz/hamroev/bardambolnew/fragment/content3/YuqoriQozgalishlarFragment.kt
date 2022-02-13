@@ -72,7 +72,6 @@ class YuqoriQozgalishlarFragment : Fragment() {
         binding = FragmentYuqoriQozgalishlarBinding.inflate(layoutInflater)
 
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
@@ -314,8 +313,8 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1SL8SnCxTvLbGCaVEKwHrSfUKOlPru_BK&export=download",
+                "qo'zg'aluvchanlik korrekciyasi"
             )
         )
 
@@ -331,8 +330,8 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1rY7hNCncsqDw1T-5ctPYGMeTjPrLXGBM&export=download",
+                "кузгалувчанлик коррекцияси"
             )
         )
 
@@ -349,8 +348,8 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=18lqgJv6AXJboOgsn0h4qPp7k536Q4qle&export=download",
+                "коррекция возбудимости"
             )
         )
 

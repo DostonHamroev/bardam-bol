@@ -72,8 +72,6 @@ class MushakZoriqishlarFragment : Fragment() {
     ): View? {
         binding =  FragmentMushakZoriqishlarBinding.inflate(layoutInflater)
         checkLanguage()
-        loadVideo()
-
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
 
@@ -314,8 +312,8 @@ class MushakZoriqishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=19fG9mzomnp3jSJ-2-KnAdFp3UVc5W45P&export=download",
+                "mushaklarda zyriqishni yumshatuvchi mashqlar"
             )
         )
 
@@ -331,8 +329,8 @@ class MushakZoriqishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=11G7RmDKup-qf3ZWfqrQm3tv_Iyt2ozsY&export=download",
+                "Мушаклардаги зурикишни юмшатувчи машклар"
             )
         )
 
@@ -349,8 +347,8 @@ class MushakZoriqishlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1OScku_utu1wLamui0pAwEVCJdwNNzVV_&export=download",
+                "снятие мышечных зажимов у детей"
             )
         )
 

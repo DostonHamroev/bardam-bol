@@ -71,8 +71,8 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentQorquvXolatidagiBirinchiYordamBinding.inflate(layoutInflater)
+
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
@@ -314,8 +314,8 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1t-BDRXmJ2vlRmu7AVLicu9hdRlnqWAK9&export=download",
+                "bolalardagi qorquv sabablari"
             )
         )
 
@@ -331,8 +331,8 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1eZMu34kb_R1SHGgXYtOizYNfq3N9aPtK&export=download",
+                "Болалардаги куркув холати сабаблари"
             )
         )
 
@@ -349,8 +349,8 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1C4Y43UxclZ9e91Z-qJxN6ks4c-NM5Xh0&export=download",
+                "помощь ребенку переживающему страхи"
             )
         )
 

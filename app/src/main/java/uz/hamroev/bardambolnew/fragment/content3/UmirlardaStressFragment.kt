@@ -73,8 +73,6 @@ class UmirlardaStressFragment : Fragment() {
         binding = FragmentUmirlardaStressBinding.inflate(layoutInflater)
 
         checkLanguage()
-        loadVideo()
-
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
 
@@ -315,8 +313,8 @@ class UmirlardaStressFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1sulmctPRo75iyL5FZG3lyBN1tJibmIx_&export=download",
+                "O'smirlarda stress korreksiyasi UZB"
             )
         )
 
@@ -332,8 +330,8 @@ class UmirlardaStressFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1LxPFI38f-FbYR_5fInXyxTdHyqrQ2smf&export=download",
+                "усмирларда стресс холатини коррекцияси  УЗБ"
             )
         )
 
@@ -350,8 +348,8 @@ class UmirlardaStressFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=16BrC69Dy6lMsbXQoeZbMQF7eUFHAGl9_&export=download",
+                "коррекция стресса у подростков"
             )
         )
 

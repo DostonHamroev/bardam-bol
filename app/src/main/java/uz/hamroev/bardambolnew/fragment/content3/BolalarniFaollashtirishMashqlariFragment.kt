@@ -71,7 +71,6 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
     ): View? {
         binding = FragmentBolalarniFaollashtirishMashqlariBinding.inflate(layoutInflater)
         checkLanguage()
-        loadVideo()
 
         fileDatabase = FileDatabase.getInstance(binding.root.context)
         val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
@@ -313,8 +312,8 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1FWOuOeiPl7ZQqRo6hYjtMgY4bCQ_U4gs&export=download",
+                "bolalarda ishonch hissini shakllantirish"
             )
         )
 
@@ -330,8 +329,8 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1iltEvMPsmSeA_cXbAHto_mzjG_yVQRlJ&export=download",
+                "болаларда ишонч хиссини шакллантириш машклари"
             )
         )
 
@@ -348,8 +347,8 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=15_n6JbmRIiAy43Xo806bORIsMKJxRFiM&export=download",
+                "упражнения для развития доверия у детей"
             )
         )
 
