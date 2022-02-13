@@ -46,31 +46,33 @@ object Cache {
             }
         }
 
-    var bolaTarbiyasiMavzu: Int?
-        get() = sharedPreferences.getInt("tarbiya", 0)
+    var musicPath1: String?
+        get() = sharedPreferences.getString("turmush", "")
         set(value) = sharedPreferences.edit() {
             if (value != null) {
-                it.putInt("tarbiya", value)
+                it.putString("turmush", value)
+            }
+        }
+    var musicPath2: String?
+        get() = sharedPreferences.getString("turmush", "")
+        set(value) = sharedPreferences.edit() {
+            if (value != null) {
+                it.putString("turmush", value)
             }
         }
 
-    var BirinchiYordamMavzu: Int?
-        get() = sharedPreferences.getInt("birinchiyordam", 0)
+    var musicPath3: String?
+        get() = sharedPreferences.getString("turmush", "")
         set(value) = sharedPreferences.edit() {
             if (value != null) {
-                it.putInt("birinchiyordam", value)
+                it.putString("turmush", value)
             }
         }
 
 
-    //mavzular uchun cache
 
-    var main3MavzuPosition: Int?
-        get() = sharedPreferences.getInt("main3Mavzu", 0)
-        set(value) = sharedPreferences.edit() {
-            if (value != null) {
-                it.putInt("main3Mavzu", value)
-            }
-        }
+
+
+
 
 }

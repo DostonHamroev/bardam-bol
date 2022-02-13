@@ -1,36 +1,23 @@
 package uz.hamroev.bardambolnew.fragment.content1.content1_2
 
-import android.app.DownloadManager
+import android.content.Intent
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
-import android.util.SparseArray
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import at.huber.youtubeExtractor.VideoMeta
-import at.huber.youtubeExtractor.YouTubeExtractor
-import at.huber.youtubeExtractor.YtFile
-import com.pdfview.PDFView
-import io.reactivex.Observable
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import uz.hamroev.bardambolnew.adapter.PdfDownloadAdapter
-import uz.hamroev.bardambolnew.adapter.VideoAdapter
 import uz.hamroev.bardambolnew.cache.Cache
 import uz.hamroev.bardambolnew.databinding.FragmentDamOlishBinding
-import uz.hamroev.bardambolnew.db.FileDatabase
-import uz.hamroev.bardambolnew.db.FileEntity
-import uz.hamroev.bardambolnew.model.PdfDownload
-import uz.hamroev.bardambolnew.model.Video
-import uz.hamroev.bardambolnew.pdf.ApiClientPdf
+import uz.hamroev.bardambolnew.music.ApiClientMusic
 import java.io.*
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,14 +43,7 @@ class DamOlishFragment : Fragment() {
     }
 
     lateinit var binding: FragmentDamOlishBinding
-    lateinit var list: ArrayList<PdfDownload>
-    lateinit var pdfDownloadAdapter: PdfDownloadAdapter
-    private val TAG = "AAAA"
-    lateinit var fileDatabase: FileDatabase
-
-    lateinit var listVideo: ArrayList<Video>
-    lateinit var videoAdapter: VideoAdapter
-    lateinit var downloadText: String
+    private val TAG = "DamOlishFragment"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -71,291 +51,174 @@ class DamOlishFragment : Fragment() {
     ): View? {
         binding = FragmentDamOlishBinding.inflate(layoutInflater, container, false)
 
+        checkCache()
 
-        checkLanguage()
+        binding.downloadBtn.setOnClickListener {
+            checkMusic()
+        }
 
-//        fileDatabase = FileDatabase.getInstance(binding.root.context)
-//        val searchFileNameList = list[0].pdfName?.let { fileDatabase.fileDao().searchFileName(it) }
-//
-//        if (searchFileNameList != null) {
-//            checkIsDownload(searchFileNameList)
-//        }
+        binding.musicBtn.setOnClickListener {
+            checkMusic()
+        }
+
 
         return binding.root
     }
 
-    private fun loadVideo() {
-
-        videoAdapter = VideoAdapter(
-            binding.root.context,
-            listVideo,
-            object : VideoAdapter.OnMyVideoClickListener {
-                override fun onDownload(video: Video, position: Int, view: View) {
-                    view.visibility = View.GONE
-                    videoDownload(position)
-                }
-
-                private fun videoDownload(videoUrlPosition: Int) {
-                    Toast.makeText(binding.root.context, "${downloadText}", Toast.LENGTH_SHORT)
-                        .show()
-                    Observable.fromCallable {
-                        var downloadManger: DownloadManager
-                        object : YouTubeExtractor(binding.root.context) {
-                            override fun onExtractionComplete(
-                                ytFiles: SparseArray<YtFile>?,
-                                videoMeta: VideoMeta?
-                            ) {
-                                if (ytFiles != null) {
-                                    var itag = 22
-                                    var newLink = ytFiles.get(itag).url
-                                    var title = "Video ${listVideo[videoUrlPosition].titleVideo}"
-                                    var request = DownloadManager.Request(Uri.parse(newLink))
-                                    request.setTitle(title)
-                                    request.setDestinationInExternalPublicDir(
-                                        Environment.DIRECTORY_DOWNLOADS,
-                                        "/Bardam/${title}.mp4"
-                                    )
-                                    downloadManger =
-                                        activity?.getSystemService(AppCompatActivity.DOWNLOAD_SERVICE) as DownloadManager
-                                    request.allowScanningByMediaScanner()
-                                    request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE and DownloadManager.Request.NETWORK_WIFI)
-                                    downloadManger.enqueue(request)
-                                }
-                            }
-                        }.extract("https://www.youtube.com/watch?v=${listVideo[videoUrlPosition].videoId}")
-
-                        Log.d("AAAA", "videoDownload: ${listVideo[videoUrlPosition].videoId}")
-
-                    }.subscribe()
-                }
-
-            })
-        binding.rvVideo.adapter = videoAdapter
-
-    }
-
-    private fun checkIsDownload(list: List<FileEntity>) {
-        try {
-            if (list.isEmpty()) {
-                Log.d(TAG, "checkIsDownload: FIle not Download")
-                pdfDownloadMain()
-            } else {
-                loadPdfByPath(list[0].file_path)
-                Log.d(TAG, "checkIsDownload: FIle Downloaded")
-            }
-        } catch (e: Exception) {
-
+    private fun checkCache() {
+        if (Cache.musicPath1 == "") {
+            Log.d(TAG, "checkCache: Load qil")
+            binding.musicBtn.visibility = View.GONE
+            binding.loadingProgress.visibility = View.GONE
+            binding.downloadBtn.visibility = View.VISIBLE
+        } else {
+            Log.d(TAG, "checkCache: Open qil")
+            binding.musicBtn.visibility = View.VISIBLE
+            binding.downloadBtn.visibility = View.GONE
+            binding.loadingProgress.visibility = View.GONE
         }
+    }
+
+    private fun checkMusic() {
+        if (Cache.musicPath1 == "") loadMusic() else openMusic()
+    }
+
+    private fun openMusic() {
+        binding.musicBtn.visibility = View.VISIBLE
+        binding.loadingProgress.visibility = View.GONE
+        binding.downloadBtn.visibility = View.GONE
+
+
+//        val intent = Intent(Intent.ACTION_GET_CONTENT)
+//        val file = File(Cache.musicPath1)
+//        val fromFile = Uri.fromFile(file)
+//        intent.data = fromFile
+//        intent.setDataAndType(fromFile, "audio/*")
+//        startActivity(intent)
+
+//        val file = File(Cache.musicPath1)
+//        val uri = Uri.fromFile(file)
+//        val intent = Intent(Intent.ACTION_VIEW, uri)
+//        intent.setDataAndType(uri, "audio/*")
+//        startActivity(intent)
+
+//        val it = Intent(Intent.ACTION_VIEW)
+//        val uri = Uri.parse("${Cache.musicPath1}")
+//        it.setDataAndType(uri, "audio/mp3")
+//        startActivity(it)
+
+        val mediaPlayer = MediaPlayer()
+        mediaPlayer.setDataSource(Cache.musicPath1)
+        mediaPlayer.prepare()
+        mediaPlayer.start()
 
 
     }
 
-    private fun loadPdfByPath(path: String) {
-        binding.rvPdfDownloading.visibility = View.GONE
-        binding.pdfView.visibility = View.VISIBLE
-        binding.pdfView.fromFile(path).show()
-    }
+    private fun loadMusic() {
 
-    private fun pdfDownloadMain() {
-        pdfDownloadAdapter = PdfDownloadAdapter(
-            binding.root.context,
-            list,
-            object : PdfDownloadAdapter.OnMyPdfDownloadClickListener {
-                override fun onPdfDownloadClick(
-                    pdfDownload: PdfDownload,
-                    position: Int,
-                    downloadView: View,
-                    loadingView: View,
-                    downloadingCardView: View,
-                    pdfView: PDFView,
-                    cardMain: View
-                ) {
-                    downloadView.visibility = View.GONE
-                    loadingView.visibility = View.VISIBLE
-                    downloadingCardView.visibility = View.VISIBLE
-
-                    downloadPdf(
-                        pdfDownload,
-                        position,
-                        downloadView,
-                        loadingView,
-                        downloadingCardView,
-                        pdfView,
-                        cardMain
-                    )
-
-                }
-
-                private fun downloadPdf(
-                    pdfDownload: PdfDownload,
-                    position: Int,
-                    downloadView: View,
-                    loadingView: View,
-                    downloadingCardView: View,
-                    pdfView: PDFView,
-                    cardMain: View
-                ) {
-
-                    val service = ApiClientPdf().service
-                    list[position].pdfUrl?.let {
-                        service.getPdf(it).enqueue(object : Callback<ResponseBody> {
-
-                            val context = binding.root.context
-                            val path =
-                                "${context.filesDir.absolutePath}/${list[position].pdfName}.pdf"
-
-                            override fun onResponse(
-                                call: Call<ResponseBody>?,
-                                response: Response<ResponseBody>?
-                            ) {
-                                Log.d(TAG, "onResponse: ")
-                                if (response!!.isSuccessful) {
-                                    Log.d(TAG, "onResponse: Success qaytdi")
-                                    writeResponseBodyToDisk(response.body(), path, pdfView)
-                                    Log.d(TAG, "onResponse: after write $path")
-                                    val fileEntity = FileEntity()
-                                    fileEntity.file_name = list[position].pdfName.toString()
-                                    fileEntity.file_path = path
-                                    fileDatabase.fileDao().addFilePathAndName(fileEntity)
-                                    //                                cardMain.visibility = View.GONE
-                                    //                                downloadingCardView.visibility = View.GONE
-                                    //                                pdfView.visibility = View.VISIBLE
-                                    //                                pdfView.fromFile(path).show()
-                                    openPdfWithAdapter(path)
-
-                                }
-
-                            }
-
-                            override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
-                                Log.d(TAG, "onFailure: ${t!!.message}")
-                                Toast.makeText(
-                                    binding.root.context,
-                                    "Check your internet",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        })
-                    }
-                }
-
-
-                fun writeResponseBodyToDisk(
-                    body: ResponseBody,
-                    filePath: String,
-                    pdfView: PDFView
-                ): Boolean {
-                    try {
-                        var mediaFile = File(filePath)
-                        var inputStream: InputStream? = null
-                        var outputStream: OutputStream? = null
-                        try {
-                            val fileReader = ByteArray(4096)
-                            val fileSize = body.contentLength()
-                            var fileSizeDownloaded: Long = 0
-                            inputStream = body.byteStream()
-                            outputStream = FileOutputStream(mediaFile)
-                            while (true) {
-                                val read = inputStream.read(fileReader)
-                                if (read == -1) {
-                                    break
-                                }
-                                outputStream.write(fileReader, 0, read)
-                                fileSizeDownloaded += read.toLong()
-                                Log.d(TAG, "file download: $fileSizeDownloaded of $fileSize")
-
-
-                            }
-                            outputStream.flush()
-                            return true
-                        } catch (e: IOException) {
-                            return false
-                        } finally {
-                            inputStream?.close()
-                            outputStream?.close()
-                        }
-                    } catch (e: IOException) {
-                        return false
-                    }
-                }
-
-
-            })
-
-        binding.rvPdfDownloading.adapter = pdfDownloadAdapter
-    }
-
-    private fun openPdfWithAdapter(path: String) {
-        binding.rvPdfDownloading.visibility = View.GONE
-        binding.pdfView.fromFile(path).show()
-    }
-
-    private fun checkLanguage() {
         when (Cache.til) {
             "uz" -> {
-                loadUzData()
+                downloadMusicUZ()
             }
             "krill" -> {
-                loadKrillData()
+                downloadMusicKRILL()
             }
             "ru" -> {
-                loadRuData()
+                downloadMusicRU()
             }
         }
     }
 
-    private fun loadUzData() {
-        downloadText = "Yuklanmoqda..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
-        list = ArrayList()
-        list.clear()
-        list.add(
-            PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
-            )
-        )
+    private fun downloadMusicRU() {
 
     }
 
-    private fun loadKrillData() {
-        downloadText = "Юкланмоқда..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAA", ""))
-        list = ArrayList()
-        list.clear()
-        list.add(
-            PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
-            )
-        )
+    private fun downloadMusicKRILL() {
 
     }
 
-    private fun loadRuData() {
-        downloadText = "Загрузка..."
-        listVideo = ArrayList()
-        listVideo.clear()
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAA", ""))
-        list = ArrayList()
-        list.clear()
-        list.add(
-            PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
-            )
-        )
+    private fun downloadMusicUZ() {
+        binding.downloadBtn.visibility = View.GONE
+        binding.loadingProgress.visibility = View.VISIBLE
+        val service = ApiClientMusic().service
+        val uz_url_music = "u/0/uc?id=1PItSfdX0aVCZ56PfsM8XcWBEENy7apoz&export=download"
+        val music_name = "Relaksiya"
+        binding.musicName.text = music_name.toString().trim()
+
+        service.getMusic(uz_url_music)
+            .enqueue(object : Callback<ResponseBody> {
+                val context = binding.root.context
+                val path = "${context.filesDir.absolutePath}/${music_name}.mp3"
+
+                override fun onResponse(
+                    call: Call<ResponseBody>?,
+                    response: Response<ResponseBody>?
+                ) {
+                    Log.d(TAG, "onResponse: ")
+                    if (Cache.path != "") {
+                        openMusic()
+                    } else Cache.musicPath1 = path
+                    response?.let { writeResponseBody(it.body(), path) }
+                    openMusic()
+                }
+
+                override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
+                    Log.d(TAG, "onFailure: ")
+                }
+
+            })
 
     }
 
+
+    fun writeResponseBody(body: ResponseBody, path: String?): Boolean {
+        return try {
+            val file = File(path)
+            var inputStream: InputStream? = null
+            var outputStream: OutputStream? = null
+            try {
+                val fileReader = ByteArray(4096)
+                //long fileSize = body.contentLength();
+                //long fileSizeDownloaded = 0;
+
+                val fileSize = body.contentLength()
+                var fileSizeDownloaded: Long = 0
+
+                inputStream = body.byteStream()
+                outputStream = FileOutputStream(file)
+                while (true) {
+                    val read: Int = inputStream.read(fileReader)
+                    if (read == -1) {
+                        break
+                    }
+                    outputStream.write(fileReader, 0, read)
+                    //fileSizeDownloaded += read;
+                    fileSizeDownloaded += read.toLong()
+                    Log.d(TAG, "file download: $fileSizeDownloaded of $fileSize")
+
+
+                    /*
+                    set progress
+
+                    * */
+                }
+                outputStream.flush()
+                true
+            } catch (e: IOException) {
+                false
+            } finally {
+                if (inputStream != null) {
+                    inputStream.close()
+                }
+                if (outputStream != null) {
+                    outputStream.close()
+                }
+            }
+        } catch (e: IOException) {
+            false
+        }
+    }
 
 
     companion object {
