@@ -296,8 +296,8 @@ class ZilzilaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1sN8KFaLdaMma7zHoUyXIzcFKInDTlT4d&export=download",
+                "Zilzilada harakatlanish"
             )
         )
 
@@ -313,8 +313,8 @@ class ZilzilaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1nyvT56-rae2PVyAwc64aaL4Nb19_zqK7&export=download",
+                "Зилзилада харакатланиш"
             )
         )
 
@@ -330,8 +330,8 @@ class ZilzilaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1VVaIOX3pu9Z8trN9rNYRIT5QKqn0EbqU&export=download",
+                "памятка_действий_при_землятресении"
             )
         )
 

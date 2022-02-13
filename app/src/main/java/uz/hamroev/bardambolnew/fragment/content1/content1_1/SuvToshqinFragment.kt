@@ -296,8 +296,8 @@ class SuvToshqinFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1acIk_BqicLfc-Cw1g9377-nm8yNT11St&export=download",
+                "Toshqin"
             )
         )
 
@@ -313,8 +313,8 @@ class SuvToshqinFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1I7r0Yx3hpdWfbDGYnyXZjGtpj-NBBnIm&export=download",
+                "Тошкин"
             )
         )
 
@@ -330,8 +330,8 @@ class SuvToshqinFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=18B2sq7faN1SuGIPBaBj8t25oUHXqdYCs&export=download",
+                "Наводнение"
             )
         )
 

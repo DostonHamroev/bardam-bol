@@ -328,8 +328,8 @@ class TransportFalokatFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Vkxv5hnu1zJFgLl4SlWWlEzsG1ey3ImA&export=download",
+                "Transport falokatlarida xylq-atvor qoidalari"
             )
         )
 
@@ -359,8 +359,8 @@ class TransportFalokatFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1f7lv1OiUYPJoj2Nw1gC3gmxYeS02low0&export=download",
+                "транспорт фалокатларида хулк-атвор коидалари"
             )
         )
 
@@ -382,8 +382,8 @@ class TransportFalokatFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1DEFyKY8Eej11WMcdGUT3T3qa10OuCaQ7&export=download",
+                "правила_поведения_при_авто_и_авиакатастрофах_рус"
             )
         )
 

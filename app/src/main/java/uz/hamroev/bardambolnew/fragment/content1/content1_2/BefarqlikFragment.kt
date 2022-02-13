@@ -315,8 +315,8 @@ class BefarqlikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1FFJ97KC_zjSan7dHhGHd8JV5bRvGUX8P&export=download",
+                "Loqaydlik (1)"
             )
         )
 
@@ -331,8 +331,8 @@ class BefarqlikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1VAikPxt5hc14EVz1cGBvCjeWzF3WU05h&export=download",
+                "Локайдлик(1)"
             )
         )
 
@@ -347,8 +347,8 @@ class BefarqlikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1IjSGalFmqFEj3ovXC7wuXxZZ1jTXg_eB&export=download",
+                "Апатия (1)рус"
             )
         )
 

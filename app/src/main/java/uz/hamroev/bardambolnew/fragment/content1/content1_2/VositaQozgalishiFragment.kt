@@ -315,8 +315,8 @@ class VositaQozgalishiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1AkrLJeoM8RFpj6vDtHn-NN4rCKOixA_2&export=download",
+                "Harakatli quzgalishda birinchi yordam(1)"
             )
         )
 
@@ -331,8 +331,8 @@ class VositaQozgalishiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1DF2678jQz7KJL_Ft7rZw52jGwEILRW6e&export=download",
+                "харакали кузгалишда биринчи ёрдам 1"
             )
         )
 
@@ -347,8 +347,8 @@ class VositaQozgalishiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1c2clJdtMWJhRyS-F2WUI0dHpAAe9ypb5&export=download",
+                "двигательное возбуждение 1 рус"
             )
         )
 

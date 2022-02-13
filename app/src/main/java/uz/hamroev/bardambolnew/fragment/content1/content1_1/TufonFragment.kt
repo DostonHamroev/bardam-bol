@@ -317,8 +317,8 @@ class TufonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1xNQqm82EC5wobqr8BLCtTxJAJr5sOhQV&export=download",
+                "Tofonda xulk-atvor qoidalari"
             )
         )
 
@@ -334,8 +334,8 @@ class TufonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1otxgVdlrqe-i3kq9emhO-FePTEWtUbWR&export=download",
+                "туфонда хулк-атвор коидалари"
             )
         )
 
@@ -351,8 +351,8 @@ class TufonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1U-coKh_9obZLlueazw2H05sPr7Wg1etH&export=download",
+                "правила поведения при урагане"
             )
         )
 

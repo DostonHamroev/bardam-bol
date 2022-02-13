@@ -314,8 +314,8 @@ class SalomatlikniSaqlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=16mQEL0mYfUFqr8aoQGXg8r8Oxb87kTs-&export=download",
+                "Salomatlik asoslari"
             )
         )
 
@@ -331,8 +331,8 @@ class SalomatlikniSaqlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1beTJCkp-E2tR4FVRltODkglHqEnRKm7l&export=download",
+                "Саломатлик асослари"
             )
         )
 
@@ -349,8 +349,8 @@ class SalomatlikniSaqlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1mQunYmBrrlkVinHpjeaf2kLyD2pyvezK&export=download",
+                "Основы здорового образа жизни"
             )
         )
 

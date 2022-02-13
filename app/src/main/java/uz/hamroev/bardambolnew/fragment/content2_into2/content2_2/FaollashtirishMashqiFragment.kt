@@ -314,8 +314,8 @@ class FaollashtirishMashqiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1vVBPYqkHdk8l731L8Imfwy5qofcXIWgY&export=download",
+                "faollashtirish formulasi"
             )
         )
 
@@ -331,8 +331,8 @@ class FaollashtirishMashqiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Ly35uh5cPYyI_XD275sjX6sW-tIzX3BX&export=download",
+                "фаоллаштириш формуласи"
             )
         )
 
@@ -349,8 +349,8 @@ class FaollashtirishMashqiFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1bRNm8IDA_Z0m8Z-K2tzKm_vuW4Iowt8z&export=download",
+                "формула акивизации рус"
             )
         )
 

@@ -315,8 +315,8 @@ class SuvniTozalashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1AkNESPvvqCAn57LNwQ7JcaE_dnWWz7SN&export=download",
+                "Tabiiy sharoitda suvni tozalash"
             )
         )
 
@@ -332,8 +332,8 @@ class SuvniTozalashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1BsAKSUGkfYFeIMW_jDDZrlWUBQ-lgoE1&export=download",
+                "табиий шароитда сувни тозалаш"
             )
         )
 
@@ -350,8 +350,8 @@ class SuvniTozalashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1UOhoGogIOlBpVcLsVJbojywImda76pK8&export=download",
+                "Очистка воды в естественных условиях"
             )
         )
 

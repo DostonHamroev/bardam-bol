@@ -315,8 +315,8 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1dAXq0AqxQAEMSP58ObRMZHxUtc6lYxOT&export=download",
+                "первая помощь детям узб лотин"
             )
         )
 
@@ -331,8 +331,8 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1OyjP3QhWjSaQmkmsny-ODzZphODQTzSm&export=download",
+                "первая помощь детям узб кирил"
             )
         )
 
@@ -347,8 +347,8 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1EfkIFVZZBJTdiGbL7K3NUAxT5xYy4UJn&export=download",
+                "первая помощь детям"
             )
         )
 

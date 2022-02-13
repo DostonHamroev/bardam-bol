@@ -314,8 +314,8 @@ class JismoniyMashqlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1L0uZir9hBIynGVgR_o8cjrhNVpk98AmV&export=download",
+                "Jismoniy mashklar"
             )
         )
 
@@ -331,8 +331,8 @@ class JismoniyMashqlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1e76rpwETYqGaUk5eIUpemDLuz0c3lS8c&export=download",
+                "Жисмоний машклар"
             )
         )
 
@@ -349,8 +349,8 @@ class JismoniyMashqlarFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1ndZN7aueXZSUjohg39Q7RROYUTUep_PH&export=download",
+                "программа физических упражнений"
             )
         )
 

@@ -296,8 +296,8 @@ class YonginFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1slkxL_DTUeNpqC71v9hZm8dPEsDvXikG&export=download",
+                "Yong`inda xulq-atvor qoidalari"
             )
         )
 
@@ -315,8 +315,8 @@ class YonginFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1_ZcHyxUSmMNFZKWxvrDiyzV0123C01hY&export=download",
+                "ёнгинда хулк-атвор коидалари"
             )
         )
 
@@ -332,8 +332,8 @@ class YonginFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Re_YyzE9qo5AH46zTpdT3j9aEK1ImHuX&export=download",
+                "действие при пожаре рус"
             )
         )
 

@@ -313,8 +313,8 @@ class FalokatdaBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1cdE6qT9Qi4s2hyZTlXDjkIARrGdhcKuy&export=download",
+                "Distress holatida birinchi yordam"
             )
         )
 
@@ -330,8 +330,8 @@ class FalokatdaBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=15EB-yUYT3TeZtwyWP7nwNArgO5f_mML_&export=download",
+                "Дистресс холатида биринчи ёрдам"
             )
         )
 
@@ -348,8 +348,8 @@ class FalokatdaBirinchiYordamFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1HRFewYk_xeGyUpfkJ_TwjswvM_oXYhhl&export=download",
+                "Беседа с человеком в ситуации дистреса"
             )
         )
 

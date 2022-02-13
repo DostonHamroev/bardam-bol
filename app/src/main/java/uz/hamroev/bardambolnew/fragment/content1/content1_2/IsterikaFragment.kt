@@ -316,8 +316,8 @@ class IsterikaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1B7_mt1pS6EopA8yriXFQH2BRa-ovCBO9&export=download",
+                "isterikada birinchi yordam"
             )
         )
 
@@ -332,8 +332,8 @@ class IsterikaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=14HdhaZQacz0CiXurW1npDNq4EoI79_Et&export=download",
+                "истерикада биринчи ёрдам"
             )
         )
 
@@ -348,8 +348,8 @@ class IsterikaFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1-db_gazPIMNasQpCWVRxcrqtu96u5zi3&export=download",
+                "первая помощь при истерике"
             )
         )
 

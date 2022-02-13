@@ -314,8 +314,8 @@ class BolaniParvarishlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1lZeb_TQtVyStCVqZIWNRhOsUL2f3BIuG&export=download",
+                "Bolalarga birinchi yordam kursatish asoslari"
             )
         )
 
@@ -330,8 +330,8 @@ class BolaniParvarishlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Sxe2AkOEYItTNl1yLufHj1QHP2vTQKST&export=download",
+                "Болаларга биринчи ёрдам курсатиш асослари"
             )
         )
 
@@ -346,8 +346,8 @@ class BolaniParvarishlashFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=17AoppiG4qMpocsgpHaCcpoZgJOBED17d&export=download",
+                "Правила первой помощи детям"
             )
         )
 

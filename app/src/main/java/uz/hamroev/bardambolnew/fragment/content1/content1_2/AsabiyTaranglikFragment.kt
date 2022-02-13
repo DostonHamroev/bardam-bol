@@ -315,8 +315,8 @@ class AsabiyTaranglikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1VSSr-bxq5gbSo3YElYyjunVip_6TdfVn&export=download",
+                "Asabiy zyrikishni pasaytirish ysyllari"
             )
         )
 
@@ -331,8 +331,8 @@ class AsabiyTaranglikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1Sa0EYxzuKZ1CO8VGwciXX6jX0x4zPieY&export=download",
+                "асабий зурикишни пасайтириш усуллари"
             )
         )
 
@@ -346,8 +346,8 @@ class AsabiyTaranglikFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1sCniwW33LtXYF63fpcX8hirF2NqTxprv&export=download",
+                "Приёмы снижения нервного напряжения"
             )
         )
 

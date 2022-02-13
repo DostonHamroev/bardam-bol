@@ -295,8 +295,8 @@ class TajovuzFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=17dGhKYMj9DuH-WH6JQpw78StOSRpEDJG&export=download",
+                "agressiyada birinchi yordam(2)"
             )
         )
 
@@ -311,8 +311,8 @@ class TajovuzFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1DiaxlvR3e6ouHWqf1PZNrfXwfKVrHFKh&export=download",
+                "агрессияда биринчи ердам (1)"
             )
         )
 
@@ -327,8 +327,8 @@ class TajovuzFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1PgCxCSLZQrqP_uT41EnIGt6pXCquR9Fg&export=download",
+                "экстренная помощь при агрессии(1)"
             )
         )
 

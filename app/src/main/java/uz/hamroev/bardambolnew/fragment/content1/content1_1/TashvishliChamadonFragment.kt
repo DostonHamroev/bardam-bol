@@ -310,8 +310,8 @@ class TashvishliChamadonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1j4Rm2iCxld0WY4mWQQX7VVIiU-2aEyM5&export=download",
+                "tashvishli chemodan (2)"
             )
         )
 
@@ -323,8 +323,8 @@ class TashvishliChamadonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1yLM9CrOaygFTY5qV-DxaQ4uiq7u1hrQu&export=download",
+                "ташвишли чемодан"
             )
         )
 
@@ -336,8 +336,8 @@ class TashvishliChamadonFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1CXv8jQa0oj1yT3r_R7PZYT7_ZmYzsC4-&export=download",
+                "Тревожный чемоданчик рус"
             )
         )
 

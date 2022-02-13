@@ -315,8 +315,8 @@ class QorquvFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1sZUoUVsAirCkc6NEoWATg7qM7-qo4fg0&export=download",
+                "qurquv holatida birinchi yordam(2)"
             )
         )
 
@@ -331,8 +331,8 @@ class QorquvFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1ejsi4HdUwv8JZhKlfb6rbKklClH618Xo&export=download",
+                "куркув холатида биринчи ёрдам-2"
             )
         )
 
@@ -347,8 +347,8 @@ class QorquvFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1R_6xRxAqXfFt3RbcKxsMZxnSOKLYQ0zN&export=download",
+                "первая помощь при страхе"
             )
         )
 

@@ -314,8 +314,8 @@ class YiglamoqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1cgQy0s17FOe_aWu7uxKr6KTR9_SGrQl6&export=download",
+                "Yigida birinchi yordam"
             )
         )
 
@@ -331,8 +331,8 @@ class YiglamoqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1VuhlBcwboO07tUkt7QLhSMs6mJ-xisXZ&export=download",
+                "йигида биринчи ёрдам"
             )
         )
 
@@ -349,8 +349,8 @@ class YiglamoqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1fcBMYVKU0K6sLiGqm4Urn_V5t5yBryQ_&export=download",
+                "ПЛАЧ. Экстренная помочь"
             )
         )
 

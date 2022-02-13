@@ -314,8 +314,8 @@ class AsabiyTitroqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1DE8YFTqpfUIW_qqFhRK67YH0r4tjHh1I&export=download",
+                "asabiy titrogi"
             )
         )
 
@@ -329,8 +329,8 @@ class AsabiyTitroqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1H66kNUt7TRAspIaoGdGAWEGIDyh14Dd1&export=download",
+                "асабий титрогда биринчи ёрдам"
             )
         )
 
@@ -345,8 +345,8 @@ class AsabiyTitroqFragment : Fragment() {
         list.clear()
         list.add(
             PdfDownload(
-                "u/0/uc?id=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&export=download",
-                "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+                "u/0/uc?id=1IYFcRTG95UF9NVTX4YrhkUqm1mo2as68&export=download",
+                "нервная дрожь"
             )
         )
 
