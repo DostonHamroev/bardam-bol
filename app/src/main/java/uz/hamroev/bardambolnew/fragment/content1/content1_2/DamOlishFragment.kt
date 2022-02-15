@@ -1,22 +1,26 @@
 package uz.hamroev.bardambolnew.fragment.content1.content1_2
 
-import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SeekBar
 import androidx.fragment.app.Fragment
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.cache.Cache
 import uz.hamroev.bardambolnew.databinding.FragmentDamOlishBinding
 import uz.hamroev.bardambolnew.music.ApiClientMusic
 import java.io.*
+import kotlin.math.log
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,78 +49,79 @@ class DamOlishFragment : Fragment() {
     lateinit var binding: FragmentDamOlishBinding
     private val TAG = "DamOlishFragment"
 
+    var mediaPlayer: MediaPlayer? = null
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentDamOlishBinding.inflate(layoutInflater, container, false)
 
-        checkCache()
+        checkMusic()
 
         binding.downloadBtn.setOnClickListener {
-            checkMusic()
+            loadMusic()
         }
 
         binding.musicBtn.setOnClickListener {
-            checkMusic()
+            openMusic()
         }
+
+
 
 
         return binding.root
     }
 
-    private fun checkCache() {
-        if (Cache.musicPath1 == "") {
-            Log.d(TAG, "checkCache: Load qil")
-            binding.musicBtn.visibility = View.GONE
-            binding.loadingProgress.visibility = View.GONE
-            binding.downloadBtn.visibility = View.VISIBLE
-        } else {
-            Log.d(TAG, "checkCache: Open qil")
-            binding.musicBtn.visibility = View.VISIBLE
-            binding.downloadBtn.visibility = View.GONE
-            binding.loadingProgress.visibility = View.GONE
+
+
+    private fun releaseMP(){
+        if (mediaPlayer != null){
+            try {
+                mediaPlayer?.release()
+                mediaPlayer= null
+            }catch (e: Exception){
+                e.printStackTrace()
+            }
         }
     }
 
+
+
+
     private fun checkMusic() {
-        if (Cache.musicPath1 == "") loadMusic() else openMusic()
+        if (Cache.musicPath1 == "") loadMusic1() else openMusic()
+    }
+
+    private fun loadMusic1() {
     }
 
     private fun openMusic() {
+        Log.d(TAG, "openMusic: Cardni och")
+        binding.cardMain.visibility = View.VISIBLE
         binding.musicBtn.visibility = View.VISIBLE
         binding.loadingProgress.visibility = View.GONE
         binding.downloadBtn.visibility = View.GONE
 
-
-//        val intent = Intent(Intent.ACTION_GET_CONTENT)
-//        val file = File(Cache.musicPath1)
-//        val fromFile = Uri.fromFile(file)
-//        intent.data = fromFile
-//        intent.setDataAndType(fromFile, "audio/*")
-//        startActivity(intent)
-
-//        val file = File(Cache.musicPath1)
-//        val uri = Uri.fromFile(file)
-//        val intent = Intent(Intent.ACTION_VIEW, uri)
-//        intent.setDataAndType(uri, "audio/*")
-//        startActivity(intent)
-
-//        val it = Intent(Intent.ACTION_VIEW)
-//        val uri = Uri.parse("${Cache.musicPath1}")
-//        it.setDataAndType(uri, "audio/mp3")
-//        startActivity(it)
-
-        val mediaPlayer = MediaPlayer()
-        mediaPlayer.setDataSource(Cache.musicPath1)
-        mediaPlayer.prepare()
-        mediaPlayer.start()
-
+        mediaPlayer = MediaPlayer.create(requireContext(), Uri.parse(Cache.musicPath1))
+        binding.playBtn.setOnClickListener {
+            if (mediaPlayer?.isPlaying!!){
+                mediaPlayer?.pause()
+                binding.playBtn.setImageResource(R.drawable.ic_play)
+            } else {
+                mediaPlayer?.start()
+                binding.playBtn.setImageResource(R.drawable.ic_pause)
+            }
+        }
 
     }
 
-    private fun loadMusic() {
 
+
+
+    private fun loadMusic() {
+        Cache.musicPath1 = ""
         when (Cache.til) {
             "uz" -> {
                 downloadMusicUZ()
@@ -132,14 +137,74 @@ class DamOlishFragment : Fragment() {
 
     private fun downloadMusicRU() {
 
+        binding.loadingProgress.visibility = View.VISIBLE
+        val service = ApiClientMusic().service
+        val uz_url_music = "u/0/uc?id=1PItSfdX0aVCZ56PfsM8XcWBEENy7apoz&export=download"
+        val music_name = "Relaksiya"
+        binding.musicName.text = music_name.toString().trim()
+
+        service.getMusic(uz_url_music)
+            .enqueue(object : Callback<ResponseBody> {
+                val context = binding.root.context
+                val path = "${context.filesDir.absolutePath}/${music_name}.mp3"
+
+                override fun onResponse(
+                    call: Call<ResponseBody>?,
+                    response: Response<ResponseBody>?
+                ) {
+                    
+                    Log.d(TAG, "onResponse: ")
+                    if (Cache.path != "") {
+                        openMusic()
+                    } else Cache.musicPath1 = path
+                    response?.let { writeResponseBody(it.body(), path) }
+                    openMusic()
+                }
+
+                override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
+                    Log.d(TAG, "onFailure: ")
+                }
+
+            })
+
+
     }
 
     private fun downloadMusicKRILL() {
 
+        binding.loadingProgress.visibility = View.VISIBLE
+        val service = ApiClientMusic().service
+        val uz_url_music = "u/0/uc?id=1PItSfdX0aVCZ56PfsM8XcWBEENy7apoz&export=download"
+        val music_name = "Relaksiya"
+        binding.musicName.text = music_name.toString().trim()
+
+        service.getMusic(uz_url_music)
+            .enqueue(object : Callback<ResponseBody> {
+                val context = binding.root.context
+                val path = "${context.filesDir.absolutePath}/${music_name}.mp3"
+
+                override fun onResponse(
+                    call: Call<ResponseBody>?,
+                    response: Response<ResponseBody>?
+                ) {
+                    Log.d(TAG, "onResponse: ")
+                    if (Cache.path != "") {
+                        openMusic()
+                    } else Cache.musicPath1 = path
+                    response?.let { writeResponseBody(it.body(), path) }
+                    openMusic()
+                }
+
+                override fun onFailure(call: Call<ResponseBody>?, t: Throwable?) {
+                    Log.d(TAG, "onFailure: ")
+                }
+
+            })
+
+
     }
 
     private fun downloadMusicUZ() {
-        binding.downloadBtn.visibility = View.GONE
         binding.loadingProgress.visibility = View.VISIBLE
         val service = ApiClientMusic().service
         val uz_url_music = "u/0/uc?id=1PItSfdX0aVCZ56PfsM8XcWBEENy7apoz&export=download"
@@ -170,7 +235,6 @@ class DamOlishFragment : Fragment() {
             })
 
     }
-
 
     fun writeResponseBody(body: ResponseBody, path: String?): Boolean {
         return try {
@@ -239,5 +303,15 @@ class DamOlishFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        releaseMP()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        releaseMP()
     }
 }
