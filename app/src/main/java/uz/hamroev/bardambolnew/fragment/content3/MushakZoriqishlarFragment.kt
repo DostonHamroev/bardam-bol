@@ -313,7 +313,7 @@ class MushakZoriqishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=19fG9mzomnp3jSJ-2-KnAdFp3UVc5W45P&export=download",
-                "mushaklarda zyriqishni yumshatuvchi mashqlar"
+                "Mushaklarda zo'riqishni yumshatuvchi mashqlar"
             )
         )
 
@@ -330,7 +330,7 @@ class MushakZoriqishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=11G7RmDKup-qf3ZWfqrQm3tv_Iyt2ozsY&export=download",
-                "Мушаклардаги зурикишни юмшатувчи машклар"
+                "Мушакларда зўриқишни юмшатувчи машқлар"
             )
         )
 
@@ -348,7 +348,7 @@ class MushakZoriqishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1OScku_utu1wLamui0pAwEVCJdwNNzVV_&export=download",
-                "снятие мышечных зажимов у детей"
+                "Снятие мышечных зажимов у детей"
             )
         )
 

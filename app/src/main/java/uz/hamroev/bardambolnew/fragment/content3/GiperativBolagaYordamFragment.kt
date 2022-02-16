@@ -316,7 +316,7 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1uc2uvZC_WzvoPQm9uFPYkIZTb07iqSJ-&export=download",
-                "giperaktiv bolalar bilan ishlash"
+                "Giperaktiv bolalar bilan ishlash"
             )
         )
 
@@ -333,7 +333,7 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1B4uycaQznA7iLIsVzqLya4gtX9zcqj2I&export=download",
-                "гиперактив болаларга ёрдам"
+                "Гиперактив болаларга ёрдам"
             )
         )
 
@@ -351,7 +351,7 @@ class GiperativBolagaYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1nhA6GAEdqyiGgmTD58X6wvX7xxp8QOXk&export=download",
-                "гиперактивность рус"
+                "Гиперактивность"
             )
         )
 

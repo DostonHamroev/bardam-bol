@@ -173,7 +173,7 @@ class Content3Fragment : Fragment() {
         list.add(Content("Агрессия", R.drawable.ic_agressiya, R.drawable.back_image_content3))
         list.add(
             Content(
-                "Болаларни фаоллаштириш машклари",
+                "Болаларни фаоллаштириш машқлари",
                 R.drawable.ic_bolalarni_faollashtirish_mashqlari,
                 R.drawable.back_image_content3
             )
@@ -187,7 +187,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "ВИДЕОТЕКА болаларга биринчи психологик ёрдам курсатиш",
+                "Видеотека болаларга биринчи психологик ёрдам курсатиш",
                 R.drawable.ic_birinchi_psixologik_yordam,
                 R.drawable.back_image_content3
             )
@@ -201,7 +201,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Гиперактив Болаларга Ёрдам",
+                "Гиперактив болаларга ёрдам",
                 R.drawable.ic_giperaktiv_bola,
                 R.drawable.back_image_content3
             )
@@ -215,14 +215,14 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Қўрқув Холатида биринчи ёрдам",
+                "Қўрқув холатида биринчи ёрдам",
                 R.drawable.ic_qorquv_halatdagi_bola,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Мушакдаги Зўриқишни бартараф этиш",
+                "Мушакдаги зўриқишни бартараф этиш",
                 R.drawable.ic_mushak,
                 R.drawable.back_image_content3
             )
@@ -246,7 +246,7 @@ class Content3Fragment : Fragment() {
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("агрессия", R.drawable.ic_agressiya, R.drawable.back_image_content3))
+        list.add(Content("Агрессия", R.drawable.ic_agressiya, R.drawable.back_image_content3))
         list.add(
             Content(
                 "Активизирующие упражнения для детей.",
@@ -263,7 +263,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "ВИДЕОТЕКА Первая помощь детям",
+                "Видеотека Первая помощь детям",
                 R.drawable.ic_birinchi_psixologik_yordam,
                 R.drawable.back_image_content3
             )
@@ -298,14 +298,14 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Снять мышечное напряжение",
+                "Снятие мышечного напряжения",
                 R.drawable.ic_mushak,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "устранение стрессовых состояний у подростков",
+                "Устранение стрессовых состояний у подростков",
                 R.drawable.ic_stress,
                 R.drawable.back_image_content3
             )

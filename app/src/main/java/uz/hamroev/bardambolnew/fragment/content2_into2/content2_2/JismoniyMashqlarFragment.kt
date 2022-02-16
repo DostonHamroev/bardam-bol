@@ -350,7 +350,7 @@ class JismoniyMashqlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1ndZN7aueXZSUjohg39Q7RROYUTUep_PH&export=download",
-                "программа физических упражнений"
+                "Программа физических упражнений"
             )
         )
 

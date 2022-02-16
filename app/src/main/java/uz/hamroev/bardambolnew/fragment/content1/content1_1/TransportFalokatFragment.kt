@@ -308,30 +308,13 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("5 full hd 1 qism transport falokatlari uz", "WtAlnC2aIDM", ""))
-        listVideo.add(
-            Video(
-                "Xavo transportidagi halokatida xylk atvor qoidalari",
-                "ni9MdKq2fgM",
-                ""
-            )
-        )
-        listVideo.add(
-            Video(
-                "Xavo transportidagi halokatida xylk atvor qoidalari",
-                "ZBwe4rStc-o",
-                ""
-            )
-        )
-        listVideo.add(Video("хаво транспорт халокатида хулк атвор коидалари", "L0jUKYoBaMk", ""))
+        listVideo.add(Video("Transport falokatlari", "WtAlnC2aIDM", ""))
+        listVideo.add(Video("Havo transportidagi halokatida xulq atvor qoidalari FULL", "ni9MdKq2fgM", ""))
+        listVideo.add(Video("Havo transportidagi halokatida xulq atvor qoidalari HD", "ZBwe4rStc-o", ""))
+        listVideo.add(Video("Havo transport xalokatida xulq atvor koidalari", "L0jUKYoBaMk", ""))
         list = ArrayList()
         list.clear()
-        list.add(
-            PdfDownload(
-                "u/0/uc?id=1Vkxv5hnu1zJFgLl4SlWWlEzsG1ey3ImA&export=download",
-                "Transport falokatlarida xylq-atvor qoidalari"
-            )
-        )
+        list.add(PdfDownload("u/0/uc?id=1Vkxv5hnu1zJFgLl4SlWWlEzsG1ey3ImA&export=download", "Transport falokatlarida xulq-atvor qoidalari"))
 
     }
 
@@ -339,28 +322,28 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("5 full hd 1 qism transport falokatlari uz", "WtAlnC2aIDM", ""))
+        listVideo.add(Video("Транспорт фалокатлари", "WtAlnC2aIDM", ""))
         listVideo.add(
             Video(
-                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "Ҳаво транспортидаги ҳалокатида хулқ атвор қоидалари FULL",
                 "ni9MdKq2fgM",
                 ""
             )
         )
         listVideo.add(
             Video(
-                "Xavo transportidagi halokatida xylk atvor qoidalari",
+                "Ҳаво транспортидаги ҳалокатида хулқ атвор қоидалари HD",
                 "ZBwe4rStc-o",
                 ""
             )
         )
-        listVideo.add(Video("хаво транспорт халокатида хулк атвор коидалари", "L0jUKYoBaMk", ""))
+        listVideo.add(Video("Ҳаво транспортидаги ҳалокатида хулқ атвор қоидалари", "L0jUKYoBaMk", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1f7lv1OiUYPJoj2Nw1gC3gmxYeS02low0&export=download",
-                "транспорт фалокатларида хулк-атвор коидалари"
+                "Ҳаво транспортидаги ҳалокатида хулқ атвор қоидалари"
             )
         )
 
@@ -370,10 +353,10 @@ class TransportFalokatFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("правила поведения при транспортных авариях", "FxytA43A12o", ""))
+        listVideo.add(Video("Правила поведения при транспортных авариях", "FxytA43A12o", ""))
         listVideo.add(
             Video(
-                "правила поведения при авариях на воздушном транспорте",
+                "Правила поведения при авариях на воздушном транспорте",
                 "c3_mKuzM0Ek",
                 ""
             )
@@ -383,7 +366,7 @@ class TransportFalokatFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1DEFyKY8Eej11WMcdGUT3T3qa10OuCaQ7&export=download",
-                "правила_поведения_при_авто_и_авиакатастрофах_рус"
+                "Правила поведения при авто и авиакатастрофах "
             )
         )
 

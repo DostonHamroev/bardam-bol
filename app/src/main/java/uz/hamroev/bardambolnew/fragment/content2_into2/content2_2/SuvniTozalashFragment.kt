@@ -333,7 +333,7 @@ class SuvniTozalashFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1BsAKSUGkfYFeIMW_jDDZrlWUBQ-lgoE1&export=download",
-                "табиий шароитда сувни тозалаш"
+                "Табиий шароитда сувни тозалаш"
             )
         )
 

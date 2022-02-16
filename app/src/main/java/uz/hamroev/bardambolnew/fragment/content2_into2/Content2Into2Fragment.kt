@@ -94,10 +94,10 @@ class Content2Into2Fragment : Fragment() {
         list = ArrayList()
         list.clear()
         list.add(Content("Jismoniy mashqlar", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Relaksatsiya mashki", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Relaksatsiya mashqi", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Salomatlikni saklash asoslari",
+                "Salomatlikni saqlash asoslari",
                 R.drawable.ic_2_1,
                 R.drawable.back_image_content1
             )
@@ -123,11 +123,11 @@ class Content2Into2Fragment : Fragment() {
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Жисмоний машклар", R.drawable.ic_2_1, R.drawable.back_image_content1))
-        list.add(Content("Релаксация машки", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Жисмоний машқлар", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Релаксация машқи", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Саломатликни саклаш асослари",
+                "Саломатликни сақлаш асослари",
                 R.drawable.ic_2_1,
                 R.drawable.back_image_content1
             )

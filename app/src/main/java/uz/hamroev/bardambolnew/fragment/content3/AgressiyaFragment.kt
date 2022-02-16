@@ -316,7 +316,7 @@ class AgressiyaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1-pzQPMMU5QR9PzIICBWs-mQ64CFygWzq&export=download",
-                "Tajavyzkorlikni korrekciyasi"
+                "Tajavyzkorlikni korreksiyasi"
             )
         )
 
@@ -333,7 +333,7 @@ class AgressiyaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1Mqg3B8AhtRl7WBwnHdDQHymi_Zb50Snu&export=download",
-                "тажаввузкорликни хусусиятлари"
+                "Тажаввузкорликни хусусиятлари"
             )
         )
 
@@ -351,7 +351,7 @@ class AgressiyaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1FRfRgbwyLwyLZ6urKpWSBSohMV0xYGlz&export=download",
-                "коррекция агрессивности"
+                "Коррекция агрессивности"
             )
         )
 

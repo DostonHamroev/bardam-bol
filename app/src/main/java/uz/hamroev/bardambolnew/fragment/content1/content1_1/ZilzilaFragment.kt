@@ -290,8 +290,8 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Zil zila Uzb Full", "bVBEAKMEKD4", ""))
-        listVideo.add(Video("Zil zila Uzb Lite", "QWCvpSLSXSo", ""))
+        listVideo.add(Video("Zilzila Full", "bVBEAKMEKD4", ""))
+        listVideo.add(Video("Zilzila Lite", "QWCvpSLSXSo", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,8 +307,8 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Zil zila Uzb Full", "bVBEAKMEKD4", ""))
-        listVideo.add(Video("Zil zila Uzb Lite", "QWCvpSLSXSo", ""))
+        listVideo.add(Video("Зилзила Full", "bVBEAKMEKD4", ""))
+        listVideo.add(Video("Зилзила Lite", "QWCvpSLSXSo", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,14 +324,14 @@ class ZilzilaFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("действия при землятресенииRus Lite", "6Q-5kzVauNA", ""))
-        listVideo.add(Video("действия при землятресенииRus Full", "3WxuPLFfF78", ""))
+        listVideo.add(Video("Действия при землятресении Lite", "6Q-5kzVauNA", ""))
+        listVideo.add(Video("Действия при землятресении Full", "3WxuPLFfF78", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1VVaIOX3pu9Z8trN9rNYRIT5QKqn0EbqU&export=download",
-                "памятка_действий_при_землятресении"
+                "Памятка действий при землятресении"
             )
         )
 

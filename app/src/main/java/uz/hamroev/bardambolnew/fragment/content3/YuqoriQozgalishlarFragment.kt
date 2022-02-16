@@ -314,7 +314,7 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1SL8SnCxTvLbGCaVEKwHrSfUKOlPru_BK&export=download",
-                "qo'zg'aluvchanlik korrekciyasi"
+                "Qo'zg'aluvchanlik korreksiyasi"
             )
         )
 
@@ -331,7 +331,7 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1rY7hNCncsqDw1T-5ctPYGMeTjPrLXGBM&export=download",
-                "кузгалувчанлик коррекцияси"
+                "Қўзғалувчанлик коррекцияси"
             )
         )
 
@@ -349,7 +349,7 @@ class YuqoriQozgalishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=18lqgJv6AXJboOgsn0h4qPp7k536Q4qle&export=download",
-                "коррекция возбудимости"
+                "Коррекция возбудимости"
             )
         )
 

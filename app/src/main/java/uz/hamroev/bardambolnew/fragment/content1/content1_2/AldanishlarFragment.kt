@@ -316,7 +316,7 @@ class AldanishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1kVVSbfDFURphu0SKU0LaGrFJMoPtxj9y&export=download",
-                "alahlash va gallyusinatsiyalarda birinchi yordam"
+                "Alahlash va gallyusinatsiyalarda birinchi yordam"
             )
         )
 
@@ -351,7 +351,7 @@ class AldanishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=13L3myM9jXekgK883I3I_Un8_QQ8WX4Oa&export=download",
-                "первая помощь при галлюцинации"
+                "Первая помощь при галлюцинации"
             )
         )
 

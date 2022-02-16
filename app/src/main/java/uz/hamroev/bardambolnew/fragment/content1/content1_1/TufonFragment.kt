@@ -311,14 +311,14 @@ class TufonFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("туфон", "OMMHBVf3sOU", ""))
-        listVideo.add(Video("туфонда хулк-атвор коидалари", "VFo1WVxIyck", ""))
+        listVideo.add(Video("To'fon", "OMMHBVf3sOU", ""))
+        listVideo.add(Video("To'fonda xulq-atvor qoidalari", "VFo1WVxIyck", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1xNQqm82EC5wobqr8BLCtTxJAJr5sOhQV&export=download",
-                "Tofonda xulk-atvor qoidalari"
+                "To'fonda xulq-atvor qoidalari"
             )
         )
 
@@ -328,14 +328,14 @@ class TufonFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("туфон", "OMMHBVf3sOU", ""))
-        listVideo.add(Video("туфонда хулк-атвор коидалари", "VFo1WVxIyck", ""))
+        listVideo.add(Video("Тўфон", "OMMHBVf3sOU", ""))
+        listVideo.add(Video("Тўфонда хулқ-атвор қоидалари", "VFo1WVxIyck", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1otxgVdlrqe-i3kq9emhO-FePTEWtUbWR&export=download",
-                "туфонда хулк-атвор коидалари"
+                "Тўфонда хулқ-атвор қоидалари"
             )
         )
 
@@ -346,13 +346,13 @@ class TufonFragment : Fragment() {
         listVideo = ArrayList()
         listVideo.clear()
         listVideo.add(Video("Буря", "2LFirDfDAHU", ""))
-        listVideo.add(Video("правила поведения во время бури", "4JODIHWTkLA", ""))
+        listVideo.add(Video("Правила поведения во время бури", "4JODIHWTkLA", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1U-coKh_9obZLlueazw2H05sPr7Wg1etH&export=download",
-                "правила поведения при урагане"
+                "Правила поведения во время бури"
             )
         )
 

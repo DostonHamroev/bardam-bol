@@ -78,31 +78,31 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadUzData() {
-        binding.typeWriter.animateText("Ekstremal vaziyatlarda o'zini boshqarish !")
+        binding.typeWriter.animateText("Ekstremal vaziyatlarda o'zini boshqarish!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
         list.add(MainMenu("Ekstremal vaziyatlarni boshqarish", R.drawable.ic_doctor2))
         list.add(MainMenu("O'ziga-o'zi birinchi yordam ko'rsatish", R.drawable.ic_doctor1))
-        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga Yordam ko'rsatish", R.drawable.ic_children_father))
+        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga yordam ko'rsatish", R.drawable.ic_children_father))
         list.add(MainMenu("Guvohnoma", R.drawable.ic_certificat_girl))
-        list.add(MainMenu("Ilova Haqida", R.drawable.ic_app_about))
+        list.add(MainMenu("Ilova haqida", R.drawable.ic_app_about))
     }
 
     private fun loadKrillData() {
-        binding.typeWriter.animateText("Экстремал вазиятларда узини бошкариш !")
+        binding.typeWriter.animateText("Экстремал вазиятларда ўзини бошкариш!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
         list.add(MainMenu("Экстремал вазиятларни бошқариш", R.drawable.ic_doctor2))
         list.add(MainMenu("Ўзига-ўзи биринчи ёрдам кўрсатиш", R.drawable.ic_doctor1))
-        list.add(MainMenu("Болага ғамхўрлик. Болага Ёрдам кўрсатиш", R.drawable.ic_children_father))
+        list.add(MainMenu("Болага ғамхўрлик. Болага ёрдам кўрсатиш", R.drawable.ic_children_father))
         list.add(MainMenu("Гувоҳнома", R.drawable.ic_certificat_girl))
         list.add(MainMenu("Илова ҳақида", R.drawable.ic_app_about))
     }
 
     private fun loadRuData() {
-        binding.typeWriter.animateText("Что делать во время экстремальных ситуаций !")
+        binding.typeWriter.animateText("Что делать во время экстремальных ситуаций!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()

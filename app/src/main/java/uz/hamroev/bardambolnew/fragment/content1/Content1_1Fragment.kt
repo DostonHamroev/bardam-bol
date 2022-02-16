@@ -101,7 +101,7 @@ class Content1_1Fragment : Fragment() {
         list.add(Content("Yong'in", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Baxtsiz hodisalar va aviahalokatlar paytida o'zini tutish qoidalari",
+                "Baxtsiz hodisalar va aviahalokat paytida o'zini tutish qoidalari",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
@@ -125,7 +125,7 @@ class Content1_1Fragment : Fragment() {
         list.add(Content("Ёнғин", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "бахциз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари",
+                "Бахтсиз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
@@ -144,12 +144,12 @@ class Content1_1Fragment : Fragment() {
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("землятресение", R.drawable.ic_zilzila, R.drawable.back_image_content1))
-        list.add(Content("наводнение", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
-        list.add(Content("пожар", R.drawable.ic_yongin, R.drawable.back_image_content1))
+        list.add(Content("Землятресение", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Наводнение", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Пожар", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "правила поведения при аварии и авиакатастрофах",
+                "Правила поведения при аварии и авиакатастрофах",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
@@ -161,7 +161,7 @@ class Content1_1Fragment : Fragment() {
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("туфон", R.drawable.ic_tofon, R.drawable.back_image_content1))
+        list.add(Content("Уроган", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 

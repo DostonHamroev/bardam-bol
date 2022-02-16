@@ -310,13 +310,13 @@ class AsabiyTaranglikFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Психик зурикишни пасайтириш", "CLvt2rVWdyg", ""))
+        listVideo.add(Video("Psixik zo'riqishni pasaytirish", "CLvt2rVWdyg", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1VSSr-bxq5gbSo3YElYyjunVip_6TdfVn&export=download",
-                "Asabiy zyrikishni pasaytirish ysyllari"
+                "Asabiy zo'riqishni pasaytirish usullari"
             )
         )
 
@@ -326,13 +326,13 @@ class AsabiyTaranglikFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Психик зурикишни пасайтириш", "CLvt2rVWdyg", ""))
+        listVideo.add(Video("Психик зўриқишни пасайтириш", "CLvt2rVWdyg", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1Sa0EYxzuKZ1CO8VGwciXX6jX0x4zPieY&export=download",
-                "асабий зурикишни пасайтириш усуллари"
+                "Асабий зўриқишни пасайтириш усуллари"
             )
         )
 
@@ -342,7 +342,7 @@ class AsabiyTaranglikFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Приёмы снижения нервно психич напряжения", "2KSfznuJN1c", ""))
+        listVideo.add(Video("Приёмы снижения нервно-психического напряжения", "2KSfznuJN1c", ""))
         list.clear()
         list.add(
             PdfDownload(

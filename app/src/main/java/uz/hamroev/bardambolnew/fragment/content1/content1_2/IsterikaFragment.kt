@@ -311,13 +311,13 @@ class IsterikaFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Isterika uzb", "3c3DekoOHI8", ""))
+        listVideo.add(Video("Isterika", "3c3DekoOHI8", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1B7_mt1pS6EopA8yriXFQH2BRa-ovCBO9&export=download",
-                "isterikada birinchi yordam"
+                "Isterikada birinchi yordam"
             )
         )
 
@@ -327,13 +327,13 @@ class IsterikaFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("истерика узб", "G0TqtMcQ9LI", ""))
+        listVideo.add(Video("Истерика", "G0TqtMcQ9LI", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=14HdhaZQacz0CiXurW1npDNq4EoI79_Et&export=download",
-                "истерикада биринчи ёрдам"
+                "Истерикада биринчи ёрдам"
             )
         )
 
@@ -343,13 +343,13 @@ class IsterikaFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("ИСТЕРИКА RUS", "eilqIW_0wew", ""))
+        listVideo.add(Video("Истерика ", "eilqIW_0wew", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1-db_gazPIMNasQpCWVRxcrqtu96u5zi3&export=download",
-                "первая помощь при истерике"
+                "Первая помощь при истерике"
             )
         )
 

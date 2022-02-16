@@ -309,7 +309,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("болаларга биринчи ёрдам", "kc4YmcUosfw", ""))
+        listVideo.add(Video("Bolalarga birinchi yordam", "kc4YmcUosfw", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -325,7 +325,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("болаларга биринчи ёрдам", "kc4YmcUosfw", ""))
+        listVideo.add(Video("Болаларга биринчи ёрдам", "kc4YmcUosfw", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -341,7 +341,7 @@ class BolaniParvarishlashFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("первая помощь детям", "-vN58jY8CrQ", ""))
+        listVideo.add(Video("Первая помощь детям", "-vN58jY8CrQ", ""))
         list = ArrayList()
         list.clear()
         list.add(

@@ -310,13 +310,13 @@ class QorquvFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("куркув холатида экстремал ердам", "M4U2oSqXVTY", ""))
         list = ArrayList()
+        listVideo.add(Video("Qo'rquv holatida ekstremal yordam", "M4U2oSqXVTY", ""))
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1sZUoUVsAirCkc6NEoWATg7qM7-qo4fg0&export=download",
-                "qurquv holatida birinchi yordam(2)"
+                "Qo'rquv holatida birinchi yordam"
             )
         )
 
@@ -326,13 +326,13 @@ class QorquvFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("куркув холатида экстремал ердам", "M4U2oSqXVTY", ""))
+        listVideo.add(Video("Қўрқув ҳолатида экстремал ёрдам", "M4U2oSqXVTY", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1ejsi4HdUwv8JZhKlfb6rbKklClH618Xo&export=download",
-                "куркув холатида биринчи ёрдам-2"
+                "Қўрқув холатида биринчи ёрдам"
             )
         )
 
@@ -342,13 +342,13 @@ class QorquvFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("первая помощь с состоянии страха", "JkDbSuB5q1o", ""))
+        listVideo.add(Video("Первая помощь с состоянии страха", "JkDbSuB5q1o", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1R_6xRxAqXfFt3RbcKxsMZxnSOKLYQ0zN&export=download",
-                "первая помощь при страхе"
+                "Первая помощь при страхе"
             )
         )
 

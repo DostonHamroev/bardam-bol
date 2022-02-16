@@ -314,7 +314,7 @@ class BirinchiTibbiyYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1Ou9co5Tg2QZsWMXKggO6MuWp1eer0Pb_&export=download",
-                "Birinhi tibbiy yordam UZB"
+                "Birinchi tibbiy yordam"
             )
         )
 
@@ -331,7 +331,7 @@ class BirinchiTibbiyYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=14rmHBkOO6Rku9tOQKKcO09fvvreBIhzt&export=download",
-                "Биринчи тиббий ёрдам Krill"
+                "Биринчи тиббий ёрдам"
             )
         )
 
@@ -349,7 +349,7 @@ class BirinchiTibbiyYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1wYYsZXNy-n5_jd3qOxS2I53ynFzcNnLJ&export=download",
-                "первая медицинская помощь RUS"
+                "Первая медицинская помощь"
             )
         )
 

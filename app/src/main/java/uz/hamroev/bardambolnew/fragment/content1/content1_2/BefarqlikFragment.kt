@@ -310,13 +310,13 @@ class BefarqlikFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Локайдлик", "ckkFY-sgTfQ", ""))
+        listVideo.add(Video("Loqaydlik", "ckkFY-sgTfQ", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1FFJ97KC_zjSan7dHhGHd8JV5bRvGUX8P&export=download",
-                "Loqaydlik (1)"
+                "Loqaydlik"
             )
         )
 
@@ -326,13 +326,13 @@ class BefarqlikFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Локайдлик", "ckkFY-sgTfQ", ""))
+        listVideo.add(Video("Лоқайдлик", "ckkFY-sgTfQ", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1VAikPxt5hc14EVz1cGBvCjeWzF3WU05h&export=download",
-                "Локайдлик(1)"
+                "Лоқайдлик"
             )
         )
 
@@ -342,13 +342,13 @@ class BefarqlikFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("апатия рус", "LrIFs4YtCQU", ""))
+        listVideo.add(Video("Апатия", "LrIFs4YtCQU", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1IjSGalFmqFEj3ovXC7wuXxZZ1jTXg_eB&export=download",
-                "Апатия (1)рус"
+                "Апатия"
             )
         )
 

@@ -291,7 +291,7 @@ class YonginFragment : Fragment() {
         listVideo.add(Video("Yong'inda harakatlanish", "-0OzPa0KzUE", ""))
         listVideo.add(Video("Uyda yong'in", "yPVKq5089Oc", ""))
         listVideo.add(Video("Yong'in", "4EK9G0tJWic", ""))
-        listVideo.add(Video("Yonginda xarakatlanish qoidalari", "HINQZimGxAI", ""))
+        listVideo.add(Video("Yong'inda harakatlanish qoidalari", "HINQZimGxAI", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,16 +307,16 @@ class YonginFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Yong'inda harakatlanish", "-0OzPa0KzUE", ""))
-        listVideo.add(Video("Uyda yong'in", "yPVKq5089Oc", ""))
-        listVideo.add(Video("Yong'in", "4EK9G0tJWic", ""))
-        listVideo.add(Video("Yonginda xarakatlanish qoidalari", "HINQZimGxAI", ""))
+        listVideo.add(Video("Ёнғинда ҳаракатланиш", "-0OzPa0KzUE", ""))
+        listVideo.add(Video("Уйда ёнғин", "yPVKq5089Oc", ""))
+        listVideo.add(Video("Ёнғин", "4EK9G0tJWic", ""))
+        listVideo.add(Video("Ёнғинда ҳаракатланиш қоидалари", "HINQZimGxAI", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1_ZcHyxUSmMNFZKWxvrDiyzV0123C01hY&export=download",
-                "ёнгинда хулк-атвор коидалари"
+                "Ёнғинда ҳаракатланиш қоидалари"
             )
         )
 
@@ -326,14 +326,14 @@ class YonginFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("действия при пожаре", "KTbuqEDNlIE", ""))
-        listVideo.add(Video("пожар", "RbNi22YUdL0", ""))
+        listVideo.add(Video("Действия при пожаре", "KTbuqEDNlIE", ""))
+        listVideo.add(Video("Пожар", "RbNi22YUdL0", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1Re_YyzE9qo5AH46zTpdT3j9aEK1ImHuX&export=download",
-                "действие при пожаре рус"
+                "Действие при пожаре"
             )
         )
 

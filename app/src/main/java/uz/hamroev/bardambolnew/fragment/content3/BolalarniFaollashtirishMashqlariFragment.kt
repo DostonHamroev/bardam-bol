@@ -313,7 +313,7 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1FWOuOeiPl7ZQqRo6hYjtMgY4bCQ_U4gs&export=download",
-                "bolalarda ishonch hissini shakllantirish"
+                "Bolalarda ishonch hissini shakllantirish"
             )
         )
 
@@ -330,7 +330,7 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1iltEvMPsmSeA_cXbAHto_mzjG_yVQRlJ&export=download",
-                "болаларда ишонч хиссини шакллантириш машклари"
+                "Болаларда ишонч хиссини шакллантириш"
             )
         )
 
@@ -348,7 +348,7 @@ class BolalarniFaollashtirishMashqlariFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=15_n6JbmRIiAy43Xo806bORIsMKJxRFiM&export=download",
-                "упражнения для развития доверия у детей"
+                "Упражнения для развития доверия у детей"
             )
         )
 

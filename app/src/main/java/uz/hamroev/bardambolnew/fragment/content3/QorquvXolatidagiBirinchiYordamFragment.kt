@@ -315,7 +315,7 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1t-BDRXmJ2vlRmu7AVLicu9hdRlnqWAK9&export=download",
-                "bolalardagi qorquv sabablari"
+                "Bolalardagi qorquv sabablari"
             )
         )
 
@@ -332,7 +332,7 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1eZMu34kb_R1SHGgXYtOizYNfq3N9aPtK&export=download",
-                "Болалардаги куркув холати сабаблари"
+                "Болалардаги қорқув сабаблари"
             )
         )
 
@@ -350,7 +350,7 @@ class QorquvXolatidagiBirinchiYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1C4Y43UxclZ9e91Z-qJxN6ks4c-NM5Xh0&export=download",
-                "помощь ребенку переживающему страхи"
+                "Помощь ребенку переживающему страхи"
             )
         )
 

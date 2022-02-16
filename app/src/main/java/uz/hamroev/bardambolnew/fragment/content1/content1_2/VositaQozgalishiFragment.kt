@@ -310,13 +310,13 @@ class VositaQozgalishiFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("харакатли кузгалиш", "xPLbI1glFjE", ""))
+        listVideo.add(Video("Harakatli qo'zg'alish", "xPLbI1glFjE", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1AkrLJeoM8RFpj6vDtHn-NN4rCKOixA_2&export=download",
-                "Harakatli quzgalishda birinchi yordam(1)"
+                "Harakatli qo'zg'alishda birinchi yordam"
             )
         )
 
@@ -326,13 +326,13 @@ class VositaQozgalishiFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("харакатли кузгалиш", "xPLbI1glFjE", ""))
+        listVideo.add(Video("Ҳаракатли қўзғалиш", "xPLbI1glFjE", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1DF2678jQz7KJL_Ft7rZw52jGwEILRW6e&export=download",
-                "харакали кузгалишда биринчи ёрдам 1"
+                "Ҳаракатли қўзғалишда биринчи ёрдам"
             )
         )
 
@@ -348,7 +348,7 @@ class VositaQozgalishiFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1c2clJdtMWJhRyS-F2WUI0dHpAAe9ypb5&export=download",
-                "двигательное возбуждение 1 рус"
+                "Двигательное возбуждение"
             )
         )
 

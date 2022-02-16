@@ -349,7 +349,7 @@ class FalokatdaBirinchiYordamFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1HRFewYk_xeGyUpfkJ_TwjswvM_oXYhhl&export=download",
-                "Беседа с человеком в ситуации дистреса"
+                "Беседа с человеком в ситуации дистресcа"
             )
         )
 

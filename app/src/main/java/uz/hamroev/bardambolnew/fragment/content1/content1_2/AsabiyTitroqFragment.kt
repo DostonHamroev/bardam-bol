@@ -309,13 +309,13 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("асабий титроги", "J341Ka7QAhw", ""))
+        listVideo.add(Video("Asabiy titrog'", "J341Ka7QAhw", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1DE8YFTqpfUIW_qqFhRK67YH0r4tjHh1I&export=download",
-                "asabiy titrogi"
+                "Asabiy titrog'"
             )
         )
 
@@ -325,13 +325,13 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("асабий титроги", "J341Ka7QAhw", ""))
+        listVideo.add(Video("Асабий титроғ", "J341Ka7QAhw", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1H66kNUt7TRAspIaoGdGAWEGIDyh14Dd1&export=download",
-                "асабий титрогда биринчи ёрдам"
+                "Асабий титрогда биринчи ёрдам"
             )
         )
 
@@ -341,13 +341,13 @@ class AsabiyTitroqFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("нервная дрожь", "nwQROLxO3Og", ""))
+        listVideo.add(Video("Нервная дрожь", "nwQROLxO3Og", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1IYFcRTG95UF9NVTX4YrhkUqm1mo2as68&export=download",
-                "нервная дрожь"
+                "Нервная дрожь"
             )
         )
 

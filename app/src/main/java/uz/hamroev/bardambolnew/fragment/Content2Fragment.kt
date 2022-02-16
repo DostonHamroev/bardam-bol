@@ -77,28 +77,28 @@ class Content2Fragment : Fragment() {
         list.clear()
         list.add(
             Content(
-                "Birinhi tibbiy yordam",
+                "Birinchi tibbiy yordam",
                 R.drawable.ic_birinchi_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Sog'lom Turmush Tarzi",
+                "Sog'lom turmush tarzi",
                 R.drawable.ic_soglom_turmush_tarzi,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Bolalarga Birinchi Tibbiy Yordam (Video)",
+                "Bolalarga birinchi tibbiy Yordam (Video)",
                 R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Kattalarga Birinchi Tibbiy Yordam (Video)",
+                "Kattalarga birinchi tibbiy yordam (Video)",
                 R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
@@ -117,21 +117,21 @@ class Content2Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Соглом турмуш тарзини",
+                "Соғлом турмуш тарзини",
                 R.drawable.ic_soglom_turmush_tarzi,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Болаларга Биринчи Тиббий Ёрдам (Видео)",
+                "Болаларга биринчи тиббий ёрдам (Видео)",
                 R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Катталарга Биринчи Тиббий Ёрдам (Видео)",
+                "Катталарга биринчи тиббий ёрдам (Видео)",
                 R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
@@ -143,7 +143,7 @@ class Content2Fragment : Fragment() {
         list.clear()
         list.add(
             Content(
-                "первая медицинская помощь",
+                "Первая медицинская помощь",
                 R.drawable.ic_birinchi_tibbiy_yordam,
                 R.drawable.back_image_content2
             )

@@ -313,7 +313,7 @@ class QayguXolatidagiBolaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1l5GdA_6-4D3_vTzl5uJk68HvidUvnbuk&export=download",
-                "Qaygy xolatiga tushgan bolaga yordam"
+                "Qayg'u xolatiga tushgan bolaga yordam"
             )
         )
 
@@ -330,7 +330,7 @@ class QayguXolatidagiBolaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1EetS8ObTncpN-N7xUVYdXN6TC7KPqk0E&export=download",
-                "Кайгу холатига тушган болага ёрдам"
+                "Қайғу холатига тушган болага ёрдам"
             )
         )
 
@@ -348,7 +348,7 @@ class QayguXolatidagiBolaFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1sjIWYCooljzYmMgM4g9r-nIi4vPjwPM1&export=download",
-                "помощь ребенку пережившему горе"
+                "Помощь ребенку пережившему горе"
             )
         )
 

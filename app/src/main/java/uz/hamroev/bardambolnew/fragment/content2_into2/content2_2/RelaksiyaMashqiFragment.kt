@@ -313,7 +313,7 @@ class RelaksiyaMashqiFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1RmiHSIUCRSiRqlgD4SAbirEt0y8KarGM&export=download",
-                "ruxiy holatni yahshilash mashki"
+                "Ruxiy holatni yaxshilash mashqi"
             )
         )
 
@@ -330,7 +330,7 @@ class RelaksiyaMashqiFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=12p4gga9pPF2bLz5Wyx_o2B3Wxgj-5U35&export=download",
-                "Рухий холатни яхшилаш машки"
+                "Рухий ҳолатни яхшилаш машқи"
             )
         )
 
@@ -348,7 +348,7 @@ class RelaksiyaMashqiFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1RVm_fR8_x_8axzBuaorfGIqjsXPTpVQ3&export=download",
-                "упражнение нормализации психического состояния"
+                "Упражнение нормализации психического состояния"
             )
         )
 

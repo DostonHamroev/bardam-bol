@@ -209,9 +209,9 @@ class HomeActivity : AppCompatActivity() {
     private fun loadUzData() {
 
 
-        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda o'zini boshqarish !"
+        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda o'zini boshqarish!"
 
-        binding.navMainPageTitle.text = "Asosiy Sahifa"
+        binding.navMainPageTitle.text = "Asosiy sahifa"
 
         binding.navContentFirstTitle.text = "Ekstremal vaziyatlarni boshqarish"
         binding.navContentSecondTitle.text = "O'ziga-o'zi birinchi yordam ko'rsatish"
@@ -230,9 +230,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadKrillData() {
-        binding.navHeaderTitle.text = "Экстремал вазиятларда узини бошкариш !"
+        binding.navHeaderTitle.text = "Экстремал вазиятларда узини бошкариш!"
 
-        binding.navMainPageTitle.text = "Асосий Саҳифа"
+        binding.navMainPageTitle.text = "Асосий саҳифа"
 
         binding.navContentFirstTitle.text = "Экстремал вазиятларни бошқариш"
         binding.navContentSecondTitle.text = "Ўзига-ўзи биринчи ёрдам кўрсатиш"
@@ -251,7 +251,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadRuData() {
-        binding.navHeaderTitle.text = "Что делать во время экстремальных ситуаций !"
+        binding.navHeaderTitle.text = "Что делать во время экстремальных ситуаций!"
 
         binding.navMainPageTitle.text = "Главная страница"
 

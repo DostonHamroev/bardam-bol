@@ -314,7 +314,7 @@ class UmirlardaStressFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1sulmctPRo75iyL5FZG3lyBN1tJibmIx_&export=download",
-                "O'smirlarda stress korreksiyasi UZB"
+                "O'smirlarda stress korreksiyasi"
             )
         )
 
@@ -331,7 +331,7 @@ class UmirlardaStressFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1LxPFI38f-FbYR_5fInXyxTdHyqrQ2smf&export=download",
-                "усмирларда стресс холатини коррекцияси  УЗБ"
+                "Усмирларда стресс холатини коррекцияси"
             )
         )
 
@@ -349,7 +349,7 @@ class UmirlardaStressFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=16BrC69Dy6lMsbXQoeZbMQF7eUFHAGl9_&export=download",
-                "коррекция стресса у подростков"
+                "Коррекция стресса у подростков"
             )
         )
 

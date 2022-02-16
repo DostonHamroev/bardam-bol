@@ -290,13 +290,13 @@ class TajovuzFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("тажавузкорликда биринчи ёрдам", "X2brfHqB-5U", ""))
+        listVideo.add(Video("Tajavuzkorlikda birinchi yordam", "X2brfHqB-5U", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=17dGhKYMj9DuH-WH6JQpw78StOSRpEDJG&export=download",
-                "agressiyada birinchi yordam(2)"
+                "Tajavuzkorlikda birinchi yordam"
             )
         )
 
@@ -306,13 +306,13 @@ class TajovuzFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("тажавузкорликда биринчи ёрдам", "X2brfHqB-5U", ""))
+        listVideo.add(Video("Тажавузкорликда биринчи ёрдам", "X2brfHqB-5U", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1DiaxlvR3e6ouHWqf1PZNrfXwfKVrHFKh&export=download",
-                "агрессияда биринчи ердам (1)"
+                "Тажавузкорликда биринчи ёрдам"
             )
         )
 
@@ -322,13 +322,13 @@ class TajovuzFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("первая помощь при агрессии", "EKiKO9vmT7o", ""))
+        listVideo.add(Video("Первая помощь при агрессии", "EKiKO9vmT7o", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1PgCxCSLZQrqP_uT41EnIGt6pXCquR9Fg&export=download",
-                "экстренная помощь при агрессии(1)"
+                "Первая помощь при агрессии"
             )
         )
 

@@ -310,13 +310,13 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("болаларга ердам курсатиш усуллари", "Kmi2VshHvPc", ""))
+        listVideo.add(Video("Bolalarga yordam ko'rsatish usullari", "Kmi2VshHvPc", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1dAXq0AqxQAEMSP58ObRMZHxUtc6lYxOT&export=download",
-                "первая помощь детям узб лотин"
+                "Bolalarga birinchi yordam"
             )
         )
 
@@ -326,13 +326,13 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("болаларга ердам курсатиш усуллари", "Kmi2VshHvPc", ""))
+        listVideo.add(Video("Болаларга ёрдам кўрсатиш усуллари", "Kmi2VshHvPc", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1OyjP3QhWjSaQmkmsny-ODzZphODQTzSm&export=download",
-                "первая помощь детям узб кирил"
+                "Болаларга биринчи ёрдам"
             )
         )
 
@@ -342,13 +342,13 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("взаимодействие с детьми при ЧС", "pC_UgLIN2jU", ""))
+        listVideo.add(Video("Взаимодействие с детьми при ЧС", "pC_UgLIN2jU", ""))
         list = ArrayList()
         list.clear()
         list.add(
             PdfDownload(
                 "u/0/uc?id=1EfkIFVZZBJTdiGbL7K3NUAxT5xYy4UJn&export=download",
-                "первая помощь детям"
+                "Первая помощь детям"
             )
         )
 
