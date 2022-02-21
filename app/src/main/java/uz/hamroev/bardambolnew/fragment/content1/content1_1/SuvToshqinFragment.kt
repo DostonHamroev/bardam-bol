@@ -291,7 +291,7 @@ class SuvToshqinFragment : Fragment() {
         listVideo = ArrayList()
         listVideo.clear()
         listVideo.add(Video("Sel", "tkTRV57Uzbo", ""))
-        listVideo.add(Video("Qor", "aaaaaaaaaaa", ""))
+        listVideo.add(Video("Qor", "47Wvj9iF07A", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -308,7 +308,7 @@ class SuvToshqinFragment : Fragment() {
         listVideo = ArrayList()
         listVideo.clear()
         listVideo.add(Video("Сел", "tkTRV57Uzbo", ""))
-        listVideo.add(Video("Қор", "AAAAAAAAAA", ""))
+        listVideo.add(Video("Қор", "47Wvj9iF07A", ""))
         list = ArrayList()
         list.clear()
         list.add(

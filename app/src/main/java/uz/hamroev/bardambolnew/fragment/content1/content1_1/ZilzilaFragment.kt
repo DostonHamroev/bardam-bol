@@ -326,6 +326,7 @@ class ZilzilaFragment : Fragment() {
         listVideo.clear()
         listVideo.add(Video("Действия при землятресении Lite", "6Q-5kzVauNA", ""))
         listVideo.add(Video("Действия при землятресении Full", "3WxuPLFfF78", ""))
+        listVideo.add(Video("Действия при землятресении", "98XcalM3oUg", ""))
         list = ArrayList()
         list.clear()
         list.add(
