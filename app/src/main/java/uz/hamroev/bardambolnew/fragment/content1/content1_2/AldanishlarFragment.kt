@@ -313,12 +313,7 @@ class AldanishlarFragment : Fragment() {
         listVideo.add(Video("AAAAAAAAAAAAAAAAAAAAAAAA", "Jq608TcU_g8", ""))
         list = ArrayList()
         list.clear()
-        list.add(
-            PdfDownload(
-                "u/0/uc?id=1kVVSbfDFURphu0SKU0LaGrFJMoPtxj9y&export=download",
-                "Alahlash va gallyusinatsiyalarda birinchi yordam"
-            )
-        )
+        list.add(PdfDownload("u/0/uc?id=1kVVSbfDFURphu0SKU0LaGrFJMoPtxj9y&export=download", "Alahsirash va gallyusinatsiyalarda birinchi yordam"))
 
     }
 
@@ -333,7 +328,7 @@ class AldanishlarFragment : Fragment() {
         list.add(
             PdfDownload(
                 "u/0/uc?id=1eyjr4rqKsuzRVWNCAUsF6YAxTY75mGkS&export=download",
-                "Aлахлаш ва галюцинацияларда биринчи ёрдам"
+                "Aлаҳсираш ва галюцинацияларда биринчи ёрдам"
             )
         )
 

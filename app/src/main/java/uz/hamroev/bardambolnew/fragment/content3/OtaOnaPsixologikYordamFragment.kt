@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.util.SparseArray
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import at.huber.youtubeExtractor.VideoMeta
 import at.huber.youtubeExtractor.YouTubeExtractor
 import at.huber.youtubeExtractor.YtFile
@@ -21,7 +21,6 @@ import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import uz.hamroev.bardambolnew.R
 import uz.hamroev.bardambolnew.adapter.PdfDownloadAdapter
 import uz.hamroev.bardambolnew.adapter.VideoAdapter
 import uz.hamroev.bardambolnew.cache.Cache
@@ -312,12 +311,12 @@ class OtaOnaPsixologikYordamFragment : Fragment() {
         listVideo.clear()
         listVideo.add(Video("Mashq", "zxazAjDH8mM", ""))
         listVideo.add(Video("Ishonch bilan qulash", "0ituWLkvP20", ""))
-        listVideo.add(Video("Ishonch bilan qulash HD", "ltb9UAH56pg", ""))
+        //listVideo.add(Video("Ishonch bilan qulash HD", "ltb9UAH56pg", ""))
         listVideo.add(Video("Limon sharbati", "TMOSOFNfRPo", ""))
         listVideo.add(Video("Qo'rqmas bolajonlar", "zJPbsg0Wha8", ""))
-        listVideo.add(Video("Qo'rqmas bolajonlar hd", "E0rh-2ZKkUQ", ""))
+        //listVideo.add(Video("Qo'rqmas bolajonlar hd", "E0rh-2ZKkUQ", ""))
         listVideo.add(Video("Tipratikanchalar o'yini", "lxP14lfQAww", ""))
-        listVideo.add(Video("Tipratikanchalar o'yini  HD", "zIZHZfi431s", ""))
+        //listVideo.add(Video("Tipratikanchalar o'yini  HD", "zIZHZfi431s", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -335,12 +334,12 @@ class OtaOnaPsixologikYordamFragment : Fragment() {
         listVideo.clear()
         listVideo.add(Video("Машқ", "zxazAjDH8mM", ""))
         listVideo.add(Video("Ишонч билан қулаш", "0ituWLkvP20", ""))
-        listVideo.add(Video("Ишонч билан қулаш HD", "ltb9UAH56pg", ""))
+        // listVideo.add(Video("Ишонч билан қулаш HD", "ltb9UAH56pg", ""))
         listVideo.add(Video("Лимон шарбати", "TMOSOFNfRPo", ""))
         listVideo.add(Video("Қўрқмас болажонлар", "zJPbsg0Wha8", ""))
-        listVideo.add(Video("Қўрқмас болажонлар HD", "E0rh-2ZKkUQ", ""))
+        // listVideo.add(Video("Қўрқмас болажонлар HD", "E0rh-2ZKkUQ", ""))
         listVideo.add(Video("Типратиканчалар ўйини", "lxP14lfQAww", ""))
-        listVideo.add(Video("Типратиканчалар ўйини HD", "zIZHZfi431s", ""))
+        // listVideo.add(Video("Типратиканчалар ўйини HD", "zIZHZfi431s", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -358,12 +357,12 @@ class OtaOnaPsixologikYordamFragment : Fragment() {
         listVideo.clear()
         listVideo.add(Video("Упражнение", "zxazAjDH8mM", ""))
         listVideo.add(Video("Доверие", "0ituWLkvP20", ""))
-        listVideo.add(Video("Доверие HD", "ltb9UAH56pg", ""))
+        // listVideo.add(Video("Доверие HD", "ltb9UAH56pg", ""))
         listVideo.add(Video("Лимонный сок", "TMOSOFNfRPo", ""))
         listVideo.add(Video("Бестрашные дети", "zJPbsg0Wha8", ""))
-        listVideo.add(Video("Бестрашные дети HD", "E0rh-2ZKkUQ", ""))
+        //  listVideo.add(Video("Бестрашные дети HD", "E0rh-2ZKkUQ", ""))
         listVideo.add(Video("Игра ежики", "lxP14lfQAww", ""))
-        listVideo.add(Video("Игра ежики HD", "zIZHZfi431s", ""))
+        // listVideo.add(Video("Игра ежики HD", "zIZHZfi431s", ""))
         list = ArrayList()
         list.clear()
         list.add(

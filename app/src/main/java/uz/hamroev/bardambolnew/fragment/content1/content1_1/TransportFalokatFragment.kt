@@ -310,7 +310,7 @@ class TransportFalokatFragment : Fragment() {
         listVideo.clear()
         listVideo.add(Video("Transport falokatlari", "WtAlnC2aIDM", ""))
         listVideo.add(Video("Havo transportidagi halokatida xulq atvor qoidalari FULL", "ni9MdKq2fgM", ""))
-        listVideo.add(Video("Havo transportidagi halokatida xulq atvor qoidalari HD", "ZBwe4rStc-o", ""))
+       // listVideo.add(Video("Havo transportidagi halokatida xulq atvor qoidalari HD", "ZBwe4rStc-o", ""))
         listVideo.add(Video("Havo transport xalokatida xulq atvor koidalari", "L0jUKYoBaMk", ""))
         list = ArrayList()
         list.clear()

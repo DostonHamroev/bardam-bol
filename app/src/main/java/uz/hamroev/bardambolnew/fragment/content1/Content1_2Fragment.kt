@@ -121,7 +121,7 @@ class Content1_2Fragment : Fragment() {
         list.add(Content("Befarqlik", R.drawable.ic_bafarqlik, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Dam olish uchun audio",
+                "Relaksatsiya mashqi",
                 R.drawable.ic_audio_dam_olish,
                 R.drawable.back_image_content1
             )

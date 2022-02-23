@@ -244,7 +244,7 @@ class HomeActivity : AppCompatActivity() {
     private fun loadUzData() {
 
 
-        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda o'zini boshqarish!"
+        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda, ya'ni tabiiy va texnogen ofatlarda inson o'z-o'zini boshqarishga xizmat qiladigan mobil ilova!"
 
         binding.navMainPageTitle.text = "Asosiy sahifa"
 
@@ -265,7 +265,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadKrillData() {
-        binding.navHeaderTitle.text = "Экстремал вазиятларда узини бошкариш!"
+        binding.navHeaderTitle.text = "Экстремал вазиятларда, яъни табиий ва техноген офатларда инсон ўз-ўзини бошқаришга хизмат қиладиган мобил илова!"
 
         binding.navMainPageTitle.text = "Асосий саҳифа"
 
@@ -286,7 +286,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadRuData() {
-        binding.navHeaderTitle.text = "Что делать во время экстремальных ситуаций!"
+        binding.navHeaderTitle.text = "Мобильное приложение для управления человеком собой в экстремальных ситуациях, т.е природных и техногенных катастрофах!"
 
         binding.navMainPageTitle.text = "Главная страница"
 

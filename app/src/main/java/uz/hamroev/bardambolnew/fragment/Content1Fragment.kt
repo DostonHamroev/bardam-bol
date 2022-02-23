@@ -106,7 +106,7 @@ class Content1Fragment : Fragment() {
         list.clear()
         list.add(
             Content(
-                "Правила поведения в экстренных ситуациях",
+                "Правила поведения в экстремальных ситуациях",
                 R.drawable.ic_ekstremal_vaziayt,
                 R.drawable.back_image_content1
             )

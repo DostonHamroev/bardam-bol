@@ -78,11 +78,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadUzData() {
-        binding.typeWriter.animateText("Ekstremal vaziyatlarda o'zini boshqarish!")
+        binding.typeWriter.animateText("Ekstremal vaziyatlarda, ya'ni tabiiy va texnogen ofatlarda inson o'z-o'zini boshqarishga xizmat qiladigan mobil ilova!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Ekstremal vaziyatlarni boshqarish", R.drawable.ic_doctor2))
+        list.add(MainMenu("Ekstremal vaziyatlarda inson o'z-o'zini boshqarish", R.drawable.ic_doctor2))
         list.add(MainMenu("O'ziga-o'zi birinchi yordam ko'rsatish", R.drawable.ic_doctor1))
         list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga yordam ko'rsatish", R.drawable.ic_children_father))
         list.add(MainMenu("Guvohnoma", R.drawable.ic_certificat_girl))
@@ -90,11 +90,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadKrillData() {
-        binding.typeWriter.animateText("Экстремал вазиятларда ўзини бошкариш!")
+        binding.typeWriter.animateText("Экстремал вазиятларда, яъни табиий ва техноген офатларда инсон ўз-ўзини бошқаришга хизмат қиладиган мобил илова!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Экстремал вазиятларни бошқариш", R.drawable.ic_doctor2))
+        list.add(MainMenu("Экстремал вазиятларда инсон ўз-ўзини бошқариш", R.drawable.ic_doctor2))
         list.add(MainMenu("Ўзига-ўзи биринчи ёрдам кўрсатиш", R.drawable.ic_doctor1))
         list.add(MainMenu("Болага ғамхўрлик. Болага ёрдам кўрсатиш", R.drawable.ic_children_father))
         list.add(MainMenu("Гувоҳнома", R.drawable.ic_certificat_girl))
@@ -102,11 +102,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadRuData() {
-        binding.typeWriter.animateText("Что делать во время экстремальных ситуаций!")
+        binding.typeWriter.animateText("Мобильное приложение для управления человеком собой в экстремальных ситуациях, т.е природных и техногенных катастрофах!")
         binding.typeWriter.setCharacterDeley(50)
         list = ArrayList()
         list.clear()
-        list.add(MainMenu("Управление экстремальными ситуациями", R.drawable.ic_doctor2))
+        list.add(MainMenu("Управление человека самим собой в экстремальных ситуациях", R.drawable.ic_doctor2))
         list.add(MainMenu("Оказание первой доврачебной", R.drawable.ic_doctor1))
         list.add(MainMenu("Забота о ребенке. Оказание помощи ребенку", R.drawable.ic_children_father))
         list.add(MainMenu("Сертификат", R.drawable.ic_certificat_girl))

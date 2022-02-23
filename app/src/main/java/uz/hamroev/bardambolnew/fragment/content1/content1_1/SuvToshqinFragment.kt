@@ -290,8 +290,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Yuklanmoqda..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Sel", "tkTRV57Uzbo", ""))
-        listVideo.add(Video("Qor", "47Wvj9iF07A", ""))
+        listVideo.add(Video("Qor ko'chishida evakuatsiya choralari", "tkTRV57Uzbo", ""))
+        listVideo.add(Video("Sel kelishi paytida evakuatsiya choralari", "47Wvj9iF07A", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -307,8 +307,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Сел", "tkTRV57Uzbo", ""))
-        listVideo.add(Video("Қор", "47Wvj9iF07A", ""))
+        listVideo.add(Video("Қор кўчишида эвакуатсия чоралари", "tkTRV57Uzbo", ""))
+        listVideo.add(Video("Сел келиши пайтида эвакуатсия чоралари", "47Wvj9iF07A", ""))
         list = ArrayList()
         list.clear()
         list.add(
@@ -324,8 +324,8 @@ class SuvToshqinFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Снегопад", "8x9EhIweay8", ""))
-        listVideo.add(Video("Оползень", "m0gGqGLHXbg", ""))
+        listVideo.add(Video("Действия человека при сходе лавины", "8x9EhIweay8", ""))
+        listVideo.add(Video("Действия человека при сходе селевых потоков", "m0gGqGLHXbg", ""))
         list = ArrayList()
         list.clear()
         list.add(
