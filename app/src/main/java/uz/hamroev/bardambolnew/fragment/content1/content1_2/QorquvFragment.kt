@@ -311,7 +311,7 @@ class QorquvFragment : Fragment() {
         listVideo = ArrayList()
         listVideo.clear()
         list = ArrayList()
-        listVideo.add(Video("Qo'rquv holatida ekstremal yordam", "M4U2oSqXVTY", ""))
+        listVideo.add(Video("Qo'rquv holatida birinchi yordam", "M4U2oSqXVTY", ""))
         list.clear()
         list.add(
             PdfDownload(
@@ -326,7 +326,7 @@ class QorquvFragment : Fragment() {
         downloadText = "Юкланмоқда..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Қўрқув ҳолатида экстремал ёрдам", "M4U2oSqXVTY", ""))
+        listVideo.add(Video("Қўрқув ҳолатида биринчи ёрдам", "M4U2oSqXVTY", ""))
         list = ArrayList()
         list.clear()
         list.add(

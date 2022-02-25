@@ -96,72 +96,72 @@ class Content1_1Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Zilzila", R.drawable.ic_zilzila, R.drawable.back_image_content1))
-        list.add(Content("Suv toshqin", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
-        list.add(Content("Yong'in", R.drawable.ic_yongin, R.drawable.back_image_content1))
+        list.add(Content("Zilzila harakatlanish", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Suv toshqin vaziyatida harakatlanish", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Yong'inda xulq-atvor qoidalari", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Baxtsiz hodisalar va aviahalokat paytida o'zini tutish qoidalari",
+                "Transport falokatlarida xulq-atvor qoidalari",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
-                "Tashvishli chamadon",
+                "Tashvish qopi",
                 R.drawable.ic_tashvishli_chamadon,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("To'fon", R.drawable.ic_tofon, R.drawable.back_image_content1))
+        list.add(Content("To'fonda xulq-atvor qoidalari", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Зилзила", R.drawable.ic_zilzila, R.drawable.back_image_content1))
-        list.add(Content("Сув тошқин", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
-        list.add(Content("Ёнғин", R.drawable.ic_yongin, R.drawable.back_image_content1))
+        list.add(Content("Зилзилада ҳаракатланиш", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Сув тошқин вазиятида ҳаракатланиш", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Ёнғинда хулқ-атвор қоидалари", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Бахтсиз ҳодисалар ва авиаҳалокатлар пайтида ўзини тутиш қоидалари",
+                "Транспорт фалокатларида хулқ-атвор қоидалари",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
-                "Ташвишли чамадон",
+                "Ташвиш қопи",
                 R.drawable.ic_tashvishli_chamadon,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Тўфон", R.drawable.ic_tofon, R.drawable.back_image_content1))
+        list.add(Content("Тўфонда хулқ-атвор қоидалари", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Землятресение", R.drawable.ic_zilzila, R.drawable.back_image_content1))
-        list.add(Content("Наводнение", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
-        list.add(Content("Пожар", R.drawable.ic_yongin, R.drawable.back_image_content1))
+        list.add(Content("Правила поведения при землятресении", R.drawable.ic_zilzila, R.drawable.back_image_content1))
+        list.add(Content("Правила поведения при наводнении", R.drawable.ic_suv_toshqin, R.drawable.back_image_content1))
+        list.add(Content("Правила поведения при пожаре", R.drawable.ic_yongin, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Правила поведения при аварии и авиакатастрофах",
+                "Правила поведения при авто и авиакатастрофах",
                 R.drawable.ic_batsiz_hodisa,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
-                "Тревожный чемодан",
+                "Тревожный чемоданчик",
                 R.drawable.ic_tashvishli_chamadon,
                 R.drawable.back_image_content1
             )
         )
-        list.add(Content("Уроган", R.drawable.ic_tofon, R.drawable.back_image_content1))
+        list.add(Content("Правила поведения при урагане", R.drawable.ic_tofon, R.drawable.back_image_content1))
 
     }
 

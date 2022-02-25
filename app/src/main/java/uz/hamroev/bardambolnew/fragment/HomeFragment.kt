@@ -78,8 +78,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadUzData() {
-        binding.typeWriter.animateText("Ekstremal vaziyatlarda, ya'ni tabiiy va texnogen ofatlarda inson o'z-o'zini boshqarishga xizmat qiladigan mobil ilova!")
-        binding.typeWriter.setCharacterDeley(50)
+        binding.typeWriter.animateText("«Bardam bo‘l»  mobil ilovasi Sizni  ekstremal vaziyatlar tabiati va  shunday vaziyatlarda xulq-atvor qoidalari, ekstremal vaziyatlarda evakuatsiya, shifokor kelguniga qadar o‘zingiz va farzandingizga tibbiy hamda psixologik yordam ko‘rsatish to‘g‘risidagi ma’lumotlar bilan qurollantiradi!")
+        binding.typeWriter.setCharacterDeley(5)
         list = ArrayList()
         list.clear()
         list.add(MainMenu("Ekstremal vaziyatlarda inson o'z-o'zini boshqarish", R.drawable.ic_doctor2))
@@ -90,8 +90,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadKrillData() {
-        binding.typeWriter.animateText("Экстремал вазиятларда, яъни табиий ва техноген офатларда инсон ўз-ўзини бошқаришга хизмат қиладиган мобил илова!")
-        binding.typeWriter.setCharacterDeley(50)
+        binding.typeWriter.animateText("«Бардам бўл»  мобил иловаси Сизни  экстремал вазиятлар табиати ва  шундай вазиятларда хулқ-атвор қоидалари, экстремал вазиятларда эвакуация, шифокор келгунига қадар ўзингиз ва фарзандингизга тиббий ҳамда психологик ёрдам кўрсатиш тўғрисидаги маълумотлар билан қуроллантиради!")
+        binding.typeWriter.setCharacterDeley(5)
         list = ArrayList()
         list.clear()
         list.add(MainMenu("Экстремал вазиятларда инсон ўз-ўзини бошқариш", R.drawable.ic_doctor2))
@@ -102,8 +102,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun loadRuData() {
-        binding.typeWriter.animateText("Мобильное приложение для управления человеком собой в экстремальных ситуациях, т.е природных и техногенных катастрофах!")
-        binding.typeWriter.setCharacterDeley(50)
+        binding.typeWriter.animateText("Мобильное приложение «Бардам бул» вооружит Вас информацией о  природе и правилах поведения, эвакуации в экстремальной ситуации, оказании доврачебной медицинской  и психологической помощи себе и ребенку!")
+        binding.typeWriter.setCharacterDeley(5)
         list = ArrayList()
         list.clear()
         list.add(MainMenu("Управление человека самим собой в экстремальных ситуациях", R.drawable.ic_doctor2))

@@ -342,7 +342,7 @@ class FavqulotdaVaziyatlarFragment : Fragment() {
         downloadText = "Загрузка..."
         listVideo = ArrayList()
         listVideo.clear()
-        listVideo.add(Video("Взаимодействие с детьми при ЧС", "pC_UgLIN2jU", ""))
+        listVideo.add(Video("Правила первой психологической помощи детям", "pC_UgLIN2jU", ""))
         list = ArrayList()
         list.clear()
         list.add(

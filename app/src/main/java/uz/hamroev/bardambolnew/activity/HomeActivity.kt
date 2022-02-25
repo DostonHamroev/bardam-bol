@@ -244,7 +244,7 @@ class HomeActivity : AppCompatActivity() {
     private fun loadUzData() {
 
 
-        binding.navHeaderTitle.text = "Ekstremal vaziyatlarda, ya'ni tabiiy va texnogen ofatlarda inson o'z-o'zini boshqarishga xizmat qiladigan mobil ilova!"
+        binding.navHeaderTitle.text = "«Bardam bo‘l»  mobil ilovasi Sizni  ekstremal vaziyatlar tabiati va  shunday vaziyatlarda xulq-atvor qoidalari, ekstremal vaziyatlarda evakuatsiya, shifokor kelguniga qadar o‘zingiz va farzandingizga tibbiy hamda psixologik yordam ko‘rsatish to‘g‘risidagi ma’lumotlar bilan qurollantiradi!"
 
         binding.navMainPageTitle.text = "Asosiy sahifa"
 
@@ -265,7 +265,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadKrillData() {
-        binding.navHeaderTitle.text = "Экстремал вазиятларда, яъни табиий ва техноген офатларда инсон ўз-ўзини бошқаришга хизмат қиладиган мобил илова!"
+        binding.navHeaderTitle.text = "«Бардам бўл»  мобил иловаси Сизни  экстремал вазиятлар табиати ва  шундай вазиятларда хулқ-атвор қоидалари, экстремал вазиятларда эвакуация, шифокор келгунига қадар ўзингиз ва фарзандингизга тиббий ҳамда психологик ёрдам кўрсатиш тўғрисидаги маълумотлар билан қуроллантиради!"
 
         binding.navMainPageTitle.text = "Асосий саҳифа"
 
@@ -286,7 +286,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun loadRuData() {
-        binding.navHeaderTitle.text = "Мобильное приложение для управления человеком собой в экстремальных ситуациях, т.е природных и техногенных катастрофах!"
+        binding.navHeaderTitle.text = "Мобильное приложение «Бардам бул» вооружит Вас информацией о  природе и правилах поведения, эвакуации в экстремальной ситуации, оказании доврачебной медицинской  и психологической помощи себе и ребенку!"
 
         binding.navMainPageTitle.text = "Главная страница"
 

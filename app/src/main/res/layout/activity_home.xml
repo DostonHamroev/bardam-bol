@@ -73,7 +73,7 @@
                             android:padding="10dp"
                             android:text="Eksremal\nvaziyatlarda\no'zini\nBoshqarish"
                             android:textColor="@color/my_green"
-                            android:textSize="16sp"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
