@@ -84,9 +84,9 @@ class HomeFragment : Fragment() {
         list.clear()
         list.add(MainMenu("Ekstremal vaziyatlarda inson o'z-o'zini boshqarish", R.drawable.ic_doctor2))
         list.add(MainMenu("O'ziga-o'zi birinchi tibbiy yordam ko'rsatish qoidalari", R.drawable.ic_doctor1))
-        list.add(MainMenu("Bolaga g'amxo'rlik. Bolaga yordam ko'rsatish qoidalari", R.drawable.ic_children_father))
+        list.add(MainMenu("Bolaga g'amxo'rlik.", R.drawable.ic_children_father))
         list.add(MainMenu("Guvohnoma", R.drawable.ic_certificat_girl))
-        list.add(MainMenu("Ilova haqida", R.drawable.ic_app_about))
+        list.add(MainMenu("Mualliflar", R.drawable.ic_app_about))
     }
 
     private fun loadKrillData() {
@@ -96,9 +96,9 @@ class HomeFragment : Fragment() {
         list.clear()
         list.add(MainMenu("Экстремал вазиятларда инсон ўз-ўзини бошқариш", R.drawable.ic_doctor2))
         list.add(MainMenu("Ўзига-ўзи биринчи тиббий ёрдам кўрсатиш қоидалари", R.drawable.ic_doctor1))
-        list.add(MainMenu("Болага ғамхўрлик. Болага ёрдам кўрсатиш қоидалари", R.drawable.ic_children_father))
+        list.add(MainMenu("Болага ғамхўрлик", R.drawable.ic_children_father))
         list.add(MainMenu("Гувоҳнома", R.drawable.ic_certificat_girl))
-        list.add(MainMenu("Илова ҳақида", R.drawable.ic_app_about))
+        list.add(MainMenu("Муаллифлар", R.drawable.ic_app_about))
     }
 
     private fun loadRuData() {
@@ -108,9 +108,9 @@ class HomeFragment : Fragment() {
         list.clear()
         list.add(MainMenu("Управление человека самим собой в экстремальных ситуациях", R.drawable.ic_doctor2))
         list.add(MainMenu("Правила первой доврачебной само-помощи", R.drawable.ic_doctor1))
-        list.add(MainMenu("Забота о ребенке. Оказание помощи ребенку", R.drawable.ic_children_father))
+        list.add(MainMenu("Забота о ребенке", R.drawable.ic_children_father))
         list.add(MainMenu("Сертификат", R.drawable.ic_certificat_girl))
-        list.add(MainMenu("О приложении", R.drawable.ic_app_about))
+        list.add(MainMenu("Авторы и разработчики приложения", R.drawable.ic_app_about))
 
     }
 

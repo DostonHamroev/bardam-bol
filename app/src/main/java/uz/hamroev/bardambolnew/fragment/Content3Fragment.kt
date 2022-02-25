@@ -93,7 +93,7 @@ class Content3Fragment : Fragment() {
     private fun loadUzData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Agressiya", R.drawable.ic_agressiya, R.drawable.back_image_content3))
+        list.add(Content("Tajovuzkorlik holatida birinchi yordam", R.drawable.ic_agressiya, R.drawable.back_image_content3))
         list.add(
             Content(
                 "Bolalarni faollashtirish mashqlari",
@@ -103,7 +103,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Bolalar uchun videolar",
+                "Bolalarni rivojlantirish uchun videokutubxona",
                 R.drawable.ic_bolalar_uchun_video,
                 R.drawable.back_image_content3
             )
@@ -124,7 +124,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Giperaktiv Bolalarga Yordam",
+                "Giperaktiv bolalarga yordam",
                 R.drawable.ic_giperaktiv_bola,
                 R.drawable.back_image_content3
             )
@@ -138,21 +138,21 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Qo'rquv Xolatida birinchi yordam",
+                "Qo'rquv xolatida birinchi yordam",
                 R.drawable.ic_qorquv,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Mushakdagi Zo'riqishni bartaraf etish",
+                "Mushakdagi zo'riqishni bartaraf etish",
                 R.drawable.ic_mushak,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Umirlarda stress xolatlarini bartaraf etish",
+                "O'smirlarda stress xolatlarini bartaraf etish",
                 R.drawable.ic_stress,
                 R.drawable.back_image_content3
             )
@@ -170,7 +170,7 @@ class Content3Fragment : Fragment() {
     private fun loadKrillData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Агрессия", R.drawable.ic_agressiya, R.drawable.back_image_content3))
+        list.add(Content("Тажовузкорлик ҳолатида биринчи ёрдам", R.drawable.ic_agressiya, R.drawable.back_image_content3))
         list.add(
             Content(
                 "Болаларни фаоллаштириш машқлари",
@@ -180,7 +180,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Болалар учун видеотека",
+                "Болаларни ривожлантириш учун видеокутубхона",
                 R.drawable.ic_bolalar_uchun_video,
                 R.drawable.back_image_content3
             )
@@ -229,7 +229,7 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Умирларда стресс холатларини бартараф этиш",
+                "Ўсмирларда стресс холатларини бартараф этиш",
                 R.drawable.ic_stress,
                 R.drawable.back_image_content3
             )
@@ -246,7 +246,7 @@ class Content3Fragment : Fragment() {
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Агрессия", R.drawable.ic_agressiya, R.drawable.back_image_content3))
+        list.add(Content("Психологическая помощь при агрессивном состоянии", R.drawable.ic_agressiya, R.drawable.back_image_content3))
         list.add(
             Content(
                 "Активизирующие упражнения для детей.",
@@ -256,14 +256,14 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Видеотека для детей",
+                "Психологическое саморазвитие ребенка (видиотека)",
                 R.drawable.ic_bolalar_uchun_video,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Видеотека Первая помощь детям",
+                "Приёмы первой психологической помощи детям (видиотека)",
                 R.drawable.ic_birinchi_psixologik_yordam,
                 R.drawable.back_image_content3
             )
@@ -277,35 +277,35 @@ class Content3Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Поддержка гиперактивных детей",
+                "Психологическая помощь гиперактивным детям",
                 R.drawable.ic_giperaktiv_bola,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Психологическая поддержка ребенка в бедственном положении",
+                "Психологическая помощь ребенку переживающему горе",
                 R.drawable.ic_qaygu_holatgadi_bola,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Первая помощь при страхе",
+                "Психологическая помощь ребенку в состоянии страха",
                 R.drawable.ic_qorquv_halatdagi_bola,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Снятие мышечного напряжения",
+                "Приёмы снятия мышечного напряжения",
                 R.drawable.ic_mushak,
                 R.drawable.back_image_content3
             )
         )
         list.add(
             Content(
-                "Устранение стрессовых состояний у подростков",
+                "Коррекция стрессовых состояний у подростков",
                 R.drawable.ic_stress,
                 R.drawable.back_image_content3
             )
