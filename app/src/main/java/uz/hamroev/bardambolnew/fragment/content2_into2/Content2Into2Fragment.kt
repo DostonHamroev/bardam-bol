@@ -146,17 +146,17 @@ class Content2Into2Fragment : Fragment() {
     private fun loadRuData() {
         list = ArrayList()
         list.clear()
-        list.add(Content("Упражнение", R.drawable.ic_2_1, R.drawable.back_image_content1))
+        list.add(Content("Программа физических упражнений", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Упражнение на расслабление",
+                "Упражнение нормализации психического состояния",
                 R.drawable.ic_2_1,
                 R.drawable.back_image_content1
             )
         )
         list.add(
             Content(
-                "Основы здравоохранения",
+                "Основы здорового образа жизни",
                 R.drawable.ic_2_1,
                 R.drawable.back_image_content1
             )
@@ -164,7 +164,7 @@ class Content2Into2Fragment : Fragment() {
         list.add(Content("Методы очистки воды", R.drawable.ic_2_1, R.drawable.back_image_content1))
         list.add(
             Content(
-                "Активационное упражнение",
+                "Активизация психического состояния",
                 R.drawable.ic_2_1,
                 R.drawable.back_image_content1
             )

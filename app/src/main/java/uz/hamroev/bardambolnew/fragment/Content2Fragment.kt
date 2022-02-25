@@ -157,14 +157,14 @@ class Content2Fragment : Fragment() {
         )
         list.add(
             Content(
-                "Первая помощь детям (видео)",
+                "Первая  доврачебная помощь детям (видео)",
                 R.drawable.ic_bolaga_tibbiy_yordam,
                 R.drawable.back_image_content2
             )
         )
         list.add(
             Content(
-                "Первая помощь взрослым (видео)",
+                "Первая доврачебная помощь взрослым (видео)",
                 R.drawable.ic_kattalarga_birinchi_yordam,
                 R.drawable.back_image_content2
             )
